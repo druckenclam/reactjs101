@@ -1,20 +1,20 @@
-# Learning React from Scratch  ReactJS（ReactJS 101）
+# Learning ReactJS from Scratch （ReactJS 101）
 This is a React book for absolute beginners，which covers ReactJS and its ecosystem, including Flux, Redux, React Router, ImmutableJS, React Native, Relay/GraphQL etc.，and helps you building across platforms applications.
 
 ![從零開始學 ReactJS（ReactJS 101）](./cover.png)
 
 ## Links
 
-1. [從零開始學 ReactJS（ReactJS 101）粉絲頁](https://www.facebook.com/reactjs101/)
+1. [Learning ReactJS from Scratch （ReactJS 101）Fan Page](https://www.facebook.com/reactjs101/)
 
 2. [繁體中文範例程式碼和書籍內容連載位置](https://github.com/kdchang/reactjs101)
 
-3. [勘誤、許願、建議或提問](https://github.com/kdchang/reactjs101/issues)
+3. [Corrections, Wish List, Suggestions, and Query](https://github.com/kdchang/reactjs101/issues)
 
 ## Translate
 
-1. [简体中文版本 by @carlleton](https://github.com/carlleton/reactjs101/tree/zh-CN)
-2. [前端圈简体中文版本 by @blueflylin]( https://github.com/blueflylin/reactjs101) [特別感謝前端圈小夥伴！](http://fequan.com/)
+1. [Simplified Chinese by @carlleton](https://github.com/carlleton/reactjs101/tree/zh-CN)
+2. [Simplified Chinese (fequan version) by @blueflylin]( https://github.com/blueflylin/reactjs101) [Special thanks go to Mates from fequan!](http://fequan.com/)
 
 
 若需翻譯成其他語言版本，請先 `fork` 一份 `repo` 到自己的 Guthub 並另外開新的 `branch`。最後將翻譯版本連結更新在 `master` 分支中 `README.md` 的 `相關連結（Links）` 後發送 `Pull Request`，謝謝您。
