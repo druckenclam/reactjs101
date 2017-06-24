@@ -17,7 +17,7 @@ This is a React book for absolute beginners. The book navigates you through Reac
 2. [Simplified Chinese (fequan version) by @blueflylin]( https://github.com/blueflylin/reactjs101) [Special thanks go to Mates from fequan!](http://fequan.com/)
 
 
-To translate this book to other languages, please fork this repository to your own account and create a new branch. When the translation is finished, please add the link to the translation under the section 'Links' of README.md (master branch) and send a 'Pull Request'. Thanks for your help.
+To translate this book to other languages, please fork this repository to your own account and create a new branch. When the translation is finished, please add a link to the translation under the section 'Links' of README.md (master branch) and send a 'Pull Request'. Thanks for your help.
 
 ## Table of Contents
 
