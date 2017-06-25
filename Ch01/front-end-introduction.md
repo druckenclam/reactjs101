@@ -8,7 +8,7 @@ With the growing complexity of the mordern web and the increased focus on user e
 ![Web 前端工程入門簡介](./images/html-css-js.png "Web 前端工程入門簡介")
 
 ## Scope of Frontend Engineering
-In fact，frontend engineers undertake a range of roles and responsibilities in the industry. Some focus more on Web Design, while others are more concerned about software engineering, the perspective of this book.Requisite skills include HTML、CSS, and JavaScript and etc. In the past，frontend engineering had been targeting applications for broswers, but now it is no longer limited to browsers. Rather, it aims to develop cross-platform applications. Below are some examples.
+In fact，frontend engineers undertake a range of roles and responsibilities in the industry. Some focus more on Web Design, while others are more concerned about software engineering, the perspective of this book.Requisite skills include HTML、CSS, JavaScript, etc. In the past，frontend engineering had been targeting exclusively applications for broswers, but now it is no longer the case. Rather, it aims to develop cross-browser, cross-platform applications. Below are some examples.
 
 1. Web Browser Applications.
 2. CLI based Headless Applications. For Example: [phantomJS](http://phantomjs.org/), [CasperJS](http://casperjs.org/).
