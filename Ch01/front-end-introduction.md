@@ -8,21 +8,21 @@ With the growing complexity of the mordern web and the increased focus on user e
 ![Web 前端工程入門簡介](./images/html-css-js.png "Web 前端工程入門簡介")
 
 ## Scope of Frontend Engineering
-事實上，在目前的業界，前端工程的定位光譜非常廣泛，有聚焦在網頁設計（Web Design），也有專注在軟體工程（Software Engineering）的部份，本書則是將前端工程定位在軟體工程的範疇。而 HTML、CSS 和 JavaScript 是前端工程最重要的技術基礎。過去一段時間，我們所認為的前端工程主要專注在瀏覽器平台，但現在的 Web 平台已經不再侷限於桌面瀏覽器，而是必須面對更多的跨平台、跨瀏覽器的應用開發場景，其中包含：
+In fact，frontend engineers undertake a range of roles and responsibilities in the industry. Some focus more on Web Design, while others are more concerned about software engineering, the perspective of this book.Requisite skills include HTML、CSS, and JavaScript and etc. In the past，frontend engineering had been targeting applications for broswers, but now it is no longer limited to browsers. Rather, it aims to develop cross-platform applications. Below are some examples.
 
-1. 網頁瀏覽器（Web Browser），一般的網頁應用程式開發
-2. 透過 CLI 指令去操作的 Headless 瀏覽器（Headless　Application）。例如：[phantomJS](http://phantomjs.org/)、[CasperJS](http://casperjs.org/) 等
-3. 運作在 WebView 瀏覽器核心（WebView Application）的應用。例如：[Apache Cordova](https://cordova.apache.org/)、[Electron](http://electron.atom.io/)、[NW.js](http://nwjs.io/) 等行動、桌面應用程式開發
-4. 原生應用程式（Native Application），透過 Web 技術撰寫原生應用程式。例如：[React Native](https://facebook.github.io/react-native/)、[Native Script](https://www.nativescript.org/) 等
+1. Web Browser Applications.
+2. CLI based Headless Applications. For Example: [phantomJS](http://phantomjs.org/), [CasperJS](http://casperjs.org/).
+3. WebView Applications. For Example: [Apache Cordova](https://cordova.apache.org/), [Electron](http://electron.atom.io/),[NW.js](http://nwjs.io/), and Desktop Applications.
+4. Native Applications Using Web Technology。For Example: [React Native](https://facebook.github.io/react-native/)、[Native Script](https://www.nativescript.org/)
 
 過去幾年，前端開發就像經歷了文藝復興（Rinascimento）的年代，開始了各種框架、套件百花齊放的時代。雖然現在有更多好用工具可以協助開發，但前端工程師似乎並沒有變得比較輕鬆。以往若能妥善運用 jQuery 等函式庫就可以應付大部分前端工程師的工作，但現在前端徵才廣告上不僅要求精通 HTML、CSS 和 JavaScript，還要對於還要對於 [Backbone](http://backbonejs.org/)、[Ember](http://emberjs.com/)、[Angular](https://angularjs.org/)、[React](https://facebook.github.io/react/)、[Vue](https://vuejs.org/) 等 JavaScript 框架或函式庫有一定程度的了解。
 
-在眾多 JavaScript 框架或函式庫中，[React](https://facebook.github.io/react/) 是 Facebook 推出的開源 [JavaScript](https://en.wikipedia.org/wiki/JavaScript) Library，它的出現讓許多革新性的 Web 觀念開始流行起來，例如：Virtual DOM、Web Component、更直覺的宣告式 UI 設計、更優雅地實現 Server Rendering 等。接下來本書將透過介紹 React 生態系（ecosystem）帶領讀者入門 React 的世界，讓讀者可以從零開始真的動手用 React 開發跨平台應用程式。
+Of all the JavaScript frameworks and libriaries，[React](https://facebook.github.io/react/) is an opensource [JavaScript](https://en.wikipedia.org/wiki/JavaScript) library developed and promoted by Facebook. It brought about quite a few revolotionary ideas about the web development such as Virtual DOM, Web Component, intuitive and declarative UI designing, graceful support for server rendering, etc. Next up, we will introduce readers of this book to React with a brief overview to React Ecosystem, preparing our readers for building cross-platform React applications from scratch.
 
 （image via [bsdacademy](http://bsdacademy.com/wp-content/uploads/2014/10/html-css-js.png)、[firebase](https://www.firebase.com/resources/images/website/logos/frameworks.png)）
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [下一章：React 生態系（Ecosystem）入門簡介](https://github.com/kdchang/reactjs101/blob/master/Ch01/react-ecosystem-introduction.md) |
+## :door: Dokodemo Door 
+| [Back to the Mainpage](https://github.com/druckenclam/reactjs101/tree/en) | [Next Chapter：Introduction to React Ecosystem](https://github.com/druckenclam/reactjs101/blob/en/Ch01/react-ecosystem-introduction.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Question, and Wish List](https://github.com/kdchang/reactjs101/issues) |
 
