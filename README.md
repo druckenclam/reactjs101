@@ -1,5 +1,5 @@
 # Learning ReactJS from Scratch （ReactJS 101）
-This is a React book for absolute beginners. The book navigates you through ReactJS and its ecosystem, including Flux, Redux, React Router, ImmutableJS, React Native, Relay/GraphQL etc.，and prepares you for building across platforms applications.
+This is a React book for absolute beginners. The book guides you progressively through ReactJS and its ecosystem, including Flux, Redux, React Router, ImmutableJS, React Native, Relay/GraphQL etc.，and prepares you for building across platform applications.
 
 ![從零開始學 ReactJS（ReactJS 101）](./cover.png)
 
@@ -7,7 +7,7 @@ This is a React book for absolute beginners. The book navigates you through Reac
 
 1. [Learning ReactJS from Scratch （ReactJS 101）Fan Page](https://www.facebook.com/reactjs101/)
 
-2. [繁體中文範例程式碼和書籍內容連載位置](https://github.com/kdchang/reactjs101)
+2. [Tranditional Chinese Version of the Book (Code Examples Included)](https://github.com/kdchang/reactjs101)
 
 3. [Corrections, Wish List, Suggestions, and Questions](https://github.com/kdchang/reactjs101/issues)
 
@@ -17,30 +17,30 @@ This is a React book for absolute beginners. The book navigates you through Reac
 2. [Simplified Chinese (fequan version) by @blueflylin]( https://github.com/blueflylin/reactjs101) [Special thanks go to Mates from fequan!](http://fequan.com/)
 
 
-To translate this book to other languages, please fork this repository to your own account and create a new branch. When the translation is finished, please add a link to the translation under the section 'Links' of README.md (master branch) and send a 'Pull Request'. Thanks for your help.
+To translate this book to other languages, please `fork` this repository to your own account and create a new `branch`. When the translation is finished, please add a link to the translation under the section `Links` of `README.md` (`master branch`) and send a `Pull Request`. Thanks for your help.
 
 ## Table of Contents
 
-- [X] [一、An introduction to Frontend Projects and React Ecosystem](https://github.com/kdchang/reactjs101/tree/master/Ch01)
-- [X] [二、開發環境設置與 Webpack 入門](https://github.com/kdchang/reactjs101/tree/master/Ch02)
-- [X] [三、React/JSX/Component 簡介](https://github.com/kdchang/reactjs101/tree/master/Ch03)
-- [X] [四、Props/State Fundamentals and Component Life Cycle](https://github.com/kdchang/reactjs101/tree/master/Ch04) 
-- [X] [五、React Router](https://github.com/kdchang/reactjs101/tree/master/Ch05)
-- [X] [六、ImmutableJS](https://github.com/kdchang/reactjs101/tree/master/Ch06)
-- [X] [七、Flux/Redux](https://github.com/kdchang/reactjs101/tree/master/Ch07) 
-- [X] [八、Container and Presentational Components](https://github.com/kdchang/reactjs101/tree/master/Ch08)
-- [X] [九、實戰教學：用 React + Router + Redux + ImmutableJS 寫一個 Github 查詢應用](https://github.com/kdchang/reactjs101/tree/master/Ch09)
-- [X] [十、實戰教學：用 React + Redux + Node（Isomorphic JavaScript）開發食譜分享網站](https://github.com/kdchang/reactjs101/tree/master/Ch10)
-- [X] [Appendix 1: React ES5、ES6+ 常見用法對照表](https://github.com/kdchang/reactjs101/tree/master/Appendix01)
-- [X] [Appendix 2: 用 React Native + Firebase 開發跨平台行動應用程式（Native Mobile App）](https://github.com/kdchang/reactjs101/tree/master/Appendix02)
-- [X] [Appendix 3: React 測試入門教學](https://github.com/kdchang/reactjs101/tree/master/Appendix03)
-- [X] [Appendix 4: GraphQL/Relay 初體驗](https://github.com/kdchang/reactjs101/tree/master/Appendix04)
+- [X] [1. Introduction to Frontend Projects and React Ecosystem](https://github.com/kdchang/reactjs101/tree/master/Ch01)
+- [X] [2. Developent Environment Setup & Webpack Basics](https://github.com/kdchang/reactjs101/tree/master/Ch02)
+- [X] [3. Introduction to React/JSX/Component](https://github.com/kdchang/reactjs101/tree/master/Ch03)
+- [X] [4. Props/State Fundamentals and Component Life Cycle](https://github.com/kdchang/reactjs101/tree/master/Ch04) 
+- [X] [5. React Router](https://github.com/kdchang/reactjs101/tree/master/Ch05)
+- [X] [6. ImmutableJS](https://github.com/kdchang/reactjs101/tree/master/Ch06)
+- [X] [7. Flux/Redux](https://github.com/kdchang/reactjs101/tree/master/Ch07) 
+- [X] [8. Container and Presentational Components](https://github.com/kdchang/reactjs101/tree/master/Ch08)
+- [X] [9. Project：A Github Search Application using React + Router + Redux + ImmutableJS](https://github.com/kdchang/reactjs101/tree/master/Ch09)
+- [X] [10.Project: Food Recipe Sharing Website Using React + Redux + Node (Isomorphic JavaScript)](https://github.com/kdchang/reactjs101/tree/master/Ch10)
+- [X] [Appendix 1: Using React the ES5 and ES6+ Way](https://github.com/kdchang/reactjs101/tree/master/Appendix01)
+- [X] [Appendix 2: React Native + Firebase Native Mobile App](https://github.com/kdchang/reactjs101/tree/master/Appendix02)
+- [X] [Appendix 3: Introduction to React Testing](https://github.com/kdchang/reactjs101/tree/master/Appendix03)
+- [X] [Appendix 4: Introduction to GraphQL/Relay](https://github.com/kdchang/reactjs101/tree/master/Appendix04)
 
 ## Prior Knowledge
-本書針對已具備基本 HTML、CSS 和 JavaScript 和 DOM 操作知識的讀者設計，但若讀者對上述的技術仍不熟悉的話，建議可以先行參考：[MDN](https://developer.mozilla.org/zh-TW/)、[Codecademy](https://www.codecademy.com/)、[W3C School](http://www.w3schools.com/)、[JavaScript核心](http://weizhifeng.net/javascript-the-core.html) 或是參考筆者 [之前的教學講義](http://kdchang.cc/web-programming-course/) 進行學習。另外，本書全書範例都將以 ES6+ 撰寫，若需參考 ES5 用法，請參考附錄一的 [React ES5、ES6+ 常見用法對照表](https://github.com/kdchang/reactjs101/tree/master/Appendix01)。
+Readers of this book are expected to be reasonablly well versed in HTML, CSS, JavaScript, and DOM. Absent the aformentioned knowledge，it's recommended that the readers read following material: [MDN](https://developer.mozilla.org/), [Codecademy](https://www.codecademy.com/), [W3C School](http://www.w3schools.com/), [JavaScript the Core](http://weizhifeng.net/javascript-the-core.html), or [my prior web programming courses](http://kdchang.cc/web-programming-course/). Please note that example code is written exclusively in ES6+. To use react with ES5，please refer to appendix 1 [Using React the ES5 and ES6+ Way](https://github.com/kdchang/reactjs101/tree/master/Appendix01)。
 
 ## Author
-[@kdchang](http://blog.kdchang.cc) 文藝型開發者，夢想是做出人們想用的產品和辦一所心目中理想的學校，目前專注在 Mobile 和 IoT 應用開發。A Starter & Maker. JavaScript, Python & Arduino/Android lover.:)
+[@kdchang](http://blog.kdchang.cc), a programming artist，wishes to build highly sought-after products and to open an ideal educational institution. With the focus on Mobile and IoT development。the author is a Starter & Maker, JavaScript, Python & Arduino/Android lover.:)
 
 ## License
 本書採用創用CC授權4.0 "姓名標示─非商業性─相同方式分享(BY-NC-SA)" 授權。
@@ -49,7 +49,7 @@ To translate this book to other languages, please fork this repository to your o
 
 本授權條款允許使用者重製、散布、傳輸以及修改著作，但不得為商業目的之使用。若使用者修改該著作時，僅得依本授權條款或與本授權條款類似者來散布該衍生作品。使用時必須按照著作人指定的方式表彰其姓名。
 
-詳細資訊請參考 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)。
+Please refer to [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) for details.
 
 ## Keywords
-React, React Native, React Router, Flux, Redux, Node, Express, ImmutableJS, NPM, Babel, Browserify, Webpack, Gulp, Grunt, Pure Functions, PropTypes, Stateless Functional Components, Presentational Components, ES6, ES5, JSX, Jest, Unit Test, Component, Relay, GraphQL, Universal/Isomorphic, React Tutorial React教程, React教學, 學React, React Tutorial, Tutorial, Ecosystem, Front-End
+React, React Native, React Router, Flux, Redux, Node, Express, ImmutableJS, NPM, Babel, Browserify, Webpack, Gulp, Grunt, Pure Functions, PropTypes, Stateless Functional Components, Presentational Components, ES6, ES5, JSX, Jest, Unit Test, Component, Relay, GraphQL, Universal/Isomorphic, React Tutorial React Course, React Source, Learn React, React Tutorial, Tutorial, Ecosystem, Front-End
