@@ -21,7 +21,7 @@ To translate this book to other languages, please `fork` this repository to your
 
 ## Table of Contents
 
-- [X] [1. Introduction to Frontend Projects and React Ecosystem](https://github.com/druckenclam/reactjs101/tree/en/Ch01)
+- [X] [1. Introduction to Web Frontend Engineering and React Ecosystem](https://github.com/druckenclam/reactjs101/tree/en/Ch01)
 - [X] [2. Developent Environment Setup & Webpack Basics](https://github.com/druckenclam/reactjs101/tree/en/Ch02)
 - [X] [3. Introduction to React/JSX/Component](https://github.com/druckenclam/reactjs101/tree/en/Ch03)
 - [X] [4. Props/State Fundamentals and Component Life Cycle](https://github.com/druckenclam/reactjs101/tree/en/Ch04) 
