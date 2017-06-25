@@ -1,13 +1,13 @@
-# Web 前端工程入門簡介
+# Introduction to Web Frontend Projects
 
 ![Web 前端工程入門簡介](./images/frameworks.png "Web 前端工程入門簡介")
 
-## 前言
-隨著現代化網頁（Modern Web）開發專業和複雜性的提昇以及對於使用者體驗的要求下，網頁開發已從過去的 Web Develpoer 一夫當關，轉向專業分工，更加細分成網頁前端（Web Front End）、網頁後端（Web Back End）等職位。此外，由於跨平台、跨瀏覽器的需求日益增加，技術變化更迭快速，市場上對於前端工程師（Web Front End Engineer）的需求也與日俱增，前端工程的（Front End Engineering）所要面對的挑戰也越來越多。
+## Preface
+With the growing complexity of the mordern web and the increased focus on user experience, web design and development has evolved accordingly: no person can do it alone; web developers have specialized in areas such as Web Front End, Web Back End, etc. In light of the demand for cross-platform applications against the backdrop of fast-growing technology innovations, frontend developers are in high demand in the market, and also face growing challenges. 
 
 ![Web 前端工程入門簡介](./images/html-css-js.png "Web 前端工程入門簡介")
 
-## 前端工程範疇
+## Scope of Frontend Engineering
 事實上，在目前的業界，前端工程的定位光譜非常廣泛，有聚焦在網頁設計（Web Design），也有專注在軟體工程（Software Engineering）的部份，本書則是將前端工程定位在軟體工程的範疇。而 HTML、CSS 和 JavaScript 是前端工程最重要的技術基礎。過去一段時間，我們所認為的前端工程主要專注在瀏覽器平台，但現在的 Web 平台已經不再侷限於桌面瀏覽器，而是必須面對更多的跨平台、跨瀏覽器的應用開發場景，其中包含：
 
 1. 網頁瀏覽器（Web Browser），一般的網頁應用程式開發
