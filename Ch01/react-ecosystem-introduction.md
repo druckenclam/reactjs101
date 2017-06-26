@@ -1,8 +1,8 @@
-# React 生態系（Ecosystem）入門簡介
+# Introduction to React Ecosystem
 
 ![React 生態系（Ecosystem）入門簡介](./images/react-eco-wp.gif "React 生態系（Ecosystem）入門簡介")
 
-根據 [React 官方網站](https://facebook.github.io/react/) 的說明：React 是一個專注於 UI（View）的 JavaScript 函式庫（Library）。自從 Facebook 於 2013 年開源 React 這個函式庫後，相關的生態系開始蓬勃發展。事實上，透過學習 React 生態系（ecosystem）的過程中，可以讓我們順便學習現代化 Web 開發的重要觀念（例如：模組化、ES6+、Webpack、Babel、ESLint、函數式程式設計等），成為更好的開發者。 
+As per [React official website](https://facebook.github.io/react/), React is a JavaScript library specializing in UI(View). Since Facebook opened React source code in 2013, the ecosystem has been booming. In fact, by going through React ecosystem, we will be better able to understand some of the important concepts in mordern web development, for example, modularization, ES6+, Webpack, Babel, ESLink, and fucntional programming, and to eventually become a better developer. 
 
 ## ReactJS
 ReactJS 是 Facebook 推出的 JavaScript 函式庫，若以 MVC 框架來看，React 定位是在 View 的範疇。在 ReactJS 0.14 版之後，ReactJS 更把原先處理 DOM 的部分獨立出去（react-dom），讓 ReactJS 核心更單純，也更符合 React 所倡導的 `Learn once, write everywhere` 的理念。事實上，ReactJS 本身的 API 相對單純，但由於整個生態系非常龐大，因此學習 React 卻是一條漫長的道路。此外，當你想把 React 應用在你的應用程式時，你通常必須學習整個 React Stack 才能充分發揮 React 的最大優勢。
@@ -100,10 +100,10 @@ Facebook 本身有提供 [Test Utilities](https://facebook.github.io/react/docs/
 ## GraphQL/Relay
 [GraphQL](http://graphql.org/docs/getting-started/) 是 Facebook 所開發的資料查詢語言（Data Query Language），主要是想解決傳統 RESTful API 所遇到的一些問題，並提供前端更有彈性的 API 設計方式。[Relay](https://facebook.github.io/relay/) 則是 Facebook 提出搭配 GraphQL 用於 React 的一個宣告式數據框架，可以降低 Ajax 的請求數量（類似的框架還有 Netflix 推出的 [Falcor](https://netflix.github.io/falcor/)）。但由於目前主流的後端 API 仍以傳統 RESTful API 設計為主，所以在使用 GraphQL 上通常會需要比較大架構設計的變動。因此本書則是把 GraphQL/Relay 介紹放到附錄的部份，讓有興趣的讀者可以自行參考體驗一下。
 
-## 總結
+## Summary
 以上就是讀者在 React 生態系遊走時會遇到的各種關卡，也許有些初學者會對於這樣龐大的體系所嚇到，放棄學習 React 這項革新性技術的機會。不過別擔心，接下來筆者將帶領讀者按圖索驥，依序介紹整個 React 生態系的各種技術，一步步帶領大家用 React 實作出生活中會用到的應用程式。
 
-## 延伸閱讀
+## Further Reading
 1. [Navigating the React.JS Ecosystem](https://www.toptal.com/react/navigating-the-react-ecosystem)
 2. [petehunt/react-howto](https://github.com/petehunt/react-howto#learning-relay-falcor-etc)
 3. [React Ecosystem - A summary](https://staminaloops.github.io/undefinedisnotafunction/react-ecosystem/)
@@ -117,7 +117,7 @@ Facebook 本身有提供 [Test Utilities](https://facebook.github.io/react/docs/
 
 （image via [jpsierens](http://jpsierens.com/wp-content/uploads/2016/06/react-eco-wp.gif)）
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：Web 前端工程入門簡介](https://github.com/kdchang/reactjs101/blob/master/Ch01/front-end-introduction.md) | [下一章：React 開發環境設置與 Webpack 入門教學](https://github.com/kdchang/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter：Introduction to Web Frontend Engineering](https://github.com/druckenclam/reactjs101/blob/en/Ch01/front-end-introduction.md) | [下一章：React 開發環境設置與 Webpack 入門教學](https://github.com/druckenclam/reactjs101/blob/en/Ch02/webpack-dev-enviroment.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
