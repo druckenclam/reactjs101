@@ -22,7 +22,7 @@ Of all the JavaScript frameworks and libriaries，[React](https://facebook.githu
 （image via [bsdacademy](http://bsdacademy.com/wp-content/uploads/2014/10/html-css-js.png)、[firebase](https://www.firebase.com/resources/images/website/logos/frameworks.png)）
 
 ## :door: Dokodemo Door 
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Next Chapter：Introduction to React Ecosystem](https://github.com/druckenclam/reactjs101/blob/en/Ch01/react-ecosystem-introduction.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Next Chapter: Introduction to React Ecosystem](https://github.com/druckenclam/reactjs101/blob/en/Ch01/react-ecosystem-introduction.md) |
 
 | [Correction, Question, and Wish List](https://github.com/kdchang/reactjs101/issues) |
 
