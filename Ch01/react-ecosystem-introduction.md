@@ -11,13 +11,13 @@ ReactJS is a Javascript Framework by Facebook. From the perspective of MVC, Reac
 JSX is not a brand new language, but syntatic sugar(https://en.wikipedia.org/wiki/Syntactic_sugar), an [XML](https://zh.wikipedia.org/wiki/XML) like extension to ECMAScript. In JSX HTML tags and Javascript code are intertwined -- a stark contrast to the prior notion that HTML and JavaScript should be separated. Although it is possible to use React without JSX, I am sure that you will appreciate JSX when you start writing React Components.
 
 ## NPM
-NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, you have a multitude of packages at your fingertips. Instead of reinventing the wheels,更可以讓你可以輕鬆用指令管理不同的套件。由於 NPM 主要是基於 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) 的規範，通常必須搭配 Browserify 這樣的工具才能在前端使用 NPM 的模組。然而因 NPM 是基於 Nested Dependency Tree，不同的套件有可能會在引入依賴時會引入相同但不同版本的套件，造成檔案大小過大的情形。這和另一個套件管理工具 [Bower](https://bower.io/) 專注在前端套件且使用 Flat Dependency Tree（讓使用者決定相依的套件版本）是比較不同的地方。
+NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, you have a multitude of packages at your fingertips. Instead of reinventing the wheels, you manage packages with NPM commands. 由於 NPM 主要是基於 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) 的規範，通常必須搭配 Browserify 這樣的工具才能在前端使用 NPM 的模組。然而因 NPM 是基於 Nested Dependency Tree，不同的套件有可能會在引入依賴時會引入相同但不同版本的套件，造成檔案大小過大的情形。這和另一個套件管理工具 [Bower](https://bower.io/) 專注在前端套件且使用 Flat Dependency Tree（讓使用者決定相依的套件版本）是比較不同的地方。
 
 ## ES6+
 [ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) 係指 ES6（ES2015）和 ES7 的聯集，在 ES6+ 新的標準當中引入許多新的特性和功能，彌補了過去 JavaScript 被詬病的一些特性。由於未來 React 將以支援 ES6+ 為主，因此直接學習 ES6+ 用法是相對好的選擇，本書的所有範例也將會以 ES6+ 撰寫。
 
 ## Babel
-由於並非所有瀏覽器都支援 ES6+ 語法，所以透過 [Babel](https://babeljs.io/) 這個 JavaScript 編譯器（可以想成是翻譯機或是翻譯蒟篛）可以讓你的 ES6+ 、JSX 等程式碼轉換成瀏覽器可以看得懂的語法。通常會在資料夾的 root 位置加入 `.babelrc` 進行轉譯規則 `preset` 和引用外掛（plugin）的設定。
+Not every browser supports ES6+. That's when [Babel](https://babeljs.io/), a JavaScript compiler comes in handy. It translates ES6+ 、JSX code into Javascript code that browsers support. The Babel configure `.babelrc` usually reside in the root folder. It specifies translation rules `preset`, and plugins.
 
 ## JavaScript 模組化開發
 隨著 Web 應用程式的複雜性提高，JavaScript 模組化開發已經成為必然的趨勢，以下簡單介紹 JavaScript 模組化的相關規範。事實上，在一開始沒有官方定義的標準時出現了各種社群自行定義的規範和實踐。
@@ -61,10 +61,10 @@ NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, 
 
 1. Webpack
 
-	[Webpack](https://webpack.github.io/) 是一個模組打包工具（module bundler），以下列出 Webpack 的幾項主要功能：
-	- 將 CSS、圖片與其他資源打包
+	[Webpack](https://webpack.github.io/) is a module bundler. Among other things, below is its major functionalities:
+	- bundle CSS, images, and other resources
 	- 打包之前預處理（Less、CoffeeScript、JSX、ES6 等）的檔案
-	- 依 entry 文件不同，把 .js 分拆為多個 .js 檔案
+	- based on entry files, split one .js file into multiple ones
 	- 整合豐富的 Loader 可以使用（Webpack 本身僅能處理 JavaScript 模組，其餘檔案如：CSS、Image 需要載入不同 Loader 進行處理）
 
 2. Browserify
@@ -101,7 +101,7 @@ Facebook 本身有提供 [Test Utilities](https://facebook.github.io/react/docs/
 [GraphQL](http://graphql.org/docs/getting-started/) 是 Facebook 所開發的資料查詢語言（Data Query Language），主要是想解決傳統 RESTful API 所遇到的一些問題，並提供前端更有彈性的 API 設計方式。[Relay](https://facebook.github.io/relay/) 則是 Facebook 提出搭配 GraphQL 用於 React 的一個宣告式數據框架，可以降低 Ajax 的請求數量（類似的框架還有 Netflix 推出的 [Falcor](https://netflix.github.io/falcor/)）。但由於目前主流的後端 API 仍以傳統 RESTful API 設計為主，所以在使用 GraphQL 上通常會需要比較大架構設計的變動。因此本書則是把 GraphQL/Relay 介紹放到附錄的部份，讓有興趣的讀者可以自行參考體驗一下。
 
 ## Summary
-以上就是讀者在 React 生態系遊走時會遇到的各種關卡，也許有些初學者會對於這樣龐大的體系所嚇到，放棄學習 React 這項革新性技術的機會。不過別擔心，接下來筆者將帶領讀者按圖索驥，依序介紹整個 React 生態系的各種技術，一步步帶領大家用 React 實作出生活中會用到的應用程式。
+We have explored all the major comonents in the React ecosystem. The task of learning React seems daunting, but don't get put off. 不過別擔心，接下來筆者將帶領讀者按圖索驥，依序介紹整個 React 生態系的各種技術，一步步帶領大家用 React 實作出生活中會用到的應用程式。
 
 ## Further Reading
 1. [Navigating the React.JS Ecosystem](https://www.toptal.com/react/navigating-the-react-ecosystem)
