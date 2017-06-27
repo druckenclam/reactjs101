@@ -17,7 +17,7 @@ NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, 
 [ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) refers to ES6 (ES2015), ES7 and any ECMAScript standards afterwards. ES6+ introduce a set of engrossing features and functionalities to the language, fixing lots of drawbacks of the old standards. React supports ES6+, so it's only sensible that we learn ES6+. All the example code in this book is written in ES6+.
 
 ## Babel
-Not every browser supports ES6+. That's when [Babel](https://babeljs.io/), a JavaScript transpiler, comes in handy. It transpiles ES6+ 、JSX code into Javascript code that browsers support. The Babel configure `.babelrc` usually reside in the root folder. It specifies translation rules `preset`, and plugins.
+Not every browser supports ES6+. That's when [Babel](https://babeljs.io/), a JavaScript transpiler, comes in handy. It transpiles ES6+, JSX code into Javascript code that browsers support. The Babel configure `.babelrc` usually reside in the root folder. It specifies translation rules `preset`, and plugins.
 
 ## JavaScript Modularization
 With web applications growing in size and complexity, JavaScript modularization is inevitable.  Due to the lack of official standards, many communities came up with their standards and practice. Below is a summary of some of the JavaScript modularization standards.
@@ -46,7 +46,7 @@ With web applications growing in size and complexity, JavaScript modularization 
 
 4. CMD
 
-	CMD, [Common Module Definition](https://github.com/cmdjs/specification/blob/master/draft/module.md), is similar to AMD，但相對簡潔，卻又保持和 CommonJS 的兼容性。其最大特色為：依賴就近，延遲執行。主要實現為：[Sea.js](http://seajs.org/docs/#intro)。
+	CMD, [Common Module Definition](https://github.com/cmdjs/specification/blob/master/draft/module.md), is similar to AMD，but simpler，and compatible with CommonJS. 其最大特色為：依賴就近，延遲執行。主要實現為：[Sea.js](http://seajs.org/docs/#intro)。
 
 5. UMD
 
@@ -54,7 +54,7 @@ With web applications growing in size and complexity, JavaScript modularization 
 
 6. ES6 Module
 
-	ECMAScript6 的標準中定義了 JavaScript 的模組化方式，讓 JavaScript 在開發大型複雜應用程式時上更為方便且易於管理，亦可以取代過去 AMD、CommonJS 等規範，成為通用於瀏覽器端和伺服器端的模組化解決方案。 The support is still lacking by browsers and Node. Applications using ES6 Module must be transpiled by [Babel](https://babeljs.io/) first.
+	ECMAScript6 make modularization part of the standard. As a reuslt, large scale JavaScript applications are more manageable. It will replace other specifications such as AMD and CommonJS. 成為通用於瀏覽器端和伺服器端的模組化解決方案。 The support is still lacking by browsers and Node. Applications using ES6 Module must be transpiled by [Babel](https://babeljs.io/) first.
 
 ## Webpack/Browserify + Gulp
 隨著網頁應用程式開發的複雜性提昇，現在的網頁往往不單只是單純的網頁，而是一個網頁應用程式（WebApp）。為了管理複雜的應用程式開發，此時模組化開發方法便顯得日益重要，而理想上的模組化開發工具一直是前端工程的很大的議題。Webpack 和 Browserify + Gulp 則是進行 React 應用程式開發常用的開發工具，可以協助進行自動化程式碼打包、轉譯等重複性工作，提昇開發效率。本書範例主要會搭配 Webpack 進行開發。
