@@ -33,28 +33,28 @@ With web applications growing in size and complexity, JavaScript modularization 
 
 2. AMD
 
-	[Asynchronous Module Definition](https://en.wikipedia.org/wiki/Asynchronous_module_definition), or AMD for short，為非同步載入模組的規範，其在宣告時模組時即需定義依賴的模組。AMD 常用於瀏覽器端，其最著名的實踐為 [RequireJS](http://requirejs.org/)
+	[Asynchronous Module Definition](https://en.wikipedia.org/wiki/Asynchronous_module_definition), or AMD for short，is an asynchronous module loading specifization. it specify its dependencies when a module is declared. AMD is usually used for applications for browsers. The most famous application using AMD is [RequireJS](http://requirejs.org/)
 
-	基本格式：
+	Basic Format:
 	```js 
 	define(id?, dependencies?, factory);
 	```
 
 3. CommonJS
 
-	[CommonJS](http://wiki.commonjs.org/wiki/CommonJS) 規範是一種同步模組載入的規範。以 Node.js 其遵守 CommonJS 規範，使用 `require` 進行模組同步載入，並透過 `exports`、`module.exports` 來輸出模組。主要實現為 [Node.js](https://nodejs.org/en/) 伺服器端的同步載入和瀏覽器端的 [Browserify](http://browserify.org/)。
+	[CommonJS](http://wiki.commonjs.org/wiki/CommonJS) is a synchronous loading specification, which uses `require` to load modules and `exports`、`module.exports` to export modules. It is implemented by [Node.js](https://nodejs.org/en/) to develop server side applications and by [Browserify](http://browserify.org/) to develop browser side applications.
 
 4. CMD
 
-	CMD 全稱為 [Common Module Definition](https://github.com/cmdjs/specification/blob/master/draft/module.md)，其規範和 AMD 類似，但相對簡潔，卻又保持和 CommonJS 的兼容性。其最大特色為：依賴就近，延遲執行。主要實現為：[Sea.js](http://seajs.org/docs/#intro)。
+	CMD, [Common Module Definition](https://github.com/cmdjs/specification/blob/master/draft/module.md), is similar to AMD，但相對簡潔，卻又保持和 CommonJS 的兼容性。其最大特色為：依賴就近，延遲執行。主要實現為：[Sea.js](http://seajs.org/docs/#intro)。
 
 5. UMD
 
-	[Universal Module Definition](https://github.com/umdjs/umd) 是為了要兼容 CommonJS 和 AMD 所設計的規範，希望讓模組能跨平台執行。
+	[Universal Module Definition](https://github.com/umdjs/umd) amis to be compatible with both CommonJS and AMD in the hope that applications will work across platforms.
 
 6. ES6 Module
 
-	ECMAScript6 的標準中定義了 JavaScript 的模組化方式，讓 JavaScript 在開發大型複雜應用程式時上更為方便且易於管理，亦可以取代過去 AMD、CommonJS 等規範，成為通用於瀏覽器端和伺服器端的模組化解決方案。但目前瀏覽器和 Node 在 ES6 模組支援度還不完整，大部分情況需要透過 [Babel](https://babeljs.io/) 轉譯器進行轉譯。
+	ECMAScript6 的標準中定義了 JavaScript 的模組化方式，讓 JavaScript 在開發大型複雜應用程式時上更為方便且易於管理，亦可以取代過去 AMD、CommonJS 等規範，成為通用於瀏覽器端和伺服器端的模組化解決方案。 The support is still lacking by browsers and Node. Applications using ES6 Module must be transpiled by [Babel](https://babeljs.io/) first.
 
 ## Webpack/Browserify + Gulp
 隨著網頁應用程式開發的複雜性提昇，現在的網頁往往不單只是單純的網頁，而是一個網頁應用程式（WebApp）。為了管理複雜的應用程式開發，此時模組化開發方法便顯得日益重要，而理想上的模組化開發工具一直是前端工程的很大的議題。Webpack 和 Browserify + Gulp 則是進行 React 應用程式開發常用的開發工具，可以協助進行自動化程式碼打包、轉譯等重複性工作，提昇開發效率。本書範例主要會搭配 Webpack 進行開發。
