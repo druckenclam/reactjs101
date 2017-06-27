@@ -5,13 +5,13 @@
 As per [React official website](https://facebook.github.io/react/), React is a JavaScript library specializing in UI (View). Since Facebook opened React source code in 2013, the ecosystem has been booming. By going through the ecosystem, we shall be able to understand some of the most important concepts in mordern web development, for example, modularization, ES6+, Webpack, Babel, ESLink, and fucntional programming, and to eventually become a better developer. 
 
 ## ReactJS
-ReactJS is a Javascript Framework by Facebook. From the perspective of MVC, React represents view. After ReactJS 0.14, react-dom have been separate from ReactJS, making ReactJS more focused and more in line with its paradigm that `Learn once, write everywhere`. Since ReactJS APIs are lean and target core functionality only, ReactJs need to work with its immense ecosystem. 因此學習 React 卻是一條漫長的道路。此外，當你想把 React 應用在你的應用程式時，你通常必須學習整個 React Stack 才能充分發揮 React 的最大優勢。
+ReactJS is a Javascript Framework by Facebook. From the perspective of MVC, React represents view. Since ReactJS 0.14, react-dom have been separate from ReactJS, making ReactJS more focused and more in line with its paradigm that `Learn once, write everywhere`. Since ReactJS APIs are lean and target core functionality only, ReactJs applications need to work with its immense ecosystem, making learning React a long winded road. If you are to fully utilized React in your applications, you must have a good command of the entire React Stack.
 
 ## JSX 
 JSX is not a brand new language, but syntatic sugar(https://en.wikipedia.org/wiki/Syntactic_sugar), an [XML](https://zh.wikipedia.org/wiki/XML) like extension to ECMAScript. In JSX HTML tags and Javascript code are intertwined -- a stark contrast to the prior notion that HTML and JavaScript should be separated. Although it is possible to use React without JSX, I am sure that you would appreciate JSX when you started writing on React Components.
 
 ## NPM
-NPM（Node Package Manager）是 Node.js 下的主流套件管理工具。在 NPM 上有非常多的套件，可以讓你不用再重造輪子，更可以讓你可以輕鬆用指令管理不同的套件。由於 NPM 主要是基於 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) 的規範，通常必須搭配 Browserify 這樣的工具才能在前端使用 NPM 的模組。然而因 NPM 是基於 Nested Dependency Tree，不同的套件有可能會在引入依賴時會引入相同但不同版本的套件，造成檔案大小過大的情形。這和另一個套件管理工具 [Bower](https://bower.io/) 專注在前端套件且使用 Flat Dependency Tree（讓使用者決定相依的套件版本）是比較不同的地方。
+NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, you have a multitude of packages at your fingertips. Instead of reinventing the wheels,更可以讓你可以輕鬆用指令管理不同的套件。由於 NPM 主要是基於 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) 的規範，通常必須搭配 Browserify 這樣的工具才能在前端使用 NPM 的模組。然而因 NPM 是基於 Nested Dependency Tree，不同的套件有可能會在引入依賴時會引入相同但不同版本的套件，造成檔案大小過大的情形。這和另一個套件管理工具 [Bower](https://bower.io/) 專注在前端套件且使用 Flat Dependency Tree（讓使用者決定相依的套件版本）是比較不同的地方。
 
 ## ES6+
 [ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) 係指 ES6（ES2015）和 ES7 的聯集，在 ES6+ 新的標準當中引入許多新的特性和功能，彌補了過去 JavaScript 被詬病的一些特性。由於未來 React 將以支援 ES6+ 為主，因此直接學習 ES6+ 用法是相對好的選擇，本書的所有範例也將會以 ES6+ 撰寫。
