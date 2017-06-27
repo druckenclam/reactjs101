@@ -101,7 +101,7 @@ Facebook 本身有提供 [Test Utilities](https://facebook.github.io/react/docs/
 [GraphQL](http://graphql.org/docs/getting-started/) 是 Facebook 所開發的資料查詢語言（Data Query Language），主要是想解決傳統 RESTful API 所遇到的一些問題，並提供前端更有彈性的 API 設計方式。[Relay](https://facebook.github.io/relay/) 則是 Facebook 提出搭配 GraphQL 用於 React 的一個宣告式數據框架，可以降低 Ajax 的請求數量（類似的框架還有 Netflix 推出的 [Falcor](https://netflix.github.io/falcor/)）。但由於目前主流的後端 API 仍以傳統 RESTful API 設計為主，所以在使用 GraphQL 上通常會需要比較大架構設計的變動。因此本書則是把 GraphQL/Relay 介紹放到附錄的部份，讓有興趣的讀者可以自行參考體驗一下。
 
 ## Summary
-We have explored all the major comonents in the React ecosystem. The task of learning React seems daunting, but not to worry - as the Chinese saysing goes, we will looking for a steed with the aid of its picture. We will go over all the major components of the React ecosystem and guide your step by step towards writing useful applications.
+We have explored all the major comonents in the React ecosystem. The task of learning React seems daunting, but not to worry - as the Chinese saysing goes, we will look for a steed with the aid of its picture. We will go over all the major components of the React ecosystem and guide your step by step towards writing useful applications.
 
 ## Further Reading
 1. [Navigating the React.JS Ecosystem](https://www.toptal.com/react/navigating-the-react-ecosystem)
