@@ -17,7 +17,7 @@ NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, 
 [ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) refers to ES6 (ES2015), ES7 and any ECMAScript standards afterwards. ES6+ introduce a set of engrossing features and functionalities to the language, fixing lots of drawbacks of the old standards. React supports ES6+, so it's a sensible decision that we learn ES6+. All the example code in this book is written in ES6+.
 
 ## Babel
-Not every browser supports ES6+. That's when [Babel](https://babeljs.io/), a JavaScript compiler comes in handy. It transpiles ES6+ 、JSX code into Javascript code that browsers support. The Babel configure `.babelrc` usually reside in the root folder. It specifies translation rules `preset`, and plugins.
+Not every browser supports ES6+. That's when [Babel](https://babeljs.io/), a JavaScript transpiler, comes in handy. It transpiles ES6+ 、JSX code into Javascript code that browsers support. The Babel configure `.babelrc` usually reside in the root folder. It specifies translation rules `preset`, and plugins.
 
 ## JavaScript Modularization
 隨著 Web 應用程式的複雜性提高，JavaScript 模組化開發已經成為必然的趨勢，以下簡單介紹 JavaScript 模組化的相關規範。事實上，在一開始沒有官方定義的標準時出現了各種社群自行定義的規範和實踐。
