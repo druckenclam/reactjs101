@@ -5,10 +5,10 @@
 As per [React official website](https://facebook.github.io/react/), React is a JavaScript library specializing in UI (View). Since Facebook opened React source code in 2013, the ecosystem has been booming. By going through the ecosystem, we shall be able to understand some of the most important concepts in mordern web development, for example, modularization, ES6+, Webpack, Babel, ESLink, and fucntional programming, and to eventually become a better developer. 
 
 ## ReactJS
-ReactJS 是 Facebook 推出的 JavaScript 函式庫，若以 MVC 框架來看，React 定位是在 View 的範疇。在 ReactJS 0.14 版之後，ReactJS 更把原先處理 DOM 的部分獨立出去（react-dom），讓 ReactJS 核心更單純，也更符合 React 所倡導的 `Learn once, write everywhere` 的理念。事實上，ReactJS 本身的 API 相對單純，但由於整個生態系非常龐大，因此學習 React 卻是一條漫長的道路。此外，當你想把 React 應用在你的應用程式時，你通常必須學習整個 React Stack 才能充分發揮 React 的最大優勢。
+ReactJS is a Javascript Framework by Facebook. From the perspective of MVC, React represents view. After ReactJS 0.14, react-dom have been separate from ReactJS, making ReactJS more focused and more in line with its paradigm that `Learn once, write everywhere`. In fact, ReactJS provides APIs that target core functionality only. 但由於整個生態系非常龐大，因此學習 React 卻是一條漫長的道路。此外，當你想把 React 應用在你的應用程式時，你通常必須學習整個 React Stack 才能充分發揮 React 的最大優勢。
 
 ## JSX 
-事實上，JSX 並非一種全新的語言，而是一種語法糖（[Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)），一種語法類似 [XML](https://zh.wikipedia.org/wiki/XML) 的 ECMAScript 語法擴充。在 JSX 中 HTML 和組建這些元素標籤的程式碼有緊密的關係，這和過去我們強調 HTML、JavaScript 分離的觀念有很大不同。當然，你可以選擇不要在 React 使用 JSX，不過相信我，當你真正開始撰寫 React 元件（Component）時，你會很慶幸有 JSX 真好。
+JSX is not a brand new language, but syntatic sugar(https://en.wikipedia.org/wiki/Syntactic_sugar), an [XML](https://zh.wikipedia.org/wiki/XML) like extension to ECMAScript. In JSX HTML tags and Javascript code are intertwined -- a stark contrast to the prior notion that HTML and JavaScript should be separated. Although React could be used without JSX. However, you would appreciate JSX when you started working on React Components.
 
 ## NPM
 NPM（Node Package Manager）是 Node.js 下的主流套件管理工具。在 NPM 上有非常多的套件，可以讓你不用再重造輪子，更可以讓你可以輕鬆用指令管理不同的套件。由於 NPM 主要是基於 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) 的規範，通常必須搭配 Browserify 這樣的工具才能在前端使用 NPM 的模組。然而因 NPM 是基於 Nested Dependency Tree，不同的套件有可能會在引入依賴時會引入相同但不同版本的套件，造成檔案大小過大的情形。這和另一個套件管理工具 [Bower](https://bower.io/) 專注在前端套件且使用 Flat Dependency Tree（讓使用者決定相依的套件版本）是比較不同的地方。
