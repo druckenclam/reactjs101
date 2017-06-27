@@ -20,20 +20,20 @@ NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, 
 Not every browser supports ES6+. That's when [Babel](https://babeljs.io/), a JavaScript transpiler, comes in handy. It transpiles ES6+ 、JSX code into Javascript code that browsers support. The Babel configure `.babelrc` usually reside in the root folder. It specifies translation rules `preset`, and plugins.
 
 ## JavaScript Modularization
-隨著 Web 應用程式的複雜性提高，JavaScript 模組化開發已經成為必然的趨勢，以下簡單介紹 JavaScript 模組化的相關規範。事實上，在一開始沒有官方定義的標準時出現了各種社群自行定義的規範和實踐。
+With web applications growing in size and complexity, JavaScript modularization is inevitable.  Due to the lack of official standards, many communities came up with their standards and practice. Below is a summary of some of the JavaScript modularization standards.
 
 1. CDN-Based
 	
-	也就是最傳統的 `<script>` 引入方式，然而使用這種方式雖然簡單方便，但在開發實際中大型應用程式時會產生許多弊端：
+	The tranditional way of including Javascript code via `<script>` tag is easy and simple, but it brings about a couple of problems:
 
-	- 全域作用域容易造成變數污染和衝突
-	- 文件只能依照 `<script>` 順序載入，不具彈性
-	- 在大型專案中各種資源和版本難以維護
-	- 必須由開發者自行判斷模組和函式庫之間的依賴關係
+	- It polutes the global scope and lead to potential conflicts
+	- Files are loaded based on the order they appear in `<script>` tags without flexibility
+	- It's hard to maintain in large applications
+	- Users must make sure all dependencies are met
 
 2. AMD
 
-	[Asynchronous Module Definition](https://en.wikipedia.org/wiki/Asynchronous_module_definition) 簡稱 AMD，為非同步載入模組的規範，其在宣告時模組時即需定義依賴的模組。AMD 常用於瀏覽器端，其最著名的實踐為 [RequireJS](http://requirejs.org/)
+	[Asynchronous Module Definition](https://en.wikipedia.org/wiki/Asynchronous_module_definition), or AMD for short，為非同步載入模組的規範，其在宣告時模組時即需定義依賴的模組。AMD 常用於瀏覽器端，其最著名的實踐為 [RequireJS](http://requirejs.org/)
 
 	基本格式：
 	```js 
@@ -101,7 +101,7 @@ Facebook 本身有提供 [Test Utilities](https://facebook.github.io/react/docs/
 [GraphQL](http://graphql.org/docs/getting-started/) 是 Facebook 所開發的資料查詢語言（Data Query Language），主要是想解決傳統 RESTful API 所遇到的一些問題，並提供前端更有彈性的 API 設計方式。[Relay](https://facebook.github.io/relay/) 則是 Facebook 提出搭配 GraphQL 用於 React 的一個宣告式數據框架，可以降低 Ajax 的請求數量（類似的框架還有 Netflix 推出的 [Falcor](https://netflix.github.io/falcor/)）。但由於目前主流的後端 API 仍以傳統 RESTful API 設計為主，所以在使用 GraphQL 上通常會需要比較大架構設計的變動。因此本書則是把 GraphQL/Relay 介紹放到附錄的部份，讓有興趣的讀者可以自行參考體驗一下。
 
 ## Summary
-We have explored all the major comonents in the React ecosystem. The task of learning React seems daunting, but don't get put off. 不過別擔心，接下來筆者將帶領讀者按圖索驥，依序介紹整個 React 生態系的各種技術，一步步帶領大家用 React 實作出生活中會用到的應用程式。
+We have explored all the major comonents in the React ecosystem. The task of learning React seems daunting, but don't get put off. Not to worry - as a Chinese proverb goes, we will looking for a steed with the aid of its picture. 接下來筆者將帶領讀者按圖索驥，依序介紹整個 React 生態系的各種技術，一步步帶領大家用 React 實作出生活中會用到的應用程式。-
 
 ## Further Reading
 1. [Navigating the React.JS Ecosystem](https://www.toptal.com/react/navigating-the-react-ecosystem)
