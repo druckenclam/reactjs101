@@ -14,7 +14,7 @@ JSX is not a brand new language, but syntatic sugar(https://en.wikipedia.org/wik
 NPM（Node Package Manager）is a mainstream Node.js package manager. With NPM, you have a multitude of packages at your fingertips. Instead of reinventing the wheels, you choose ready-made packages with NPM commands. NPM packages are [CommonJS](https://en.wikipedia.org/wiki/CommonJS) compliant, so it must be used together with tools like Browserify for frontend engineering.然而因 NPM 是基於 Nested Dependency Tree，不同的套件有可能會在引入依賴時會引入相同但不同版本的套件，造成檔案大小過大的情形。這和另一個套件管理工具 [Bower](https://bower.io/) 專注在前端套件且使用 Flat Dependency Tree（讓使用者決定相依的套件版本）是比較不同的地方。
 
 ## ES6+
-[ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) refers to ES6 (ES2015), ES7 and any ECMAScript standards afterwards. ES6+ introduce a set of engrossing features and functionalities to the language, fixing lots of drawbacks of the old standards. React supports ES6+, so it's a sensible decision that we learn ES6+. All the example code in this book is written in ES6+.
+[ES6+](https://babeljs.io/blog/2015/06/07/react-on-es6-plus) refers to ES6 (ES2015), ES7 and any ECMAScript standards afterwards. ES6+ introduce a set of engrossing features and functionalities to the language, fixing lots of drawbacks of the old standards. React supports ES6+, so it's only sensible that we learn ES6+. All the example code in this book is written in ES6+.
 
 ## Babel
 Not every browser supports ES6+. That's when [Babel](https://babeljs.io/), a JavaScript transpiler, comes in handy. It transpiles ES6+ 、JSX code into Javascript code that browsers support. The Babel configure `.babelrc` usually reside in the root folder. It specifies translation rules `preset`, and plugins.
