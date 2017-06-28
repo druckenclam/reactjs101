@@ -69,8 +69,8 @@ With web applications growing in size and complexity, JavaScript modularization 
 
 2. Browserify
 
-	如同官網上說明的：`Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
-	`，Browserify 是一個可以讓你在瀏覽器端也能使用像 Node 用的 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) 規範一樣，用輸出（export）和引用（require）來管理模組。此外，也能讓前端使用許多在 NPM 中的模組。
+	As its website says, `Browserify lets you require('modules') in the browser by bundling up all of your dependencies.
+	`，Browserify allows you to use Node's [CommonJS](https://en.wikipedia.org/wiki/CommonJS) specification, using export and require to manage modules. It also allows you to use a lot of NPM packages.
 
 3. Gulp
 
@@ -86,7 +86,7 @@ With web applications growing in size and complexity, JavaScript modularization 
 [Flux](https://facebook.github.io/flux/) 是一個實現單項流的應用程式資料架構（architecture），同樣是由 Facebook 推出，並和 React 專注於 View 的部份形成互補。而由 Dan Abramov 所開發的 [Redux](https://github.com/reactjs/redux) 被 React 開發社群認為是 Flux-like 更優雅的作法，也是目前主流搭配 React 的狀態（State）管理工具。讓你在開發複雜的應用程式時可以更方便管理你的狀態（state）。
 
 ## ImmutableJS
-[ImmutableJS](https://facebook.github.io/immutable-js/)，是一個能讓開發者建立不可變資料結構的函式庫。建立不可變（immutable）資料結構不僅可以讓狀態可預測性更高，也可以提昇程式的效能。
+[ImmutableJS](https://facebook.github.io/immutable-js/) allows developers to build immutable data structures, which makes prediction easier and therefore improve the performance.
 
 ## Isomorphic JavaScript
 Isomorphic JavaScript 是指前後端（Client/Server）共用相同部分的程式碼，讓 JavaScript 應用可以同時執行在瀏覽器端和伺服器端，在 React 中可以透過伺服器端渲染（server side rendering）靜態 HTML 的方式達到 Isomorphic JavaScript 效果，讓 SEO 和執行效能更加提昇並讓前後端共用程式碼。而另一個常一起出現的 Universal JavaScript 一般定義更為廣泛，係指可以運行在不同環境下的 JavaScript Code，並不局限於瀏覽器和伺服器端。但要留意的是在 Github 和許多技術文章的分享上會把兩者定義為同一件事情。
@@ -112,7 +112,7 @@ We have explored all the major comonents in the React ecosystem. The task of lea
 6. [Webpack Handbook (Chinese)](http://zhaoda.net/webpack-handbook/index.html)
 7. [Difference between AMD 和 CMD (Chinese)](https://www.zhihu.com/question/20351507)
 8. [jslint to eslint](https://www.qianduan.net/jslint-to-eslint/)
-9. [Facebook的Web开发三板斧：React.js、Relay和GraphQL](http://1ke.co/course/595)
+9. [3 Facebook Web Development Weapons: React.js、Relay和GraphQL](http://1ke.co/course/595)
 10. [airbnb/javascript](https://github.com/airbnb/javascript)
 
 （image via [jpsierens](http://jpsierens.com/wp-content/uploads/2016/06/react-eco-wp.gif)）
