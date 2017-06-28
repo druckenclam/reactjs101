@@ -74,7 +74,7 @@ With web applications growing in size and complexity, JavaScript modularization 
 
 3. Gulp
 
-	`Gulp` is a Frontend Task Runner. Frontend engineering entails a lot of repetitive tasks, such as make bundles, utlify, transpile LESS into CSS, transpile ES6+. 若是使用一般手動的方式，往往會造成效率的低下，所以透過像是 [Grunt](http://gruntjs.com/)、Gulp 這類的 Task Runner 不但可以提昇效率，也可以更方便管理這些任務。由於 Gulp 是透過 pipeline 方式來處理檔案，在使用上比起 Grunt 的方式直觀許多，所以這邊我們主要討論的是 Gulp。
+	`Gulp` is a Frontend Task Runner. Frontend engineering entails a lot of repetitive tasks, such as making bundles, utlification, transpilation of LESS into CSS, transcompilation of ES6+. Manually doing those tasks is tedious and inefficient. By using Task Runner such as [Grunt](http://gruntjs.com/) and Gulp, it is simpler and more efficient to manage those tasks. Gulp uses pipeline, a more straightforward method than that of Grunt. We will focus on Gulp int this book.
 
 ## ESLint
 [ESLint](http://eslint.org/) 是一個提供 JavaScript 和 JSX 的程式碼檢查工具，可以確保團隊的程式碼品質。其支援可插拔的特性，可以根據需求在 `.eslintrc` 設定檢查規則。目前主流的檢查規則會使用 Airbnb 所釋出的 [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)，在使用上需先安裝 [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) 等套件。
