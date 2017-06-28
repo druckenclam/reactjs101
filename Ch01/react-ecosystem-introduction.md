@@ -77,7 +77,7 @@ With web applications growing in size and complexity, JavaScript modularization 
 	`Gulp` is a Frontend Task Runner. Frontend engineering entails a lot of repetitive tasks, such as making bundles, utlification, transpilation of LESS into CSS, transcompilation of ES6+. Manually doing those tasks is tedious and inefficient. By using Task Runner such as [Grunt](http://gruntjs.com/) and Gulp, it is simpler and more efficient to manage those tasks. Gulp uses pipeline, a more straightforward method than that of Grunt. We will focus on Gulp int this book.
 
 ## ESLint
-[ESLint](http://eslint.org/) is a linting utlity for JavaScript and JSX, aiming to improve code quality. It's pluggable, with rules can be configured in `.eslintrc`. 目前主流的檢查規則會使用 Airbnb 所釋出的 [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)，在使用上需先安裝 [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) 等套件。
+[ESLint](http://eslint.org/) is a linting utlity for JavaScript and JSX, aiming to improve code quality. It's pluggable, with rules can be configured in `.eslintrc`. The most popular linting rules are used by Airbnb[Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react), which requires installation of [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb).
 
 ## React Router
 [React Router](https://github.com/reactjs/react-router) is a popular React Routing library， It maps URLs to components, which is quite useful for single page applications.
