@@ -62,10 +62,10 @@ With web applications growing in size and complexity, JavaScript modularization 
 1. Webpack
 
 	[Webpack](https://webpack.github.io/) is a module bundler. Among other things, below is its major functionalities:
-	- bundle CSS, images, and other resources
-	- 打包之前預處理（Less、CoffeeScript、JSX、ES6 等）的檔案
-	- based on entry files, split one .js file into multiple ones
-	- 整合豐富的 Loader 可以使用（Webpack 本身僅能處理 JavaScript 模組，其餘檔案如：CSS、Image 需要載入不同 Loader 進行處理）
+	- bundle CSS, images, and other resources;
+	- bundle preprocessed files written in Less, CoffeeScript, JSX, and ES6;
+	- based on entry files, split one .js file into multiple ones;
+	- Integrate multiple loaders (Webpack core can only handles JavaScript. Other files such as CSS and Image need separate loaders).
 
 2. Browserify
 
