@@ -216,15 +216,15 @@
 ## 總結
 以上就是 React 開發環境設置與 Webpack 入門教學，看到這邊的讀者不妨自己動手設定開發環境，體驗一下 React 開發環境的感覺，畢竟若是只有閱讀文字的話很容易就會忘記喔！若你不想在環境設定上花太多時間的話，不妨參考 Facebook 開發社群推出的 [create-react-app](https://github.com/facebookincubator/create-react-app)，可以快速上手，使用 Webpack、[Babel](https://babeljs.io/)、[ESLint](http://eslint.org/) 開發 React 應用程式。接下來的章節我們將持續延伸 React/JSX/Component 的介紹。 
 
-## 延伸閱讀
-1. [JavaScript 模块化七日谈](http://huangxuan.me/2015/07/09/js-module-7day/)
-2. [前端模块化开发那点历史](https://github.com/seajs/seajs/issues/588)
-3. [Webpack 中文指南](http://zhaoda.net/webpack-handbook/index.html)
+## Further Reading
+1. [JavaScript 7 day seminar](http://huangxuan.me/2015/07/09/js-module-7day/)
+2. [History of Web Frontend Modularization](https://github.com/seajs/seajs/issues/588)
+3. [Webpack Tutorial (Chinese)](http://zhaoda.net/webpack-handbook/index.html)
 4. [WEBPACK DEV SERVER](http://webpack.github.io/docs/webpack-dev-server.html)
 
 (image via [srinisoundar](https://cdn-images-1.medium.com/max/477/1*qhI4E_g3TDOK0uu1VAJlCQ.png)、[sitepoint](https://d2sis3lil8ndrq.cloudfront.net/screencasts/46e215cd-2eb3-4cf0-b699-713977a2b644.png)、[keyholesoftware](https://keyholesoftware.com/wp-content/uploads/Browserify-5.png)、[survivejs](http://survivejs.com/webpack/images/webpack.png))
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：React 生態系（Ecosystem）入門簡介](https://github.com/kdchang/reactjs101/blob/master/Ch01/react-ecosystem-introduction.md) | [下一章：ReactJS 與 Component 設計入門介紹](https://github.com/kdchang/reactjs101/blob/master/Ch03/reactjs-introduction.md) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: React 生態系（Ecosystem）入門簡介](https://github.com/druckenclam/reactjs101/blob/en/Ch01/react-ecosystem-introduction.md) | [Next Chapter: ReactJS 與 Component 設計入門介紹](https://github.com/druckenclam/reactjs101/blob/en/Ch03/reactjs-introduction.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
