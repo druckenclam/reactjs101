@@ -3,7 +3,7 @@
 ![React 開發環境設置與 Webpack 入門教學](./images/react-webpack-browserify.png "React 開發環境設置與 Webpack 入門教學")
 
 ## Introduction
-As the old chinese saying goes, one must have good tools in order to do a good job. Writting programs is no exception -- a good development environment facilitates development. We will discuss two major development methods using React: CDN-based and [webpack](https://webpack.github.io/)(We will not cover [TypeScript](https://www.typescriptlang.org/). [browserify](https://webpack.github.io/) and [Gulp](http://gulpjs.com/) is in appendices. Readers shall be able to start developing with React after this chapter.
+As the old chinese saying goes, one must have good tools in order to do a good job. Writting programs is no exception -- a good development environment facilitates development. We will discuss two major development methods using React: CDN-based and [webpack] (https://webpack.github.io/)(We will not cover [TypeScript](https://www.typescriptlang.org/). [browserify](https://webpack.github.io/) and [Gulp](http://gulpjs.com/) is in appendices. Readers shall be able to start developing with React after this chapter.
 
 ## JavaScript Modularization
 隨著網站開發的複雜度提昇，許多現代化的網站已不是單純的網站而已，更像是個富有互動性的網頁應用程式（Web App）。為了應付現代化網頁應用程式開發的需求，解決一些像是全域變數污染、低維護性等問題，JavaScript 在模組化上也有長足的發展。過去一段時間讀者們或許聽過像是 `Webpack`、`Browserify`、`module bundlers`、`AMD`、`CommonJS`、`UMD`、`ES6 Module` 等有關 JavaScript 模組化開發的專有名詞或工具，在前面一個章節我們也簡單介紹了關於 JavaScript 模組化的簡單觀念和規範介紹。若是讀者對於 JavaScript 模組化開發尚不熟悉的話推薦可以參考 [這篇文章](http://huangxuan.me/2015/07/09/js-module-7day/) 和 [這篇文章](https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc#.oa2n5s5zt) 當作入門。
