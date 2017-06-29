@@ -1,6 +1,6 @@
-# Ch02 React 開發環境設置與 Webpack 入門
+# Ch02 Developent Environment Setup & Webpack Basics
 
-1. [React 開發環境設置與 Webpack 入門](https://github.com/kdchang/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md)
+1. [Developent Environment Setup & Webpack Basics](https://github.com/druckenclam/reactjs101/blob/en/Ch02/webpack-dev-enviroment.md)
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) |
