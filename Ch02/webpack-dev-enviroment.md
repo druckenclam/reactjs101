@@ -6,20 +6,20 @@
 As the old chinese saying goes, one must have good tools in order to do a good job. Writting programs is no exception -- a good development environment facilitates development. We will discuss two major development methods using React: CDN-based and [webpack] (https://webpack.github.io/)(We will not cover [TypeScript](https://www.typescriptlang.org/). [browserify](https://webpack.github.io/) and [Gulp](http://gulpjs.com/) is in appendices. Readers shall be able to start developing with React after this chapter.
 
 ## JavaScript Modularization
-隨著網站開發的複雜度提昇，許多現代化的網站已不是單純的網站而已，更像是個富有互動性的網頁應用程式（Web App）。為了應付現代化網頁應用程式開發的需求，解決一些像是全域變數污染、低維護性等問題，JavaScript 在模組化上也有長足的發展。過去一段時間讀者們或許聽過像是 `Webpack`、`Browserify`、`module bundlers`、`AMD`、`CommonJS`、`UMD`、`ES6 Module` 等有關 JavaScript 模組化開發的專有名詞或工具，在前面一個章節我們也簡單介紹了關於 JavaScript 模組化的簡單觀念和規範介紹。若是讀者對於 JavaScript 模組化開發尚不熟悉的話推薦可以參考 [這篇文章](http://huangxuan.me/2015/07/09/js-module-7day/) 和 [這篇文章](https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc#.oa2n5s5zt) 當作入門。
+As websites become more complex, they are more like interactive web applications than simple web pages. 為了應付現代化網頁應用程式開發的需求，解決一些像是全域變數污染、低維護性等問題，JavaScript 在模組化上也有長足的發展。過去一段時間讀者們或許聽過像是 `Webpack`、`Browserify`、`module bundlers`、`AMD`、`CommonJS`、`UMD`、`ES6 Module` 等有關 JavaScript 模組化開發的專有名詞或工具，在前面一個章節我們也簡單介紹了關於 JavaScript 模組化的簡單觀念和規範介紹。若是讀者對於 JavaScript 模組化開發尚不熟悉的話推薦可以參考 [這篇文章](http://huangxuan.me/2015/07/09/js-module-7day/) 和 [這篇文章](https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc#.oa2n5s5zt) 當作入門。
 
-總的來說，使用模組化開發 JavaScript 應用程式主要有以下三種好處：
+There are three advantages developing web applications using modules:
 
-1. 提昇維護性（Maintainability）
-2. 命名空間（Namespacing）
-3. 提供可重用性（Reusability）
+1. Maintainability
+2. Namespacing
+3. Reusability
 
-而在 React 應用程式開發上更推薦使用像是 `Webpack` 這樣的 `module bundlers` 來組織我們的應用程式，但對於一般讀者來說 `Webpack` 強大而完整的功能相對複雜。為了讓讀者先熟悉 `React` 核心觀念（我們假設讀者已經有使用 `JavaScript` 或 `jQuery` 的基本經驗），我們將從使用 `CDN` 引入 `<script>` 的方式開始介紹：
+而在 React 應用程式開發上更推薦使用像是 `Webpack` 這樣的 `module bundlers` 來組織我們的應用程式，但對於一般讀者來說 `Webpack` 強大而完整的功能相對複雜。為了讓讀者先熟悉 `React` 核心觀念（assuming our readers have experience with `JavaScript`, `jQuery`），我們將從使用 `CDN` 引入 `<script>` 的方式開始介紹：
 
 ![React 開發環境設置與 Webpack 入門教學](./images/react.png "React 開發環境設置與 Webpack 入門教學")
 使用 CDN-based 的開發方式缺點是較難維護我們的程式碼（當引入函式庫一多就會有很多 `<script/>`）且會容易遇到版本相容性問題，不太適合開發大型應用程式，但因為簡單易懂，適合教學上使用。
 
-以下是 React [官方首頁的範例](https://facebook.github.io/react/index.html)，以下使用 `React v15.2.1`：
+Below is an [offficial example ] of React (https://facebook.github.io/react/index.html), using `React v15.2.1`：
 
 1. 理解 `React` 是 `Component` 導向的應用程式設計
 2. 引入 `react.js`、`react-dom.js`（react 0.14 後將 react-dom 從 react 核心分離，更符合 react 跨平台抽象化的定位）以及 `babel-standalone` 版 script（可以想成 `babel` 是翻譯機，翻譯瀏覽器看不懂的 `JSX` 或 `ES6+` 語法成為瀏覽器看的懂得的 `JavaScript`。為了提昇效率，通常我們都會在伺服器端做轉譯，這點在 production 環境尤為重要）
@@ -51,7 +51,7 @@ As the old chinese saying goes, one must have good tools in order to do a good j
 </html>
 ```
 
-在瀏覽器瀏覽最後成果：
+Result in the browser:
 
 ![React 開發環境設置與 Webpack 入門教學](./images/hello-world.png "React 開發環境設置與 Webpack 入門教學")
 
