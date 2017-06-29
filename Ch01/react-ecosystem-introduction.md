@@ -54,10 +54,10 @@ With web applications growing in size and complexity, JavaScript modularization 
 
 6. ES6 Module
 
-	ECMAScript6 make modularization part of the standard. As a reuslt, large scale JavaScript applications are more manageable. It will replace other specifications such as AMD and CommonJS. 成為通用於瀏覽器端和伺服器端的模組化解決方案。 The support is still lacking by browsers and Node. Applications using ES6 Module must be transpiled by [Babel](https://babeljs.io/) first.
+	ECMAScript6 make modularization part of the standard. As a reuslt, large scale JavaScript applications are more manageable. It will replace other specifications such as AMD and CommonJS, aiming to be the standard solution for both browser side and server side. The support is still lacking by browsers and Node. Applications using ES6 Module must be transpiled by [Babel](https://babeljs.io/) first.
 
 ## Webpack/Browserify + Gulp
-隨著網頁應用程式開發的複雜性提昇，現在的網頁往往不單只是單純的網頁，而是一個網頁應用程式（WebApp）。為了管理複雜的應用程式開發，此時模組化開發方法便顯得日益重要，而理想上的模組化開發工具一直是前端工程的很大的議題。Webpack 和 Browserify + Gulp 則是進行 React 應用程式開發常用的開發工具，可以協助進行自動化程式碼打包、轉譯等重複性工作，提昇開發效率。本書範例主要會搭配 Webpack 進行開發。
+With the growing complexity of web sites, they are more like applications than web pages. Modularization is necessary to manage this complexity. It's far from settled which tool is ideal for modularized development. Among all the tools, Webpack, Browserify + Gulp are commonly used. They can help with bundling, transpilation, and other repetitive tasks, improve development effency. This book chooeses webpack.
 
 1. Webpack
 
@@ -83,7 +83,7 @@ With web applications growing in size and complexity, JavaScript modularization 
 [React Router](https://github.com/reactjs/react-router) is a popular React Routing library， It maps URLs to components, which is quite useful for single page applications.
 
 ## Flux/Redux
-[Flux](https://facebook.github.io/flux/) 是一個實現單項流的應用程式資料架構（architecture），同樣是由 Facebook 推出，並和 React 專注於 View 的部份形成互補。而由 Dan Abramov 所開發的 [Redux](https://github.com/reactjs/redux) 被 React 開發社群認為是 Flux-like 更優雅的作法，也是目前主流搭配 React 的狀態（State）管理工具。讓你在開發複雜的應用程式時可以更方便管理你的狀態（state）。
+[Flux](https://facebook.github.io/flux/) implement a unidirectional data flow architecture, also developed by Facebook, complementing React, as React handles View. Dan Abramov developed [Redux](https://github.com/reactjs/redux), widely considered to be a better Flux-like solution. It is the mainstream React state manager, helping you manage states in complex application development.
 
 ## ImmutableJS
 [ImmutableJS](https://facebook.github.io/immutable-js/) allows developers to build immutable data structures, which makes prediction easier and therefore improve the performance.
