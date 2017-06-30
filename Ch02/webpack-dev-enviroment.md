@@ -17,7 +17,7 @@ There are three advantages developing web applications using modules:
 It's recommended that developers organize React applications using `Webpack` and `module bundlers`. However, in order to introduce readers to the idea of `React` (assuming our readers have experience with `JavaScript`, `jQuery`) without overwelming them with the powerful and complex functionalities, we start our introduction to React by using an example of `CDN`, which load React using `<script>`.
 
 ![React 開發環境設置與 Webpack 入門教學](./images/react.png "React 開發環境設置與 Webpack 入門教學")
-使用 CDN-based 的開發方式缺點是較難維護我們的程式碼（當引入函式庫一多就會有很多 `<script/>`）且會容易遇到版本相容性問題，不太適合開發大型應用程式，但因為簡單易懂，適合教學上使用。
+CDN-based methods posts a challenge for code maintenance, as there are multiple `<script/>`）tags. There is no dependency or version management either. Though not a good fit for applications of large scale, it's simple and good for teaching and learning purpose.
 
 Below is an [offficial example ] of React (https://facebook.github.io/react/index.html), using `React v15.2.1`：
 
@@ -32,7 +32,7 @@ Below is an [offficial example ] of React (https://facebook.github.io/react/inde
   <head>
     <meta charset="UTF-8" />
     <title>Hello React!</title>
-    <!-- 以下引入 react.js, react-dom.js（react 0.14 後將 react-dom 從 react 核心分離，更符合 react 跨平台抽象化的定位）以及 babel-core browser 版 -->
+    <!-- Introduce react.js, react-dom.js (react 0.14 separate react-dom from react core, to make react core platform independent) and babel-core for browsers -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
@@ -40,7 +40,7 @@ Below is an [offficial example ] of React (https://facebook.github.io/react/inde
   <body>
     <!-- 這邊的 id="example" 的 <div> 為 React Component 要插入的地方 -->
     <div id="example"></div>
-    <!-- 以下就是包在 babel（透過進行語言翻譯）中的 React JSX 語法，babel 會將其轉為瀏覽器看的懂得 JavaScript -->
+    <!-- Using babel to transpile React JSX to JavaScript that browsers support -->
     <script type="text/babel">
       ReactDOM.render(
         <h1>Hello, world!</h1>,
