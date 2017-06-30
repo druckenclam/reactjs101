@@ -24,7 +24,7 @@ Below is an [offficial example ] of React (https://facebook.github.io/react/inde
 1. Understand `React` applications are build upon `Component`
 2. Introduce `react.js`、`react-dom.js`（from react 0.14 onward, react-dom is separated from react core, making React more platform independent) and `babel-standalone` (`babel` can be thought of as a translation machine, translating `JSX` and `ES6+` into `JavaScript` that browsers understand. For performance, the translation is always done on the server side. This is especially important for production.
 3. Specify a mounting point in the `<body>` for React Components to mount:`<div id="example"></div>`
-4. `babel` transpiles `React JSX` into `JavaScript` that browsers understand. `ReactDOM.render(欲 render 的 Component 或 HTML 元素, 欲插入的位置)`。所以我們可以在瀏覽器上打開我們的 `hello.html`，就可以看到 `Hello, world!` 。That's it，we just finished our first `React` application!
+4. `babel` transpiles `React JSX` into `JavaScript` that browsers understand. `ReactDOM.render` rende the Component at the mounting point. Opening our browser to `hello.html`, it will show `Hello, world!`. That's it，we just finished our first `React` application!
 
 ```html
 <!DOCTYPE html>
