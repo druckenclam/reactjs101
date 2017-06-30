@@ -1,9 +1,9 @@
 # Introduction to React/JSX/Component
 
-## 前言
+## Introduction
 在上一個章節中我們快速學習了 React 開發環境建置和 Webpack 入門。接下來我們將更進一步了解 React 和 Component 設計時需注意的幾個重要特性。
 
-## ReactJS 特性簡介
+## ReactJS Features
 React 原本是 Facebook 自己內部使用的開發工具，但卻是一個目標遠大的一個專案：`Learn once, write anywhere`。自從 2013 年開源後周邊的生態系更是蓬勃發展。ReactJS 的出現讓前端開發有許多革新性的思維出現，其中有幾個重要特性值得我們去探討：
 
 1. 基於元件（Component）化思考
@@ -14,7 +14,7 @@ React 原本是 Facebook 自己內部使用的開發工具，但卻是一個目�
 6. 一律重繪（Always Redraw）和單向資料流（Unidirectional Data Flow）
 7. 在 JavaScript 裡寫 CSS：Inline Style 
 
-## 基於元件（Component）化思考
+## Component Based Development
 
 ![ReactJS 與 Component 設計入門介紹](./images/component.png "ReactJS 與 Component 設計入門介紹")
 
@@ -166,6 +166,6 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 （image via [maketea](http://maketea.co.uk/images/2014-03-05-robust-web-apps-with-react-part-1/wireframe_deconstructed.png)）
 
 ## :door: Dokodemo Door
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: React 開發環境設置與 Webpack 入門教學](https://github.com/druckenclam/reactjs101/blob/en/Ch02/webpack-dev-enviroment.md) | [Next Chapter: JSX 簡明入門教學指南](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Developent Environment Setup & Webpack Basics](https://github.com/druckenclam/reactjs101/blob/en/Ch02/webpack-dev-enviroment.md) | [Next Chapter: JSX 簡明入門教學指南](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) |
 
 | [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
