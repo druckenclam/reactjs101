@@ -60,12 +60,12 @@ Result in the browser:
 
 上面我們先簡單介紹了 CDN-based 的開發方式讓大家先對於 React 有個基本印象，但由於 CDN-based 的開發方式有不少缺點。所以接下來的 Webpack 將會是我們接下來範例的主要使用的開發工具。
 
-[Webpack](https://webpack.github.io/) 是一個模組打包工具（module bundler），以下列出 Webpack 的幾項主要功能：
+[Webpack](https://webpack.github.io/) is a module bundler. Among other things, below is its major functionalities:
 
-- 將 CSS、圖片與其他資源打包
-- 打包之前預處理（Less、CoffeeScript、JSX、ES6 等）檔案
-- 依 entry 文件不同，把 .js 分拆為多個 .js 檔案
-- 整合豐富的 Loader 可以使用（Webpack 本身僅能處理 JavaScript 模組，其餘檔案如：CSS、Image 需要載入不同 Loader 進行處理）
+- bundle CSS, images, and other resources;
+- bundle preprocessed files written in Less, CoffeeScript, JSX, and ES6;
+- based on entry files, split one .js file into multiple ones;
+- Integrate multiple loaders (Webpack core can only handles JavaScript. Other files such as CSS and Image need separate loaders).
 
 接下來我們一樣透過 Hello World 實例來介紹如何用 Webpack 設置 React 開發環境：
 
