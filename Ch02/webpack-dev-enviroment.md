@@ -214,7 +214,7 @@ Result in the browser:
 Opening your browser to `http://localhost:8008`, you will see `Hello, world!`.
 
 ## Summary
-Above is how we set up React development environment using Webpack. Readers are encouraged to follow the instructions.看到這邊的讀者不妨自己動手設定開發環境，體驗一下 React 開發環境的感覺，畢竟若是只有閱讀文字的話很容易就會忘記喔！若你不想在環境設定上花太多時間的話，不妨參考 Facebook 開發社群推出的 [create-react-app](https://github.com/facebookincubator/create-react-app)，可以快速上手，使用 Webpack、[Babel](https://babeljs.io/)、[ESLint](http://eslint.org/) 開發 React 應用程式。We will cover React/JSX/Component in the next chapter. 
+Above is how we set up React development environment using Webpack. Readers are encouraged to follow the instructions. It help you learn and understand the concept. Readers can also refer to [create-react-app] (https://github.com/facebookincubator/create-react-app) by Facebook community. It creates a template for development using Webpack、[Babel] (https://babeljs.io/), [ESLint] (http://eslint.org/). We will cover React/JSX/Component in the next chapter. 
 
 ## Further Reading
 1. [JavaScript 7 day seminar](http://huangxuan.me/2015/07/09/js-module-7day/)
