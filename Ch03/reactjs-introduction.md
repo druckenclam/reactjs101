@@ -1,4 +1,4 @@
-# ReactJS 與 Component 設計入門介紹
+# Introduction to React/JSX/Component
 
 ## 前言
 在上一個章節中我們快速學習了 React 開發環境建置和 Webpack 入門。接下來我們將更進一步了解 React 和 Component 設計時需注意的幾個重要特性。
@@ -144,7 +144,7 @@ const divStyle = {
 ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementById('app'));
 ```
 
-## 總結
+## Summary
 以上介紹了 ReactJS 的幾個重要特性：
 
 1. 基於元件（Component）化思考
@@ -157,7 +157,7 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 
 接下來我們將進一步探討 React 裡 JSX 的使用方式。
 
-## 延伸閱讀
+## Further Reading
 1. [React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)
 2. [React Demystified](http://blog.reverberate.org/2014/02/react-demystified.html)
 3. [Top-Level API](https://facebook.github.io/react/docs/top-level-api.html)
@@ -165,7 +165,7 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 
 （image via [maketea](http://maketea.co.uk/images/2014-03-05-robust-web-apps-with-react-part-1/wireframe_deconstructed.png)）
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：React 開發環境設置與 Webpack 入門教學](https://github.com/kdchang/reactjs101/blob/master/Ch02/webpack-dev-enviroment.md) | [下一章：JSX 簡明入門教學指南](https://github.com/kdchang/reactjs101/blob/master/Ch03/react-jsx-introduction.md) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: React 開發環境設置與 Webpack 入門教學](https://github.com/druckenclam/reactjs101/blob/en/Ch02/webpack-dev-enviroment.md) | [Next Chapter: JSX 簡明入門教學指南](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
