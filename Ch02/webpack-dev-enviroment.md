@@ -73,7 +73,7 @@ Next up, we learn how to use React with `webpack` through a Hello World example:
 
 2. Install Webpack via NPM (either global or local, we use local installation) webpack loader, and webpack-dev-server
 
-	Webpack 中的 loader 類似於 browserify 內的 transforms，但 Webpack 在使用上比較多元，除了 JavaScript loader 外也有 CSS Style 和圖片的 loader。此外，`webpack-dev-server` is a builtin web server for testing purpose.
+	Webpack's loaders are similar to browserify's transforms, yet loders have different usages: there are loaders for JavaScript, loaders for CSS Style, and loaders for images. `webpack-dev-server` is a builtin web server for testing purpose.
 
 	```
 	// NPM initialization -- creates package.json
@@ -129,7 +129,7 @@ Next up, we learn how to use React with `webpack` through a Hello World example:
 	};
 	```
 
-4. 在根目錄設定 `.babelrc`
+4. set up `.babelrc` in root folder
 
 	```javascript 
 	{
@@ -141,13 +141,13 @@ Next up, we learn how to use React with `webpack` through a Hello World example:
 	}
 	```
 
-5. 安裝 react 和 react-dom
+5. install react and react-dom
 
 	```
 	$ npm install --save react react-dom
 	```
 
-6. 撰寫 Component（記得把 `index.html` 以及 `index.js` 放到 `app` 資料夾底下喔！）
+6. Write Component (don't forget to place `index.html` and `index.js` under `app` folder)
 	`index.html`
 
 	```html 
@@ -159,7 +159,7 @@ Next up, we learn how to use React with `webpack` through a Hello World example:
 		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	</head>
 	<body>
-		<!-- 欲插入 React Component 的位置 -->
+		<!-- mounting point for React Component -->
 		<div id="app"></div>
 	</body>
 	</html>
