@@ -158,7 +158,7 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 接下來我們將進一步探討 React 裡 JSX 的使用方式。
 
 ## Further Reading
-1. [React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)
+1. [React Tutorial (chinese)](http://www.ruanyifeng.com/blog/2015/03/react.html)
 2. [React Demystified](http://blog.reverberate.org/2014/02/react-demystified.html)
 3. [Top-Level API](https://facebook.github.io/react/docs/top-level-api.html)
 4. [ES6 Classes Component](https://facebook.github.io/react/docs/reusable-components.html#es6-classes)
