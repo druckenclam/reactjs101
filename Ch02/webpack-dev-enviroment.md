@@ -58,7 +58,7 @@ Result in the browser:
 ## Webpack
 ![React 開發環境設置與 Webpack 入門教學](./images/webpack-module-bundler.png "React 開發環境設置與 Webpack 入門教學")
 
-上面我們先簡單介紹了 CDN-based 的開發方式讓大家先對於 React 有個基本印象，但由於 CDN-based 的開發方式有不少缺點。所以接下來的 Webpack 將會是我們接下來範例的主要使用的開發工具。
+Now we know how to use React with CDN-based approach，Due to the drawbacks of CDN-based development, we will focus on Webpack for the remainder of the book.
 
 [Webpack](https://webpack.github.io/) is a module bundler. Among other things, below is its major functionalities:
 
@@ -67,24 +67,24 @@ Result in the browser:
 - based on entry files, split one .js file into multiple ones;
 - Integrate multiple loaders (Webpack core can only handles JavaScript. Other files such as CSS and Image need separate loaders).
 
-接下來我們一樣透過 Hello World 實例來介紹如何用 Webpack 設置 React 開發環境：
+Next up, we learn how to use React with `webpack` through a Hello World example:
 
-1. 依據你的作業系統安裝 [Node](https://nodejs.org/en/) 和 [NPM](https://www.npmjs.com/)（目前版本的 Node 都會內建 NPM）
+1. Install [Node](https://nodejs.org/en/) 和 [NPM](https://www.npmjs.com/) (Node normally include NPM)
 
-2. 透過 NPM 安裝 Webpack（可以 global 或 local project 安裝，這邊我們使用 local）、webpack loader、webpack-dev-server
+2. Install Webpack via NPM (either global or local, we use local installation) webpack loader, and webpack-dev-server
 
-	Webpack 中的 loader 類似於 browserify 內的 transforms，但 Webpack 在使用上比較多元，除了 JavaScript loader 外也有 CSS Style 和圖片的 loader。此外，`webpack-dev-server` 則可以啟動開發用 server，方便我們測試
+	Webpack 中的 loader 類似於 browserify 內的 transforms，但 Webpack 在使用上比較多元，除了 JavaScript loader 外也有 CSS Style 和圖片的 loader。此外，`webpack-dev-server` is a builtin web server for testing purpose.
 
 	```
-	// 按指示初始化 NPM 設定檔 package.json
+	// NPM initialization -- creates package.json
 	$ npm init 
-	// --save-dev 是可以讓你將安裝套件的名稱和版本資訊存放到 package.json，方便日後使用
+	// --save-dev save packages and their versions into package.json for future development
 	$ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es2015 babel-preset-react html-webpack-plugin webpack webpack-dev-server
 	```
 
-3. 在根目錄設定 `webpack.config.js`
+3. At your root folder `webpack.config.js`
 
-	事實上，`webpack.config.js` 有點類似於 `gulp` 中的 `gulpfile.js` 功用，主要是設定 `webpack` 的相關設定
+	In fact, `webpack.config.js`, similar to `gulpfile.js` of `gulp`,  manges settings for `webpack`.
 
 	```javascript
 	// 這邊使用 HtmlWebpackPlugin，將 bundle 好的 <script> 插入到 body。${__dirname} 為 ES6 語法對應到 __dirname  
