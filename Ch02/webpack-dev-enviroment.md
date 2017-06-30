@@ -189,15 +189,15 @@ Result in the browser:
 	ReactDOM.render(<App />, document.getElementById('app'));
 	```
 
-7. 在終端機使用 `webpack` 進行成果展示，webpack 相關指令：
+7. `webpack` CLI commands:
 
-	- webpack：會在開發模式下開始一次性的建置
-	- webpack -p：會建置 production 的程式碼 
-	- webpack --watch：會監聽程式碼的修改，當儲存時有異動時會更新檔案
-	- webpack -d：加入 source maps 檔案
-	- webpack --progress --colors：加上處理進度與顏色
+	- webpack: build code for development environment
+	- webpack -p: build code for production environment 
+	- webpack --watch: enable hot reload
+	- webpack -d: add source maps
+	- webpack --progress --colors: display progress bar and color
 
-	如果不想每次都打一長串的指令碼的話可以使用 `package.json` 中的 `scripts` 設定
+	The commands can be integrated into section `scripts` of `package.json`.
 
 	```javascript 
 	"scripts": {
@@ -205,7 +205,7 @@ Result in the browser:
 	}
 	```
 
-	然後在終端機執行：
+	Run it in a terminal:
 
 	```
 	$ npm run dev
