@@ -14,7 +14,7 @@ There are three advantages developing web applications using modules:
 2. Namespacing
 3. Reusability
 
-It's recommended that developers organize React applications using `Webpack` and `module bundlers`. However, people may be put off by the powerful and complex functionality. In order to introduce readers to the idea of `React` (assuming our readers have experience with `JavaScript`, `jQuery`), we start our introduction to React by using an example of `CDN`, which load React using `<script>`.
+It's recommended that developers organize React applications using `Webpack` and `module bundlers`. However, in order to introduce readers to the idea of `React` (assuming our readers have experience with `JavaScript`, `jQuery`) without overwelming them with the powerful and complex functionalities, we start our introduction to React by using an example of `CDN`, which load React using `<script>`.
 
 ![React 開發環境設置與 Webpack 入門教學](./images/react.png "React 開發環境設置與 Webpack 入門教學")
 使用 CDN-based 的開發方式缺點是較難維護我們的程式碼（當引入函式庫一多就會有很多 `<script/>`）且會容易遇到版本相容性問題，不太適合開發大型應用程式，但因為簡單易懂，適合教學上使用。
