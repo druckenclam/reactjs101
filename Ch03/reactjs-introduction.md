@@ -1,18 +1,18 @@
 # Introduction to React/JSX/Component
 
 ## Introduction
-在上一個章節中我們快速學習了 React 開發環境建置和 Webpack 入門。接下來我們將更進一步了解 React 和 Component 設計時需注意的幾個重要特性。
+In the previous chapter, we have learned briefly how to set up React deveopment envirionment and Webpack basics. Next we will learn more about React, especially Component designing.
 
 ## ReactJS Features
-React 原本是 Facebook 自己內部使用的開發工具，但卻是一個目標遠大的一個專案：`Learn once, write anywhere`。自從 2013 年開源後周邊的生態系更是蓬勃發展。ReactJS 的出現讓前端開發有許多革新性的思維出現，其中有幾個重要特性值得我們去探討：
+React was a internal tool used by Facebook, aiming to achieve `Learn once, write anywhere`. Since entering into open source projects in 2013, the ecosystem has been booming. ReactJS revolutionized frontend engineering; Below are some revolutionary ideas:
 
-1. 基於元件（Component）化思考
-2. 用 JSX 進行宣告式（Declarative）UI 設計
-3. 使用 Virtual DOM
-4. Component PropType 防呆機制
-5. Component 就像個狀態機（State Machine），而且也有生命週期（Life Cycle）
-6. 一律重繪（Always Redraw）和單向資料流（Unidirectional Data Flow）
-7. 在 JavaScript 裡寫 CSS：Inline Style 
+1. Component Based Development
+2. Declarative UI Design using JSX
+3. Virtual DOM
+4. Component PropType Error Prevention (such as type check)
+5. Component is a State Machine with Life Cycle
+6. Always Redraw and Unidirectional Data Flow
+7. Use CSS：Inline Style in Javascript 
 
 ## Component Based Development
 
@@ -166,6 +166,6 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 （image via [maketea](http://maketea.co.uk/images/2014-03-05-robust-web-apps-with-react-part-1/wireframe_deconstructed.png)）
 
 ## :door: Dokodemo Door
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Developent Environment Setup & Webpack Basics](https://github.com/druckenclam/reactjs101/blob/en/Ch02/webpack-dev-enviroment.md) | [Next Chapter: JSX 簡明入門教學指南](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Developent Environment Setup & Webpack Basics](https://github.com/druckenclam/reactjs101/blob/en/Ch02/webpack-dev-enviroment.md) | [Next Chapter: JSX Introductary Tutorial](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) |
 
 | [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
