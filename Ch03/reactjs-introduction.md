@@ -18,9 +18,9 @@ React was a internal tool used by Facebook, aiming to achieve `Learn once, write
 
 ![ReactJS 與 Component 設計入門介紹](./images/component.png "ReactJS 與 Component 設計入門介紹")
 
-在 React 的世界中最基本的單元為元件（Component），每個元件也可以包含一個以上的子元件，並依照需求組裝成一個組合式的（Composable）元件，因此具有封裝（encapsulation）、關注點分離 (Separation of Concerns)、複用 (Reuse) 、組合 (Compose) 等特性。
+The basic building blocks for React are Components. A component, made up of other components, is a Composable components. This allows for encapsulation, Separation of Concerns, Reuse, and composition.
 
-`<TodoApp>` 元件可以包含 `<TodoHeader />`、`<TodoList />` 子元件
+`<TodoApp>` Component contains `<TodoHeader />`、`<TodoList />` sub components
 ```javascript
 	<div>
 		<TodoHeader />
@@ -28,13 +28,13 @@ React was a internal tool used by Facebook, aiming to achieve `Learn once, write
 	</div>
 ```
 
-`<TodoList />` 元件內部長相：
+`<TodoList />` sub components
 ```javascript
 	<div>
 		<ul>
-			<li>寫程式碼</li>
-			<li>哄妹子</li>
-			<li>買書</li>
+			<li>Coding</li>
+			<li>Dating</li>
+			<li>Book Purchase</li>
 		</ul>
 	</div>
 ```
