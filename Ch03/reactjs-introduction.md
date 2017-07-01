@@ -43,12 +43,12 @@ The basic building blocks for React are Components. A component, made up of othe
 
 一個比較好的方式就是訓練自己看到不同的網頁或應用程式時，強迫自己將看到的頁面切成一個個元件。相信過了一段時間後，天眼開了，就比較容易習慣元件化的思考方式。
 
-以下是一般 React Component 撰寫的主要兩種方式：
+React Component can be written in two ways:
 
-1. 使用 ES6 的 Class（可以進行比較複雜的操作和元件生命週期的控制，相對於 stateless components 耗費資源）
+1. ES6 Class Components (Allows for more complex operations and control of the life cycle, but consumes more resources)
 
 	```javascript
-	//  注意元件開頭第一個字母都要大寫
+	//  The first letter should be captalized
 	class MyComponent extends React.Component {
 		// render 是 Class based 元件唯一必須的方法（method）
 		render() {
@@ -58,11 +58,11 @@ The basic building blocks for React are Components. A component, made up of othe
 		}
 	}
 
-	// 將 <MyComponent /> 元件插入 id 為 app 的 DOM 元素中
+	// Mount <MyComponent /> at a DOM element identified by id app
 	ReactDOM.render(<MyComponent/>, document.getElementById('app'));
 	```
 
-2. 使用 Functional Component 寫法（單純地 render UI 的 stateless components，沒有內部狀態、沒有實作物件和 ref，沒有生命週期函數。若非需要控制生命週期的話建議多使用 stateless components 獲得比較好的效能）
+2. Functional Component （單純地 render UI 的 stateless components，沒有內部狀態、沒有實作物件和 ref，沒有生命週期函數。若非需要控制生命週期的話建議多使用 stateless components 獲得比較好的效能）
 
 	```javascript
 	// 使用 arrow function 來設計 Functional Component 讓 UI 設計更單純（f(D) => UI），減少副作用（side effect）
@@ -74,7 +74,7 @@ The basic building blocks for React are Components. A component, made up of othe
 	ReactDOM.render(<MyComponent/>, document.getElementById('app'));
 	```
 
-## 用 JSX 進行宣告式（Declarative）UI 設計
+## Declarative UI Design with JSX
 React 在設計上的思路認為使用 Component 比起模版（Template）和顯示邏輯（Display Logic）更能實現關注點分離的概念，而搭配 JSX 可以實現聲明式 Declarative（注重 what to），而非命令式 Imperative（注重 how to）的程式撰寫方式。
 
 像下述的宣告式（Declarative）UI 設計就比單純用（Template）式的方式更易懂：
@@ -94,10 +94,10 @@ React 在設計上的思路認為使用 Component 比起模版（Template）和�
 
 由於 JSX 在 React 元件撰寫上扮演很重要的角色，因此在下一個章節我們也將更深入講解 JSX 使用細節。 
 
-## 使用 Virtual DOM
+## Virtual DOM
 在傳統 Web 中一般是使用 jQuery 進行 DOM 的直接操作。然而更改 DOM 往往是 Web 效能的瓶頸，因此在 React 世界設計有 Virtual DOM 的機制，讓 App 和 DOM 之間用 Virtual DOM 進行溝通。當更改 DOM 時，會透過 React 自身的 diff 演算法去計算出最小更新，進而去最小化更新真實的 DOM。
 
-## Component PropType 防呆機制
+## Component PropType Error Prevention
 在 React 設計時除了提供 props 預設值設定（Default Prop Values）外，也提供了 Prop 的驗證（Validation）機制，讓整個 Component 設計更加穩健：
 
 ```javascript
@@ -126,10 +126,10 @@ MyComponent.defaultProps = {
 
 關於更多的 Validation 用法可以參考[官方網站](https://facebook.github.io/react/docs/reusable-components.html) 的說明。
 
-## Component 就像個狀態機（State Machine），而且也有生命週期（Life Cycle）
+## Component Operates like a State Machine with Life Cycle
 Component 就像個狀態機（State Machine），根據不同的 state（透過 `setState()` 修改）和 props（由父元素傳入），Component 會出現對應的顯示結果。而人有生老病死，元件也有生命週期。透過操作生命週期處理函數，可以在對應的時間點進行 Component 需要的處理，關於更詳細的元件生命週期介紹我們會再下一個章節進行更一步說明。
 
-## 一律重繪（Always Redraw）和單向資料流（Unidirectional Data Flow）
+## Always Redraw and Unidirectional Data Flow
 在 React 世界中，props 和 state 是影響 React Component 長相的重要要素。其中 props 都是由父元素所傳進來，不能更改，若要更改 props 則必須由父元素進行更改。而 state 則是根據使用者互動而產生的不同狀態，主要是透過 setState() 方法進行修改。當 React 發現 props 或是 state 更新時，就會重繪整個 UI。當然你也可以使用 forceUpdate() 去強迫重繪 Component。而 React 透過整合 Flux 或 Flux-like（例如：Redux）可以更具體實現單向資料流（Unidirectional Data Flow），讓資料流的管理更為清晰。
 
 ## 在 JavaScript 裡寫 CSS：Inline Style 
@@ -145,17 +145,17 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, document.getElementByI
 ```
 
 ## Summary
-以上介紹了 ReactJS 的幾個重要特性：
+We have covered some of the most important ReactJS features:
 
-1. 基於元件（Component）化思考
-2. 用 JSX 進行宣告式（Declarative）UI 設計
-3. 使用 Virtual DOM
-4. Component PropType 防呆機制
-5. Component 就像個狀態機（State Machine），而且也有生命週期（Life Cycle）
-6. 一律重繪（Always Redraw）和單向資料流（Unidirectional Data Flow）
-7. 在 JavaScript 裡寫 CSS：Inline Style
+1. Component Based Development
+2. Declarative UI using JSX
+3. Virtual DOM
+4. Component PropType Error Prevention
+5. Component operates like a State Machine with Life Cycle
+6. Always Redraw and Unidirectional Data Flow
+7. CSS：Inline Style in Javascript
 
-接下來我們將進一步探討 React 裡 JSX 的使用方式。
+We will learn more about how to use JSX with React.
 
 ## Further Reading
 1. [React Tutorial (chinese)](http://www.ruanyifeng.com/blog/2015/03/react.html)
