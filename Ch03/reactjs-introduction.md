@@ -39,9 +39,9 @@ The basic building blocks for React are Components. A component, made up of othe
 	</div>
 ```
 
-元件化一直是網頁前端開發的聖杯，許多開發者最希望的就是可以最大化重複使用（reuse）過去所寫的程式碼，不要重複造輪子（DRY）。在 React 中元件是一切的基礎，讓開發應用程式就好像在堆積木一樣。然而對於過去習慣模版式（template）開發的前端工程師來說，短時間要轉換成元件化思考模式並不容易，尤其過去我們往往習慣於將 HTML、CSS 和 JavaScript 分離，現在卻要把它們都封裝在一起。
+Components based development are the the holy grail for frontend engineering. Many devlopers hope to get reusablity to a maximum level, and to not repeat yourselves (DRY). In React components are the basis of everything; development is like playing with building blocks. It's somwwhat chanllenge for frontend engineers who are more familiar with template based development. It's not easy to make the transition from templates to components, especially given that in the past we separate HTML, CSS and JavaScript and that now we want to group them together.
 
-一個比較好的方式就是訓練自己看到不同的網頁或應用程式時，強迫自己將看到的頁面切成一個個元件。相信過了一段時間後，天眼開了，就比較容易習慣元件化的思考方式。
+One way to do it is to train ourselves to think in terms of components, to break down websites into individual components. After a while, we will get used to component based way of thinking.
 
 React Component can be written in two ways:
 
@@ -50,7 +50,7 @@ React Component can be written in two ways:
 	```javascript
 	//  The first letter should be captalized
 	class MyComponent extends React.Component {
-		// render 是 Class based 元件唯一必須的方法（method）
+		// render is the only mandatory method for Class
 		render() {
 			return (
 				<div>Hello, World!</div>
@@ -62,15 +62,15 @@ React Component can be written in two ways:
 	ReactDOM.render(<MyComponent/>, document.getElementById('app'));
 	```
 
-2. Functional Component （單純地 render UI 的 stateless components，沒有內部狀態、沒有實作物件和 ref，沒有生命週期函數。若非需要控制生命週期的話建議多使用 stateless components 獲得比較好的效能）
+2. Functional Component (pure stateless components for UI rendering, there is no status, 實作物件, reference，or life-cycle functions. Stateless components are faster than stateful ones)
 
 	```javascript
-	// 使用 arrow function 來設計 Functional Component 讓 UI 設計更單純（f(D) => UI），減少副作用（side effect）
+	// Use arrow function to write Functional Component, making UI design simpler and reducing side effect
 	const MyComponent = () => (
 		<div>Hello, World!</div>
 	);
 	
-	// 將 <MyComponent /> 元件插入 id 為 app 的 DOM 元素中
+	// mounting <MyComponent /> at the DOM element identified by id (app)
 	ReactDOM.render(<MyComponent/>, document.getElementById('app'));
 	```
 
