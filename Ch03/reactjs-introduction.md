@@ -124,13 +124,13 @@ MyComponent.defaultProps = {
 }
 ```
 
-More about Validation can be found at [Official Web Site](https://facebook.github.io/react/docs/reusable-components.html) 的說明。
+More about Validation can be found at [Official Web Site](https://facebook.github.io/react/docs/reusable-components.html).
 
 ## Component Operates like a State Machine with Life Cycle
-Component is like a State Machine. Based on state (modified by `setState()`) and props (passed down from the parent components), Component display itself. 而人有生老病死，元件也有生命週期。透過操作生命週期處理函數，可以在對應的時間點進行 Component 需要的處理，關於更詳細的元件生命週期介紹我們會再下一個章節進行更一步說明。
+Component is like a State Machine. Based on state (modified by `setState()`) and props (passed down from the parent components), Component display itself. Just like human-being, components have life-cycles. Life-cycle processing functions allows us to process components when it's mounted or unmounted. We will cover more about life-cycle management in the next chapter.
 
 ## Always Redraw and Unidirectional Data Flow
-在 React 世界中，props 和 state 是影響 React Component 長相的重要要素。其中 props 都是由父元素所傳進來，不能更改，若要更改 props 則必須由父元素進行更改。而 state 則是根據使用者互動而產生的不同狀態，主要是透過 setState() 方法進行修改。當 React 發現 props 或是 state 更新時，就會重繪整個 UI。當然你也可以使用 forceUpdate() 去強迫重繪 Component。而 React 透過整合 Flux 或 Flux-like（例如：Redux）可以更具體實現單向資料流（Unidirectional Data Flow），讓資料流的管理更為清晰。
+In the world of React, props and state affects the appearance of React Components. Props, passed down from the parents, are immutable. State tracks the interactivity, are modified by setState(). When React find props or state change, it will redraw the entire UI. One can use forceUpdate() to force redrawing of every Component. Combed with Flux, or Flux-like tools such as Redux, React is able to implement Unidirectional Data Flow, making data flow management simpler and easier.
 
 ## Use CSS：Inline Style in JavaScript
 React Component Inline Style, everything goes into JavaScript files:
