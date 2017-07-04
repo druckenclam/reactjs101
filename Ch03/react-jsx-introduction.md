@@ -3,14 +3,14 @@
 ![JSX 簡明入門教學指南](./images/reactjs.png)
 
 ## Introduction
-According to [React](https://facebook.github.io/react/) official website, React ia a JavaScritp Library for building user interface. In terms of MVC, ReactJS is mainly responsible for view. For a very long time, We have been preached the virtues of separation of HTML, CSS , JavaScript. They don't mix. However，from React's perspective, everything is based on Component. One should putting everything related to a Component together. We also use [JSX](https://facebook.github.io/jsx/) to write components. In fact, JSX is not a new language, but [Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)）, similar to [XML](https://zh.wikipedia.org/wiki/XML), an extension to ECMAScript. JSX tags are closely connected to programms that implements the tags. We need to think in terms of components (using ES6). ）。
+According to [React](https://facebook.github.io/react/) official website, React ia a JavaScritp Library for building user interface. In terms of MVC, ReactJS is mainly responsible for view. For a very long time, We have been preached the virtues of separation of HTML, CSS , JavaScript. They don't mix. However，from React's perspective, everything is based on Component. One should putting everything related to a Component together. We also use [JSX](https://facebook.github.io/jsx/) to write components. In fact, JSX is not a new language, but [Syntatic Sugar](https://en.wikipedia.org/wiki/Syntactic_sugar)）, similar to [XML](https://zh.wikipedia.org/wiki/XML), an extension to ECMAScript. JSX tags are closely connected to programms that implements the tags. We need to think in terms of components (using ES6).
 
 JSX utilize the powerful features of JavaScript, abandoning templates. This is different from [Angular](https://angularjs.org/)'s notion for enhancing HTML. JSX is not mandatory; you can use React without JSX. Eventually JSX will turn into JavaScript (only thing that web browser understands). After reading the material below, you shall be able to understand JSX and why it's a good choice.
 
 ## 一、Benefits of using JSX
 
-### 1. 提供更加語意化且易懂的標籤
-由於 JSX 類似 XML 的語法，讓一些非開發人員也更容易看懂，且能精確定義包含屬性的樹狀結構。一般來說我們想做一個回饋表單，使用 HTML 寫法通常會長這樣：
+### 1. Provide Semantic Tags
+Due to its similarity to XML, JSX makes it easier for non-developers to understand and modify. 一般來說我們想做一個回饋表單，使用 HTML 寫法通常會長這樣：
 
 ```html
 <form class="messageBox">
