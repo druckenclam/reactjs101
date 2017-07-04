@@ -60,24 +60,24 @@ if(this.state.liked) {
 Do you feel that `React` + `JSX` are easier to read? In fact, as components grow more complex, JSX makes it more intuitive, more readable.
 
 ### 2. More Concise
-雖然最終 JSX 會轉換成 JavaScript，但使用 JSX 可以讓程式看起來更加簡潔，以下為使用 JSX 和不使用 JSX 的範例：
+JSX will be turned into JavaScript, but it makes programming simpler. Below are comparison between using JSX and not using JSX.
 
 ```html
 <a href="https://facebook.github.io/react/">Hello!</a>
 ```
 
-不使用 JSX（記得我們說過 JSX 是選用的）：
+Not using JSX (remember JSX is optional):
 
 ```js
-// React.createElement(元件/HTML標籤, 元件屬性，以物件表示, 子元件)
+// React.createElement(Components/HTML tag, Properties, Objects, Sub Components)
 React.createElement('a', {href: 'https://facebook.github.io/react/'}, 'Hello!')
 ```
 
-### 3. 結合原生 JavaScript 語法
-JSX 並非一種全新的語言，而是一種語法糖（Syntatic Sugar），一種語法類似 XML 的 ECMAScript 語法擴充，所以並沒有改變 JavaScript 語意。透過結合 JavaScript ，可以釋放 JavaScript 語言本身能力。下面例子就是運用 `map` 方法，輕易把 `result` 值迭代出來，產生無序清單（ul）的內容，不用再使用蹩腳的模版語言（這邊有個小地方要留意的是每個 `<li>` 元素記得加上獨特的 key 這邊用 map function 迭代出的 index，不然會出現問題）：
+### 3. Combining JavaScript Native Syntax
+JSX is not a new language, but (Syntatic Sugar), an XML like extension to ECMAScript. It doesn't change JavaScript semantics, fully realizing JavaScript's potentials. Below is an example using `map` methods, calculating `result` iteratively. 產生無序清單（ul）的內容，不用再使用蹩腳的模版語言（這邊有個小地方要留意的是每個 `<li>` 元素記得加上獨特的 key 這邊用 map function 迭代出的 index，不然會出現問題）：
 
 ```js
-// const 為常數
+// const indicates it's constant
 const lists = ['JavaScript', 'Java', 'Node', 'Python'];
 
 class HelloMessage extends React.Component {
@@ -92,8 +92,8 @@ class HelloMessage extends React.Component {
 }
 ```
 
-## 二、JSX 用法摘要
-### 1. 環境設定與使用方式
+## 二、JSX Usage
+### 1. Environment Setup
 初步了解為何要使用 JSX 後，我們來聊聊 JSX 的用法。一般而言 JSX 通常有兩種使用方式：
 
 1. 使用 [browserify](http://browserify.org/) 或 [webpack](https://webpack.github.io/) 等 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) bundler 並整合 [babel](https://babeljs.io/) 預處理
