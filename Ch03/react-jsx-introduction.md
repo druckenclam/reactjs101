@@ -10,7 +10,7 @@ JSX utilize the powerful features of JavaScript, abandoning templates. This is d
 ## 一、Benefits of using JSX
 
 ### 1. Provide Semantic Tags
-Due to its similarity to XML, JSX makes it easier for non-developers to understand and modify. 一般來說我們想做一個回饋表單，使用 HTML 寫法通常會長這樣：
+Due to its similarity to XML, JSX makes it easier for non-developers to understand and modify. If we want to write a form in HTML, it will look like:
 
 ```html
 <form class="messageBox">
@@ -19,17 +19,17 @@ Due to its similarity to XML, JSX makes it easier for non-developers to understa
 </form>
 ```
 
-使用 JSX，就像 XML 語法結構一樣可以自行定義標籤且有開始和關閉，容易理解：
+JSX, similar to XML, allows for definition of custom tags with openning tags and closing ones.
 
 ```js
 <MessageBox />
 ```
 
-React 思路認為使用 Component 比起模版（Template）和顯示邏輯（Display Logic）更能實現關注點分離的概念，而搭配 JSX 可以實現聲明式 `Declarative`（注重 what to），而非命令式  `Imperative`（注重 how to）的程式撰寫方式：
+React believes component are better than templat and display logic in terms of separation of concerns. JSX helps implement `Declarative`, not `Imperative` UI designing:
 
 ![Facebook 上面按讚功能](./images/fb_like.jpg)
 
-以 Facebook 上面按讚功能來說，若是命令式 `Imperative` 寫法大約會是長這樣：
+Taking above like functionality of Facebook for example, `Imperative` code will look like:
 
 ```js
 
@@ -47,7 +47,7 @@ if(userLikes()) {
 
 ```
 
-若是聲明式 `Declarative` 則是會長這樣：
+`Declarative` will be like:
 
 ```js
 if(this.state.liked) {
@@ -59,7 +59,7 @@ if(this.state.liked) {
 
 看完上述說明是不是感覺 `React` 結合 `JSX` 的寫法更易讀易懂？事實上，當 Component 組成越來越複雜時，若使用 JSX 將可以讓整個結構更加直觀，可讀性較高。
 
-### 2. 更加簡潔
+### 2. More Concise
 雖然最終 JSX 會轉換成 JavaScript，但使用 JSX 可以讓程式看起來更加簡潔，以下為使用 JSX 和不使用 JSX 的範例：
 
 ```html
