@@ -98,10 +98,10 @@ JSX is so important in React components, we will go deeper with JSX next chapter
 In tranditional web development, jQuery operates directly on DOM. Modification of DOM is usually the bottomneck of Web. So React introced Virtual DOM that connects App and real DOM. When there is a change, React calculates the diff on virtual DOM to minimize the change and then apply the change to real DOM.
 
 ## Component PropType Error Prevention
-在 React 設計時除了提供 props 預設值設定（Default Prop Values）外，也提供了 Prop 的驗證（Validation）機制，讓整個 Component 設計更加穩健：
+Not only does React provides Default Prop Values, it also has Prop Validation mechanism, leading to more robust Component design：
 
 ```javascript
-//  注意元件開頭第一個字母都要大寫
+//  First letter of a Components must be captalized
 class MyComponent extends React.Component {
 	// render 是 Class based 元件唯一必須的方法（method）
 	render() {
@@ -111,20 +111,20 @@ class MyComponent extends React.Component {
 	}
 }
 
-// PropTypes 驗證，若傳入的 props type 不符合將會顯示錯誤
+// PropTypes Validation, if props types don't match, erro messages will be flagged
 MyComponent.propTypes = {
   todo: React.PropTypes.object,
   name: React.PropTypes.string,
 }
 
-// Prop 預設值，若對應 props 沒傳入值將會使用 default 值
+// Prop Defatul Value
 MyComponent.defaultProps = {
  todo: {}, 
  name: '', 
 }
 ```
 
-關於更多的 Validation 用法可以參考[官方網站](https://facebook.github.io/react/docs/reusable-components.html) 的說明。
+More about Validation can be found at [Official Web Site](https://facebook.github.io/react/docs/reusable-components.html) 的說明。
 
 ## Component Operates like a State Machine with Life Cycle
 Component 就像個狀態機（State Machine），根據不同的 state（透過 `setState()` 修改）和 props（由父元素傳入），Component 會出現對應的顯示結果。而人有生老病死，元件也有生命週期。透過操作生命週期處理函數，可以在對應的時間點進行 Component 需要的處理，關於更詳細的元件生命週期介紹我們會再下一個章節進行更一步說明。
