@@ -57,7 +57,7 @@ if(this.state.liked) {
 }
 ```
 
-看完上述說明是不是感覺 `React` 結合 `JSX` 的寫法更易讀易懂？事實上，當 Component 組成越來越複雜時，若使用 JSX 將可以讓整個結構更加直觀，可讀性較高。
+Do you feel that `React` + `JSX` are easier to read? In fact, as components grow more complex, JSX makes it more intuitive, more readable.
 
 ### 2. More Concise
 雖然最終 JSX 會轉換成 JavaScript，但使用 JSX 可以讓程式看起來更加簡潔，以下為使用 JSX 和不使用 JSX 的範例：
