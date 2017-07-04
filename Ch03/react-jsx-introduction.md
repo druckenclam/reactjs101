@@ -74,7 +74,7 @@ React.createElement('a', {href: 'https://facebook.github.io/react/'}, 'Hello!')
 ```
 
 ### 3. Combining JavaScript Native Syntax
-JSX is not a new language, but (Syntatic Sugar), an XML like extension to ECMAScript. It doesn't change JavaScript semantics, fully realizing JavaScript's potentials. Below is an example using `map` methods, calculating `result` iteratively. 產生無序清單（ul）的內容，不用再使用蹩腳的模版語言（這邊有個小地方要留意的是每個 `<li>` 元素記得加上獨特的 key 這邊用 map function 迭代出的 index，不然會出現問題）：
+JSX is not a new language, but (Syntatic Sugar), an XML like extension to ECMAScript. It doesn't change JavaScript semantics, fully realizing JavaScript's potentials. Below is an example using `map` methods, calculating `result` iteratively. It generates (ul) without using templates (`<li>` requires a key to be added map function, we use index for now. Without a key, reconciliation will be affected):
 
 ```js
 // const indicates it's constant
@@ -94,10 +94,10 @@ class HelloMessage extends React.Component {
 
 ## 二、JSX Usage
 ### 1. Environment Setup
-初步了解為何要使用 JSX 後，我們來聊聊 JSX 的用法。一般而言 JSX 通常有兩種使用方式：
+Now that we know whey we need JSX, we are moving on to how ot use it. There are two ways to use it:
 
-1. 使用 [browserify](http://browserify.org/) 或 [webpack](https://webpack.github.io/) 等 [CommonJS](https://en.wikipedia.org/wiki/CommonJS) bundler 並整合 [babel](https://babeljs.io/) 預處理
-2. 於瀏覽器端做解析
+1. Use [browserify](http://browserify.org/) or  [webpack](https://webpack.github.io/) [CommonJS](https://en.wikipedia.org/wiki/CommonJS) bundler + [babel](https://babeljs.io/) to preprocess JSX
+2. Preprocess in browser
 
 在這邊簡單起見，我們先使用第二種方式，先讓大家專注熟悉 JSX 語法使用，等到後面章節再教大家使用 bundler 的方式去做解析（可以試著把下面的原始碼貼到 [JSbin](http://jsbin.com/) 的 HTML 看結果）：
 
