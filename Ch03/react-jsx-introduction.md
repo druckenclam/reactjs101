@@ -297,6 +297,6 @@ React.createElement("h1", React._spread({}, props, {value: "yo"}), "Hello React!
 （image via [adweek](http://www.adweek.com/socialtimes/files/2014/05/LikeButtoniOSApps650.jpg), [codecondo](http://codecondo.com/wp-content/uploads/2015/12/Useful-Features-of-React_7851.png)）
 
 ## :door: Dokodemo Door
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: ReactJS 與 Component 設計入門介紹](https://github.com/druckenclam/reactjs101/blob/en/Ch03/reactjs-introduction.md) | [Next Chapter: Props、State、Refs 與表單處理](https://github.com/druckenclam/reactjs101/blob/en/Ch04/props-state-introduction.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Introduction to React/JSX/Component](https://github.com/druckenclam/reactjs101/blob/en/Ch03/reactjs-introduction.md) | [Next Chapter: Props、State、Refs 與表單處理](https://github.com/druckenclam/reactjs101/blob/en/Ch04/props-state-introduction.md) |
 
 | [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
