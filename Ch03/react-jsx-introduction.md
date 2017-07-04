@@ -7,7 +7,7 @@ According to [React](https://facebook.github.io/react/) official website, React 
 
 JSX utilize the powerful features of JavaScript, abandoning templates. This is different from [Angular](https://angularjs.org/)'s notion for enhancing HTML. JSX is not mandatory; you can use React without JSX. Eventually JSX will turn into JavaScript (only thing that web browser understands). 不過等你閱讀完接下來的內容，你或許會開始發現 JSX 的好，認真考慮使用 JSX 的語法。
 
-## 一、使用 JSX 的好處
+## 一、Benefits of using JSX
 
 ### 1. 提供更加語意化且易懂的標籤
 由於 JSX 類似 XML 的語法，讓一些非開發人員也更容易看懂，且能精確定義包含屬性的樹狀結構。一般來說我們想做一個回饋表單，使用 HTML 寫法通常會長這樣：
