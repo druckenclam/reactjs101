@@ -99,7 +99,7 @@ Now that we know whey we need JSX, we are moving on to how ot use it. There are 
 1. Use [browserify](http://browserify.org/) or  [webpack](https://webpack.github.io/) [CommonJS](https://en.wikipedia.org/wiki/CommonJS) bundler + [babel](https://babeljs.io/) to preprocess JSX
 2. Preprocess in browser
 
-在這邊簡單起見，我們先使用第二種方式，先讓大家專注熟悉 JSX 語法使用，等到後面章節再教大家使用 bundler 的方式去做解析（可以試著把下面的原始碼貼到 [JSbin](http://jsbin.com/) 的 HTML 看結果）：
+For the sake of simplicity, we use 2nd one first, focusing use on JSX syntax. In later chapters, we will cover how to use bundler (one can try to paste code below to [JSbin](http://jsbin.com/)):
 
 ```html
 <!DOCTYPE html>
@@ -115,7 +115,7 @@ Now that we know whey we need JSX, we are moving on to how ot use it. There are 
   <body>
     <div id="example"></div>
     <script type="text/babel">
-      // 程式碼寫在這邊！
+      // Code starts here
       ReactDOM.render(
         <h1>Hello, world!</h1>,
         document.getElementById('example')
@@ -125,9 +125,9 @@ Now that we know whey we need JSX, we are moving on to how ot use it. There are 
 </html>
 ```
 
-一般載入 JSX 方式有：
+Load JSX：
 
-- 內嵌
+- embedded
 
 ```html
 <script type="text/babel">
@@ -138,13 +138,13 @@ Now that we know whey we need JSX, we are moving on to how ot use it. There are 
 </script>
 ```
 
-- 從外部引入
+- from a file
 
 `<script type="text/jsx" src="main.jsx"></script>` 
 
 
-### 2. 標籤用法
-JSX 標籤非常類似 XML ，可以直接書寫。一般 Component 命名首字大寫，HTML Tags 小寫。以下是一個建立 Component 的 class：
+### 2. Tag Usages
+JSX tags are very similar to XML. Component's first letter should be capitalized;  HTML Tags use all small letters. Below is a class based Component:
 
 ```js
 class HelloMessage extends React.Component {
@@ -159,15 +159,15 @@ class HelloMessage extends React.Component {
 }
 ```
 
-### 3. 轉換成 JavaScript 
+### 3. Convertion to JavaScript 
 
-JSX 最終會轉換成瀏覽器可以讀取的 JavaScript，以下為其規則：
+JSX will be transpiled to JavaScript:
 
 ```js
 React.createElement(
-  string/ReactClass, // 表示 HTML 元素或是 React Component
-  [object props], // 屬性值，用物件表示
-  [children] // 接下來參數皆為元素子元素
+  string/ReactClass, // React Component or HTML
+  [object props], // attributes (using objects)
+  [children] // sub components
 )
 ```
 
