@@ -62,7 +62,7 @@ React Component can be written in two ways:
 	ReactDOM.render(<MyComponent/>, document.getElementById('app'));
 	```
 
-2. Functional Component (pure stateless components for UI rendering, there is no status, 實作物件, reference，or life-cycle functions. Stateless components are faster than stateful ones)
+2. Functional Component (pure stateless components for UI rendering, there is no status, objects, reference，or life-cycle functions. Stateless components are faster than stateful ones)
 
 	```javascript
 	// Use arrow function to write Functional Component, making UI design simpler and reducing side effect
@@ -75,7 +75,7 @@ React Component can be written in two ways:
 	```
 
 ## Declarative UI Design with JSX
-React 在設計上的思路認為使用 Component 比起模版（Template）和顯示邏輯（Display Logic）更能實現關注點分離的概念，而搭配 JSX 可以實現聲明式 Declarative（注重 what to），而非命令式 Imperative（注重 how to）的程式撰寫方式。
+React believes that components based development better serves the purpose of separation of concerns, compared to template based methods and display logic. JSX implements declarative programming, instead of imperative one.
 
 像下述的宣告式（Declarative）UI 設計就比單純用（Template）式的方式更易懂：
 
