@@ -103,7 +103,7 @@ Not only does React provides Default Prop Values, it also has Prop Validation me
 ```javascript
 //  First letter of a Components must be captalized
 class MyComponent extends React.Component {
-	// render 是 Class based 元件唯一必須的方法（method）
+	// render is the only mandatory method
 	render() {
 		return (
 			<div>Hello, World!</div>
@@ -127,13 +127,13 @@ MyComponent.defaultProps = {
 More about Validation can be found at [Official Web Site](https://facebook.github.io/react/docs/reusable-components.html) 的說明。
 
 ## Component Operates like a State Machine with Life Cycle
-Component 就像個狀態機（State Machine），根據不同的 state（透過 `setState()` 修改）和 props（由父元素傳入），Component 會出現對應的顯示結果。而人有生老病死，元件也有生命週期。透過操作生命週期處理函數，可以在對應的時間點進行 Component 需要的處理，關於更詳細的元件生命週期介紹我們會再下一個章節進行更一步說明。
+Component is like a State Machine. Based on state (modified by `setState()`) and props (passed down from the parent components), Component display itself. 而人有生老病死，元件也有生命週期。透過操作生命週期處理函數，可以在對應的時間點進行 Component 需要的處理，關於更詳細的元件生命週期介紹我們會再下一個章節進行更一步說明。
 
 ## Always Redraw and Unidirectional Data Flow
 在 React 世界中，props 和 state 是影響 React Component 長相的重要要素。其中 props 都是由父元素所傳進來，不能更改，若要更改 props 則必須由父元素進行更改。而 state 則是根據使用者互動而產生的不同狀態，主要是透過 setState() 方法進行修改。當 React 發現 props 或是 state 更新時，就會重繪整個 UI。當然你也可以使用 forceUpdate() 去強迫重繪 Component。而 React 透過整合 Flux 或 Flux-like（例如：Redux）可以更具體實現單向資料流（Unidirectional Data Flow），讓資料流的管理更為清晰。
 
-## 在 JavaScript 裡寫 CSS：Inline Style 
-在 React Component 中 CSS 使用 Inline Style 寫法，全都封裝在 JavaScript 當中：
+## Use CSS：Inline Style in JavaScript
+React Component Inline Style, everything goes into JavaScript files:
 
 ```javascript
 const divStyle = {
