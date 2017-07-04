@@ -77,25 +77,25 @@ React Component can be written in two ways:
 ## Declarative UI Design with JSX
 React believes that components based development better serves the purpose of separation of concerns, compared to template based methods and display logic. JSX implements declarative programming, instead of imperative one.
 
-像下述的宣告式（Declarative）UI 設計就比單純用（Template）式的方式更易懂：
+Declarative UI is easier to under stand than Template UI:
 
 ```javascript
-// 使用宣告式（Declarative）UI 設計很容易可以看出這個元件的功能
+// Declarative UI designing are more easier to understand
 <MailForm />
 ```
 
 ```javascript
-// <MailForm /> 內部長相
+// <MailForm /> internals
 <form>
 	<input type="text" name="email" />
 	<button type="submit"></button>
 </form>
 ```
 
-由於 JSX 在 React 元件撰寫上扮演很重要的角色，因此在下一個章節我們也將更深入講解 JSX 使用細節。 
+JSX is so important in React components, we will go deeper with JSX next chapter. 
 
 ## Virtual DOM
-在傳統 Web 中一般是使用 jQuery 進行 DOM 的直接操作。然而更改 DOM 往往是 Web 效能的瓶頸，因此在 React 世界設計有 Virtual DOM 的機制，讓 App 和 DOM 之間用 Virtual DOM 進行溝通。當更改 DOM 時，會透過 React 自身的 diff 演算法去計算出最小更新，進而去最小化更新真實的 DOM。
+In tranditional web development, jQuery operates directly on DOM. Modification of DOM is usually the bottomneck of Web. So React introced Virtual DOM that connects App and real DOM. When there is a change, React calculates the diff on virtual DOM to minimize the change and then apply the change to real DOM.
 
 ## Component PropType Error Prevention
 在 React 設計時除了提供 props 預設值設定（Default Prop Values）外，也提供了 Prop 的驗證（Validation）機制，讓整個 Component 設計更加穩健：
