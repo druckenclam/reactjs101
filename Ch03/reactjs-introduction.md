@@ -127,7 +127,7 @@ MyComponent.defaultProps = {
 More about Validation can be found at [Official Web Site](https://facebook.github.io/react/docs/reusable-components.html).
 
 ## Component Operates like a State Machine with Life Cycle
-Component is like a State Machine. Based on state (modified by `setState()`) and props (passed down from the parent components), Component display itself. Just like human-being, components have life-cycles. Life-cycle processing functions allows us to process components when it's mounted or unmounted. We will cover more about life-cycle management in the next chapter.
+Component is like a State Machine. Based on state (modified by `setState()`) and props (passed down from the parent components), Component display itself. Just like human-beings, components have life-cycles. Life-cycle processing functions allows us to process components when it's mounted or unmounted. We will cover more about life-cycle management in the next chapter.
 
 ## Always Redraw and Unidirectional Data Flow
 In the world of React, props and state affects the appearance of React Components. Props, passed down from the parents, are immutable. State tracks the interactivity, are modified by setState(). When React find props or state change, it will redraw the entire UI. One can use forceUpdate() to force redrawing of every Component. Combed with Flux, or Flux-like tools such as Redux, React is able to implement Unidirectional Data Flow, making data flow management simpler and easier.
