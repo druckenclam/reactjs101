@@ -286,17 +286,17 @@ React.createElement("h1", React._spread({}, props, {value: "yo"}), "Hello React!
 <HelloMessage onClick={this.onBtn} />
 ```
 
-## 總結
+## Summary
 以上就是 JSX 簡明入門教學，希望透過以上介紹，讓讀者了解在 React 中為何要使用 JSX，以及 JSX 基本概念和用法。最後為大家複習一下：在 React 世界裡，所有事物都是以 Component 為基礎，通常會將同一個 Component 相關的程式和資源都放在一起，而在撰寫 React Component 時我們常會使用 [JSX](https://facebook.github.io/jsx/) 的方式來提升程式撰寫效率。JSX 是一種語法類似 XML 的 ECMAScript 語法擴充，可以善用 JavaScript 的強大能力，放棄蹩腳的模版語言。當然 JSX 並非強制使用，你也可以選擇不用，因為最終 JSX 的內容會轉化成 JavaScript。當相信閱讀完上述的內容後，你會開始認真考慮使用 JSX 的語法。
 
-## 延伸閱讀
+## Further Reading
 1. [Imperative programming or declarative programming](http://www.puritys.me/docs-blog/article-320-Imperative-programming-or-declarative-programming.html)
 2. [JSX in Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
-3. [從零開始學 React（ReactJS 101）](https://www.gitbook.com/book/kdchang/react101/details)
+3. [Learn React from Scratch (ReactJS 101) (Chinese)](https://www.gitbook.com/book/kdchang/react101/details)
 
 （image via [adweek](http://www.adweek.com/socialtimes/files/2014/05/LikeButtoniOSApps650.jpg), [codecondo](http://codecondo.com/wp-content/uploads/2015/12/Useful-Features-of-React_7851.png)）
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：ReactJS 與 Component 設計入門介紹](https://github.com/kdchang/reactjs101/blob/master/Ch03/reactjs-introduction.md) | [下一章：Props、State、Refs 與表單處理](https://github.com/kdchang/reactjs101/blob/master/Ch04/props-state-introduction.md) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: ReactJS 與 Component 設計入門介紹](https://github.com/druckenclam/reactjs101/blob/en/Ch03/reactjs-introduction.md) | [Next Chapter: Props、State、Refs 與表單處理](https://github.com/druckenclam/reactjs101/blob/en/Ch04/props-state-introduction.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
