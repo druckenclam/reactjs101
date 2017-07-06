@@ -241,8 +241,8 @@ If an attributes doesn't appear, it's deemed `false`:
 <input type="button" disabled={false} />;
 ```
 
-### 6. 擴展屬性
-在 ES6 中使用 `...` 是迭代物件的意思，可以把所有物件對應的值迭代出來設定屬性，但要注意後面設定的屬性會蓋掉前面相同屬性：
+### 6. Spread Syntax
+ES6 use `...` expand iterable items, a attribute after attributes of the same name will take precedence.
 
 ```js
 var props = {
