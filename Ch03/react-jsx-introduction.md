@@ -7,7 +7,7 @@ According to [React](https://facebook.github.io/react/) official website, React 
 
 JSX utilize the powerful features of JavaScript, abandoning templates. This is different from [Angular](https://angularjs.org/)'s notion for enhancing HTML. JSX is not mandatory; you can use React without JSX. Eventually JSX will turn into JavaScript (only thing that web browser understands). After reading the material below, you shall be able to understand JSX and why it's a good choice.
 
-## 一、Benefits of using JSX
+## I Benefits of using JSX
 
 ### 1. Provide Semantic Tags
 Due to its similarity to XML, JSX makes it easier for non-developers to understand and modify. If we want to write a form in HTML, it will look like:
@@ -92,7 +92,7 @@ class HelloMessage extends React.Component {
 }
 ```
 
-## 二、JSX Usage
+## II JSX Usage
 ### 1. Environment Setup
 Now that we know whey we need JSX, we are moving on to how ot use it. There are two ways to use it:
 
