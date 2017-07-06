@@ -280,14 +280,14 @@ You can use either JSX with one `{}`, or JavaScript objects. It uses camelCase:
 ```
 
 ### 10. Event Handling
-事件處理為前端開發的重頭戲，在 JSX 中透過 inline 事件的綁定來監聽並處理事件（注意也是駝峰式寫法），更多事件處理方法請[參考官網](https://facebook.github.io/react/docs/events.html#supported-events)
+Event handling is the crux of the issue facing frontend developers. JSX use inline event binding (also camelCase). Please refere to [Official Reference] (https://facebook.github.io/react/docs/events.html#supported-events) for details.
 
 ```js
 <HelloMessage onClick={this.onBtn} />
 ```
 
 ## Summary
-以上就是 JSX 簡明入門教學，希望透過以上介紹，讓讀者了解在 React 中為何要使用 JSX，以及 JSX 基本概念和用法。最後為大家複習一下：在 React 世界裡，所有事物都是以 Component 為基礎，通常會將同一個 Component 相關的程式和資源都放在一起，而在撰寫 React Component 時我們常會使用 [JSX](https://facebook.github.io/jsx/) 的方式來提升程式撰寫效率。JSX 是一種語法類似 XML 的 ECMAScript 語法擴充，可以善用 JavaScript 的強大能力，放棄蹩腳的模版語言。當然 JSX 並非強制使用，你也可以選擇不用，因為最終 JSX 的內容會轉化成 JavaScript。當相信閱讀完上述的內容後，你會開始認真考慮使用 JSX 的語法。
+Above is our introductary tutorial to JSX. Hopefully readers now understands why React uses JSX, and the basic concepts and usages of JSX. A brief recap: React is Component based. A components combines resources together including JavaScript, Html, and CSS. React Components can be better written with [JSX] (https://facebook.github.io/jsx/), which resembles XML, serving as an extension to ECMAScript. It aims to replace templates. It should be noted, JSX is not mandatory, as it eventually will be transpiled into JavaScript. We believe you should consider seriously about using JSX if you haven't been doing so.
 
 ## Further Reading
 1. [Imperative programming or declarative programming](http://www.puritys.me/docs-blog/article-320-Imperative-programming-or-declarative-programming.html)
@@ -297,6 +297,6 @@ You can use either JSX with one `{}`, or JavaScript objects. It uses camelCase:
 （image via [adweek](http://www.adweek.com/socialtimes/files/2014/05/LikeButtoniOSApps650.jpg), [codecondo](http://codecondo.com/wp-content/uploads/2015/12/Useful-Features-of-React_7851.png)）
 
 ## :door: Dokodemo Door
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Introduction to React/JSX/Component](https://github.com/druckenclam/reactjs101/blob/en/Ch03/reactjs-introduction.md) | [Next Chapter: Props、State、Refs 與表單處理](https://github.com/druckenclam/reactjs101/blob/en/Ch04/props-state-introduction.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Introduction to React/JSX/Component](https://github.com/druckenclam/reactjs101/blob/en/Ch03/reactjs-introduction.md) | [Next Chapter: Props、State、Refs and form processing](https://github.com/druckenclam/reactjs101/blob/en/Ch04/props-state-introduction.md) |
 
 | [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
