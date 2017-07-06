@@ -107,7 +107,7 @@ For the sake of simplicity, we use 2nd one first, focusing use on JSX syntax. In
   <head>
     <meta charset="UTF-8" />
     <title>Hello React!</title>
-    <!-- 請先於 index.html 中引入 react.js, react-dom.js 和 babel-core 的 browser.min.js -->
+    <!-- Introduce, in index.html, react.js, react-dom.js, and browser.min.js of babel-core -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
@@ -171,7 +171,7 @@ React.createElement(
 )
 ```
 
-解析前（特別注意在 JSX 中使用 JavaScript 表達式時使用 `{}` 括起，如下方範例的 `text`，裡面對應的是變數。若需放置一般文字，請加上 `''`）：
+Before transpilation（特別注意在 JSX 中使用 JavaScript 表達式時使用 `{}` 括起，如下方範例的 `text`，裡面對應的是變數。若需放置一般文字，請加上 `''`）：
 
 ```js
 var text = 'Hello React';
@@ -179,7 +179,7 @@ var text = 'Hello React';
 <h1>{'text'}</h1>
 ```
 
-解析完後：
+After transpilation:
 
 ```js
 var text = 'Hello React';
