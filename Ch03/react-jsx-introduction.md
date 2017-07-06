@@ -188,7 +188,7 @@ React.createElement("h1", null, "Hello React!");
 
 Because every JSX tag correspond to one JavaScript function, so the `render` function of Components can only return one Root Node. If you want to return multiple tags, they need to be enclosed by a component or, a `<div>`, or `<span>`.
 
-### 4. 註解
+### 4. Comments
 JSX Will be transpiled into JavaScript. It uses `//` 和 `/**/` for comments.
 
 ```js
@@ -226,15 +226,15 @@ class HelloMessage extends React.Component {
 }
 ```
 
-#### Boolean 屬性
-在 JSX 中預設只有屬性名稱但沒設值為 `true`，例如以下第一個 input 標籤 `disabled ` 雖然沒設值，但結果和下面的 input 為相同：
+#### Boolean Attributes
+In JSX boolean attributes with values omitted default to `true`. For example, the first input tag below has a `disabled` attribute without value, which has the same effect as the second input tag:
 
 ```html
 <input type="button" disabled />;
 <input type="button" disabled={true} />;
 ```
 
-反之，若是沒有屬性，則預設預設為 `false`：
+If an attributes doesn't appear, it's deemed `false`:
 
 ```html
 <input type="button" />;
