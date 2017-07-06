@@ -253,33 +253,33 @@ var props = {
 
 <HelloMessage  {...props} value="yo" />
 
-// 等於以下
+// After transpilation
 React.createElement("h1", React._spread({}, props, {value: "yo"}), "Hello React!");
 
 ```
 
-### 7. 自定義屬性
-若是希望使用自定義屬性，可以使用 `data-`：
+### 7. Self-defined Attribute
+Self-defined attributes starts with `data-`：
 
 ```js
 <HelloMessage data-attr="xd" />
 ```
 
-### 8. 顯示 HTML
-通常為了避免資訊安全問題，我們會過濾掉 HTML，若需要顯示的話可以使用：
+### 8. Display HTML
+For security, by default, the HTML tags are sanitized. In order to show them, one can use _html:
 
 ```html
 <div>{{_html: '<h1>Hello World!!</h1>'}}</div>
 ```
 
-### 9. 樣式使用
-在 JSX 中使用外觀樣式方法如下，第一個 `{}` 是 JSX 語法，第二個為 JavaScript 物件。與一般屬性值用 `-` 分隔不同，為駝峰式命名寫法：
+### 9. CSS
+You can use either JSX with one `{}`, or JavaScript objects. It uses camelCase:
 
 ```js
 <HelloMessage style={{ color: '#FFFFFF', fontSize: '30px'}} />
 ```
 
-### 10. 事件處理
+### 10. Event Handling
 事件處理為前端開發的重頭戲，在 JSX 中透過 inline 事件的綁定來監聽並處理事件（注意也是駝峰式寫法），更多事件處理方法請[參考官網](https://facebook.github.io/react/docs/events.html#supported-events)
 
 ```js
