@@ -1,6 +1,6 @@
-# Props、State、Refs 與表單處理
+# Next Chapter: Props、State、Refs and form processing
 
-## 前言
+## Introduction
 在前面的章節中我們已經對於 React 和 JSX 有初步的認識，我們也了解到 React Component 事實上可以視為顯示 UI 的一個狀態機（state machine），而這個狀態機根據不同的 state（透過 `setState()` 修改）和 props（由父元素傳入），Component 會出現對應的顯示結果。本章將使用 [React 官網首頁上的範例](https://facebook.github.io/react/index.html)（使用 ES6+）來更進一步說明 Props 和 State 特性及在 React 如何進行事件和表單處理。
 
 ## Props
@@ -284,15 +284,15 @@ class MarkdownEditor extends React.Component {
 ReactDOM.render(<MarkdownEditor />, document.getElementById('app'));
 ```
 
-## 總結
+## Summary
 以上透過幾個 React 官網首頁上的範例介紹了 Props 和 State 特性及在 React 如何進行事件和表單處理這些 React 中核心的問題，若還不熟悉的讀者建議重新親自動手照著範例中的程式碼敲過一遍，也可以使用像 [jsbin](http://jsbin.com/) 這樣所見即所得的工具來練習，更能熟悉相關語法和 API 喔！接下來我們將探討 Component 的生命週期。
 
-## 延伸閱讀
-1. [React 官方網站](https://facebook.github.io/react/index.html)
+## Further Reading
+1. [React Official Site](https://facebook.github.io/react/index.html)
 2. [Top-Level API](https://facebook.github.io/react/docs/top-level-api.html)
-3. [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)
+3. [Javascript：this usage (Chinese)](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：JSX 簡明入門教學指南](https://github.com/kdchang/reactjs101/blob/master/Ch03/react-jsx-introduction.md) | [下一章：React Component 規格與生命週期（Life Cycle）](https://github.com/kdchang/reactjs101/blob/master/Ch04/react-component-life-cycle.md) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: JSX 簡明入門教學指南](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) | [Next Chapter：React Component 規格與生命週期（Life Cycle）](https://github.com/druckenclam/reactjs101/blob/en/Ch04/react-component-life-cycle.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
