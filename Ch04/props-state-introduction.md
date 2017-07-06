@@ -1,7 +1,7 @@
 # Next Chapter: Props、State、Refs and form processing
 
 ## Introduction
-在前面的章節中我們已經對於 React 和 JSX 有初步的認識，我們也了解到 React Component 事實上可以視為顯示 UI 的一個狀態機（state machine），而這個狀態機根據不同的 state（透過 `setState()` 修改）和 props（由父元素傳入），Component 會出現對應的顯示結果。本章將使用 [React 官網首頁上的範例](https://facebook.github.io/react/index.html)（使用 ES6+）來更進一步說明 Props 和 State 特性及在 React 如何進行事件和表單處理。
+We have established the basic notion of React and JSX. In essence, React Component is a state machine, representing UI. The state (changed by `setState()`) and props (from parents). Component will display the logic based on states. This chapter will use [React Official Example](https://facebook.github.io/react/index.html)(with ES6+) to demonstrate Props and State. It also covers how React handles event and forms.
 
 ## Props
 首先我們使用 React 官網上的 A Simple Component 來說明 props 的使用方式。由於傳入元件的 name 屬性為 Mark，故以下程式碼將會在瀏覽器顯示 Hello, Mark。針對傳入的 props 我們也有驗證和預設值的設計，讓我們撰寫的元件可以更加穩定健壯（robust）。
