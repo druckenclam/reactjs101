@@ -171,7 +171,7 @@ React.createElement(
 )
 ```
 
-Before transpilation（特別注意在 JSX 中使用 JavaScript 表達式時使用 `{}` 括起，如下方範例的 `text`，裡面對應的是變數。若需放置一般文字，請加上 `''`）：
+Before transpilation（remember enclose JavaScript Code with `{}`. For example,  `text` is a variable. To use string literal, one need to use `''`）：
 
 ```js
 var text = 'Hello React';
@@ -186,33 +186,33 @@ var text = 'Hello React';
 React.createElement("h1", null, "Hello React!");
 ```
 
-另外要特別要注意的是由於 JSX 最終會轉成 JavaScript 且每一個 JSX 節點都對應到一個 JavaScript 函數，所以在 Component 的 `render` 方法中只能回傳一個根節點（Root Nodes）。例如：若有多個 `<div>` 要 `render` 請在外面包一個 Component 或 `<div>`、`<span>` 元素。
+Because every JSX tag correspond to one JavaScript function, so the `render` function of Components can only return one Root Node. If you want to return multiple tags, they need to be enclosed by a component or, a `<div>`, or `<span>`.
 
 ### 4. 註解
-由於 JSX 最終會編譯成 JavaScript，註解也一樣使用 `//` 和 `/**/` 當做註解方式：
+JSX Will be transpiled into JavaScript. It uses `//` 和 `/**/` for comments.
 
 ```js
-// 單行註解
+// line comments
 
 /*
-  多行註解
+  multiple line comments
 */
 
 var content = (
   <List>
-      {/* 若是在子元件註解要加 {}  */}
+      {/* enclosed by {} within JSX */}
       <Item
-        /* 多行
-           註解
-           喔 */
-        name={window.isLoggedIn ? window.name : ''} // 單行註解
+        /* multiple
+           line
+           comments */
+        name={window.isLoggedIn ? window.name : ''} // line comment
       />
   </List>
 );
 ```
 
-### 5. 屬性
-在 HTML 中，我們可以透過標籤上的屬性來改變標籤外觀樣式，在 JSX 中也可以，但要注意 `class` 和 `for` 由於為 JavaScript 保留關鍵字用法，因此在 JSX 中使用 `className` 和 `htmlFor` 替代。
+### 5. Attributes
+HTML allows us to change attributes to change style of tags, so is true for JSX. Due to the fact that `class` and `for` are JavaScript reserved words, they are replaced by `className` and `htmlFor` in JSX respectively.
 
 ```js
 class HelloMessage extends React.Component {
