@@ -4,7 +4,7 @@
 We have established the basic notion of React and JSX. In essence, React Component is a state machine, representing UI. The state (changed by `setState()`) and props (from parents). Component will display the logic based on states. This chapter will use [React Official Example](https://facebook.github.io/react/index.html) (with ES6+) to demonstrate Props and State. It also covers how React handles event and forms.
 
 ## Props
-首先我們使用 React 官網上的 A Simple Component 來說明 props 的使用方式。由於傳入元件的 name 屬性為 Mark，故以下程式碼將會在瀏覽器顯示 Hello, Mark。針對傳入的 props 我們也有驗證和預設值的設計，讓我們撰寫的元件可以更加穩定健壯（robust）。
+First we use an example from React official website to demonstrate the usage of props. The attribute name is Mark, so the program below will display Hello, Mark in browsers. React has verification scheme for props, making our components more robust.
 
 HTML Markup：
 
@@ -17,7 +17,7 @@ HTML Markup：
   <title>A Component Using External Plugins</title>
 </head>
 <body>
-<!-- 這邊方便使用 CDN 方式引入 react 、 react-dom 進行講解，實務上和實戰教學部分我們會使用 webpack -->
+<!-- Use CDN to import react and react-dom. In real projects, we will use webpack -->
 <script src="https://fb.me/react-15.1.0.js"></script>
 <script src="https://fb.me/react-dom-15.1.0.js"></script>
   <div id="app"></div>
@@ -26,7 +26,7 @@ HTML Markup：
 </html>
 ```
 
-app.js，使用 ES6 Class Component 寫法：
+app.js, use ES6 Class Component Syntax:
 
 ```javascript
 class HelloMessage extends React.Component {
@@ -44,12 +44,12 @@ class HelloMessage extends React.Component {
 	}
 }
 
-// PropTypes 驗證，若傳入的 props type 不是 string 將會顯示錯誤
+// PropTypes Verification, If props type is not string, an error will be flagged
 HelloMessage.propTypes = {
   name: React.PropTypes.string,
 }
 
-// Prop 預設值，若對應 props 沒傳入值將會使用 default 值 Zuck
+// Prop default value, If props don't have name attribute, the default value will be Zuck
 HelloMessage.defaultProps = {
  name: 'Zuck',
 }
