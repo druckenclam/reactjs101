@@ -30,13 +30,13 @@ app.js, use ES6 Class Component Syntax:
 
 ```javascript
 class HelloMessage extends React.Component {
-	// 若是需要綁定 this.方法或是需要在 constructor 使用 props，定義 state，就需要 constructor。若是在其他方法（如 render）使用 this.props 則不用一定要定義 constructor
+	// If you want to bind this or use state, constructor is required. 
 	constructor(props) {
-		// 對於 OOP 物件導向程式設計熟悉的讀者應該對於 constructor 建構子的使用不陌生，事實上它是 ES6 的語法糖，骨子裡還是 prototype based 物件導向程式語言。透過 extends 可以繼承 React.Component 父類別。super 方法可以呼叫繼承父類別的建構子
+		// Readers with OOP background should be familiar with constructors. It's only syntax sugar; under the cover, it is still prototype based. extends is used for inheritance. super use to call constructor of parents
 		super(props);
 		this.state = {}
 	}
-	// render 是唯一必須的方法，但如果是單純 render UI 建議使用 Functional Component 寫法，效能較佳且較簡潔
+	// render is the only mandatory method. If it's a pure UI, it's recommended to use Functional Component for simplicity and performace
 	render() {
 		return (
 			<div>Hello {this.props.name}</div>
@@ -57,9 +57,9 @@ HelloMessage.defaultProps = {
 ReactDOM.render(<HelloMessage name="Mark" />, document.getElementById('app'));
 ```
 
-關於 React ES6 class constructor super() 解釋可以參考 [React ES6 class constructor super()](http://cheng.logdown.com/posts/2016/03/26/683329) 。
+Regarding React ES6 class constructor super() one can refer to [React ES6 class constructor super()](http://cheng.logdown.com/posts/2016/03/26/683329) 。
 
-使用 Functional Component 寫法：
+Use Functional Component:
 
 ```javascript
 // Functional Component 可以視為 f(d) => UI，根據傳進去的 props 繪出對應的 UI。注意這邊 props 是傳入函式的參數，因此取用 props 不用加 this
@@ -67,12 +67,12 @@ const HelloMessage = (props) => (
 	<div>Hello {props.name}</div>
 );
 
-// PropTypes 驗證，若傳入的 props type 不是 string 將會顯示錯誤
+// PropTypes verification, if props type is not string, an error will be flagged
 HelloMessage.propTypes = {
   name: React.PropTypes.string,
 }
 
-// Prop 預設值，若對應 props 沒傳入值將會使用 default 值 Zuck。用法等於 ES5 的 getDefaultProps
+// Prop default value. If props doesn't have name attribute, the default value will be Zuck. It's equivalent to getDefaultProps in ES5.
 HelloMessage.defaultProps = {
  name: 'Zuck',
 }
@@ -80,7 +80,7 @@ HelloMessage.defaultProps = {
 ReactDOM.render(<HelloMessage name="Mark" />, document.getElementById('app'));
 ```
 
-在 jsbin 上的範例：
+Example on jsbin:
 
 <a class="jsbin-embed" href="http://jsbin.com/wadice/embed?html,js,console,output">A Component Using External Plugins on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
