@@ -169,7 +169,7 @@ HTML Markup：
 app.js：
 
 ```javascript
-// TodoApp 元件中包含了顯示 Todo 的 TodoList 元件，Todo 的內容透過 props 傳入 TodoList 中。由於 TodoList 僅單純 Render UI 不涉及內部 state 操作是 stateless component，所以使用 Functional Component 寫法。需要特別注意的是這邊我們用 map function 來迭代 Todos，需要留意的是每個迭代的元素必須要有 unique key 不然會發生錯誤（可以用自定義 id，或是使用 map function 的第二個參數 index）
+// TodoApp consists of TodoList Components, which show TODOs. Todos are passed down via props into TodoList. TodoList only Renders UI, doesn't change state, so it is a stateless component, and we use Functional Component. Please note we use map function to iterate Todos. Each li must have a unique key, or there will be errors (one can define one's own id, or use the 2nd argument of map function -- index)
 const TodoList = (props) => (
 	<ul>
 		{
