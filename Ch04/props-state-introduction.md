@@ -180,7 +180,7 @@ const TodoList = (props) => (
 	</ul>
 )
 
-// 整個 App 的主要元件，這邊比較重要的是事件處理的部份，內部有
+// App component shows event handling
 class TodoApp extends React.Component {
 	constructor(props) {
 		super(props);
@@ -217,7 +217,7 @@ class TodoApp extends React.Component {
 ReactDOM.render(<TodoApp />, document.getElementById('app'));
 ```
 
-以上介紹了 React 事件處理的部份，除了 `onChange` 和 `onSubmit` 外，React 也封裝了常用的事件處理，如 `onClick` 等。若想更進一步了解有哪些可以使用的事件處理方法可以參考 [官網的 Event System](https://facebook.github.io/react/docs/events.html)。
+The above covers React event handling. Other than `onChange` and `onSubmit`, React also encapsulate other common events, such as `onClick`. For more events, one can refer to [Official Website Event System](https://facebook.github.io/react/docs/events.html)。
 
 ## Refs 與表單處理
 上面介紹了 props（傳入後就不能修改）、state（隨著使用者互動而改變）和事件處理機制後，我們將接續介紹如何在 React 中進行表單處理。同樣我們使用 React 官網範例 A Component Using External Plugins 進行介紹。由於 React 可以容易整合外部的 libraries（例如：jQuery），本範例將使用 `remarkable` 結合 `ref` 屬性取出 DOM Value 值（另外比較常用的作法是使用 `onChange` 事件處理方式處理表單內容），讓使用者可以使用 Markdown 語法的所見即所得編輯器（editor）。
@@ -258,7 +258,7 @@ class MarkdownEditor extends React.Component {
 	handleChange() {
 	    this.setState({value: this.refs.textarea.value});
 	}
-	// 將使用者輸入的 Markdown 語法 parse 成 HTML 放入 DOM 中，React 通常使用 virtual DOM 作為和 DOM 溝通的中介，不建議直接由操作 DOM。故使用時的屬性為 dangerouslySetInnerHTML
+	// Parse Markdown into HTML and store the resultant HTML into DOM. React uses virtual DOM to communicate with DOM. Direct operations on DOM is not recommended. So the attribute is set to dangerouslySetInnerHTML
 	rawMarkup() {
 	    const md = new Remarkable();
 	    return { __html: md.render(this.state.value) };
@@ -285,7 +285,7 @@ ReactDOM.render(<MarkdownEditor />, document.getElementById('app'));
 ```
 
 ## Summary
-以上透過幾個 React 官網首頁上的範例介紹了 Props 和 State 特性及在 React 如何進行事件和表單處理這些 React 中核心的問題，若還不熟悉的讀者建議重新親自動手照著範例中的程式碼敲過一遍，也可以使用像 [jsbin](http://jsbin.com/) 這樣所見即所得的工具來練習，更能熟悉相關語法和 API 喔！Next we will cover Component Life-Cycle.
+We have used examples from React Official Website to demonstrate Props, State, and React event handling, and form submission. If you are not familar with those material, it's recommended to type in the code and run it yourself. Or you can practice with tools like [jsbin](http://jsbin.com/)!Next we will cover Component Life-Cycle.
 
 ## Further Reading
 1. [React Official Site](https://facebook.github.io/react/index.html)
