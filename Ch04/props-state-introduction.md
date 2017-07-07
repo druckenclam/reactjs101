@@ -85,7 +85,7 @@ Example on jsbin:
 <a class="jsbin-embed" href="http://jsbin.com/wadice/embed?html,js,console,output">A Component Using External Plugins on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
 ## State
-接下來我們將使用 A Stateful Component 這個範例來講解 State 的用法。在 React Component 可以自己管理自己的內部 state，並用 `this.state` 來存取 state。當 `setState()` 方法更新了 state 後將重新呼叫 `render()` 方法，重新繪製 component 內容。以下範例是一個每 1000 毫秒（等於1秒）就會加一的累加器。由於這個範例是 Stateful Component 因此僅使用 ES6 Class Component，而不使用 Functional Component。
+Below we will use a Stateful Component to illustrate State. React Component manages an internal state, referenced by `this.state`. When `setState()` is invoked to update state, `render()` will be invoked to redraw the component. Below is a counter that increase itself by 1 every 1000 ms (1s). It's a Stateful Component, so we use ES6 Class Component, rather than Functional Component.
 
 HTML Markup：
 
@@ -142,9 +142,9 @@ class Timer extends React.Component {
 ReactDOM.render(<Timer />, document.getElementById('app'));
 ```
 
-關於 Javascript this 用法可以參考 [Javascript：this用法整理](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)。
+Javascript this usages can be found at [Javascript：this usage (Chinese)](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)。
 
-## 事件處理（Event Handle）
+## Event Handle
 在前面的內容我們已經學會如何使用 props 和 state，接下來我們要更進一步學習在 React 內如何進行事件處理。下列將使用 React 官網的 An Application 當做例子，實作出一個簡單的 TodoApp。
 
 HTML Markup：
@@ -285,7 +285,7 @@ ReactDOM.render(<MarkdownEditor />, document.getElementById('app'));
 ```
 
 ## Summary
-以上透過幾個 React 官網首頁上的範例介紹了 Props 和 State 特性及在 React 如何進行事件和表單處理這些 React 中核心的問題，若還不熟悉的讀者建議重新親自動手照著範例中的程式碼敲過一遍，也可以使用像 [jsbin](http://jsbin.com/) 這樣所見即所得的工具來練習，更能熟悉相關語法和 API 喔！接下來我們將探討 Component 的生命週期。
+以上透過幾個 React 官網首頁上的範例介紹了 Props 和 State 特性及在 React 如何進行事件和表單處理這些 React 中核心的問題，若還不熟悉的讀者建議重新親自動手照著範例中的程式碼敲過一遍，也可以使用像 [jsbin](http://jsbin.com/) 這樣所見即所得的工具來練習，更能熟悉相關語法和 API 喔！Next we will cover Component Life-Cycle.
 
 ## Further Reading
 1. [React Official Site](https://facebook.github.io/react/index.html)
