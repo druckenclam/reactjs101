@@ -62,7 +62,7 @@ Regarding React ES6 class constructor super() one can refer to [React ES6 class 
 Use Functional Component:
 
 ```javascript
-// Functional Component 可以視為 f(d) => UI，根據傳進去的 props 繪出對應的 UI。注意這邊 props 是傳入函式的參數，因此取用 props 不用加 this
+// Functional Component takes the form f(d) => UI. It draws UI based on the input props. props is an argument to a function. so no this is needed
 const HelloMessage = (props) => (
 	<div>Hello {props.name}</div>
 );
@@ -72,7 +72,7 @@ HelloMessage.propTypes = {
   name: React.PropTypes.string,
 }
 
-// Prop default value. If props doesn't have name attribute, the default value will be Zuck. It's equivalent to getDefaultProps in ES5.
+// Prop default value. If props doesn't have name attribute, the default value will be Zuck. It's equivalent to getDefaultProps in React + ES5.
 HelloMessage.defaultProps = {
  name: 'Zuck',
 }
