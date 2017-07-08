@@ -219,10 +219,10 @@ ReactDOM.render(<TodoApp />, document.getElementById('app'));
 
 The above covers React event handling. Other than `onChange` and `onSubmit`, React also encapsulate other common events, such as `onClick`. For more events, one can refer to [Official Website Event System](https://facebook.github.io/react/docs/events.html)。
 
-## Refs 與表單處理
-上面介紹了 props（傳入後就不能修改）、state（隨著使用者互動而改變）和事件處理機制後，我們將接續介紹如何在 React 中進行表單處理。同樣我們使用 React 官網範例 A Component Using External Plugins 進行介紹。由於 React 可以容易整合外部的 libraries（例如：jQuery），本範例將使用 `remarkable` 結合 `ref` 屬性取出 DOM Value 值（另外比較常用的作法是使用 `onChange` 事件處理方式處理表單內容），讓使用者可以使用 Markdown 語法的所見即所得編輯器（editor）。
+## Refs and Form Processing
+We have covered props (immutable), state (Changes with interaction with users), and event handling. We will introduce how to process form in submit. We will use official example A Component Using External Plugins for example. It's very easy to integrate React with 3rd party libraries such as JQuery. We are using `remarkable` + `ref` to retrieve DOM Value. (Alternatively, one can use `onChange`). User can use Markdown editor.
 
-HTML Markup（除了引入 `react` 、 `react-dom` 還要用 `CDN` 方式引入 `remarkable` 這個 `Markdown` 語法 parser 套件，記得如果沒有使用 Webpack 或是 browserify + babelify 等工具需要引入 `babel-standalone` 瀏覽器解析 ES6 語法並於引入 script 加上 type="text/babel"）：
+HTML Markup (use CDN to introduce `react`, `react-dom` and `remarkable`, the `Markdown` parser. If Webpack or browserify + babelify is not used, one need to add type="text/babel" to script if ES6 is used):
 
 ```html
 <!DOCTYPE html>
@@ -293,6 +293,6 @@ We have used examples from React Official Website to demonstrate Props, State, a
 3. [Javascript：this usage (Chinese)](https://software.intel.com/zh-cn/blogs/2013/10/09/javascript-this)
 
 ## :door: Dokodemo Door
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Introduction to JSX](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) | [Next Chapter：React Component 規格與生命週期（Life Cycle）](https://github.com/druckenclam/reactjs101/blob/en/Ch04/react-component-life-cycle.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Introduction to JSX](https://github.com/druckenclam/reactjs101/blob/en/Ch03/react-jsx-introduction.md) | [Next Chapter：React Component Life Cycle](https://github.com/druckenclam/reactjs101/blob/en/Ch04/react-component-life-cycle.md) |
 
 | [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
