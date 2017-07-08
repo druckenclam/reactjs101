@@ -1,9 +1,9 @@
-# React Component 規格與生命週期（Life Cycle）
+# React Component Life Cycle
 
-## 前言
+## Introduction
 經過前面的努力相信目前讀者對於用 React 開發一些簡單的元件（Component）已經有一定程度的掌握了，現在我們將更細部探討 React Component 的規格和其生命週期。
 
-## React Component 規格
+## React Component Specification
 若讀者還有印象的話，我們前面介紹 React 特性時有描述 React 的主要撰寫方式有兩種：一種是使用 ES6 Class，另外一種是 Stateless Components，使用 Functional Component 的寫法，單純渲染 UI。這邊再幫大家複習一下上一個章節的簡單範例：
 
 1. 使用 ES6 的 Class（可以進行比較複雜的操作和元件生命週期的控制，相對於 stateless components 耗費資源）
@@ -217,15 +217,15 @@ ReactDOM.render(
 
 <a class="jsbin-embed" href="http://jsbin.com/kupusa/embed?html,js,output">點擊看詳細範例</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
-## 總結
+## Summary
 以上介紹了 React Component 規格與生命週期（Life Cycle）的概念，其中生命週期的概念對於初學者來說可能會比較抽象，建議讀者跟著範例動手實作。接下來我們將更進一步介紹 `React Router` 讓讀者感受一下單頁式應用程式（single page application）的設計方式。
 
-## 延伸閱讀
+## Further Reading
 1. [Component Specs and Lifecycle](https://facebook.github.io/react/docs/component-specs.html#lifecycle-methods)
 
 （image via [react-lifecycle](http://imgh.us/react-lifecycle.svg)）
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：Props、State、Refs 與表單處理](https://github.com/kdchang/reactjs101/blob/master/Ch04/props-state-introduction.md) | [下一章：React Router 入門實戰教學](https://github.com/kdchang/reactjs101/blob/master/Ch05/react-router-introduction.md) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Props、State、Refs 與表單處理](https://github.com/druckenclam/reactjs101/blob/master/Ch04/props-state-introduction.md) | [Next Chapter: React Router 入門實戰教學](https://github.com/druckenclam/reactjs101/blob/master/Ch05/react-router-introduction.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Question, and Wish List](https://github.com/kdchang/reactjs101/issues) |
