@@ -1,15 +1,15 @@
 # React Component Life Cycle
 
 ## Introduction
-經過前面的努力相信目前讀者對於用 React 開發一些簡單的元件（Component）已經有一定程度的掌握了，現在我們將更細部探討 React Component 的規格和其生命週期。
+We have learned a bit how to develop React components. Now we will delve deeper into React Component specification and life cycle.
 
 ## React Component Specification
-若讀者還有印象的話，我們前面介紹 React 特性時有描述 React 的主要撰寫方式有兩種：一種是使用 ES6 Class，另外一種是 Stateless Components，使用 Functional Component 的寫法，單純渲染 UI。這邊再幫大家複習一下上一個章節的簡單範例：
+We have introduced two ways of writing React components: one is use ES6 Class; the other Stateless Components -- Functional Component to display UI only. Below is a recap of the last chapter's example:
 
-1. 使用 ES6 的 Class（可以進行比較複雜的操作和元件生命週期的控制，相對於 stateless components 耗費資源）
+1. Use ES6 Class for complex operation and life-cycle control
 
 	```javascript
-	//  注意元件開頭第一個字母都要大寫
+	//  The first letter must be capitalized
 	class MyComponent extends React.Component {
 		// render 是 Class based 元件唯一必須的方法（method）
 		render() {
@@ -19,21 +19,21 @@
 		}
 	}
 
-	// PropTypes 驗證，若傳入的 props type 不符合將會顯示錯誤
+	// PropTypes verification, if props type doesn't conform, it will show error
 	MyComponent.propTypes = {
 		name: React.PropTypes.string,
 	}
 
-	// Prop 預設值，若對應 props 沒傳入值將會使用 default 值，為每個實例化 Component 共用的值
+	// Prop default value. 
 	MyComponent.defaultProps = {
 	 	name: '',
 	}
 
-	// 將 <MyComponent /> 元件插入 id 為 app 的 DOM 元素中
+	// Mount <MyComponent /> to element marked by id app
 	ReactDOM.render(<MyComponent name="Mark"/>, document.getElmentById('app'));
 	```
 
-2. 使用 Functional Component 寫法（單純地 render UI 的 stateless components，沒有內部狀態、沒有實作物件和 ref，沒有生命週期函數。若非需要控制生命週期的話建議多使用 stateless components 獲得比較好的效能）
+2. Use Functional Component (for pure UI render, stateless components, no internal state and no ref, no life cycle functions.)
 
 	```javascript
 	// 使用 arrow function 來設計 Functional Component 讓 UI 設計更單純（f(D) => UI），減少副作用（side effect）
