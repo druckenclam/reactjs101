@@ -1,6 +1,6 @@
 # Ch05 React Router
 
-1. [React Router 入門實戰教學](https://github.com/kdchang/reactjs101/blob/master/Ch05/react-router-introduction.md)
+1. [React Router React Router Introductory Tutorial](https://github.com/druckenclam/reactjs101/blob/en/Ch05/react-router-introduction.md)
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) |
