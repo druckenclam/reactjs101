@@ -268,7 +268,7 @@ export default Repos;
 ![範例成果](./images/example.png "範例成果")
 
 ## Summary
-到這邊我們又一起完成了一個重要的一關，學習 `routing` 對於使用 `React` 開發複雜應用程式是非常重要的一步，接下來我們將一起學習一個相對獨立的單元 `ImmutableJS`，但學習 `ImmutableJS` 可以讓我們在使用 `React` 和 `Flux/Redux` 可以有更好的效能和避免一些副作用。
+We have past another important milestone. React `routing` is important for complex applications. Next we will learn something that are relatively detached from React -- `ImmutableJS`. It helps when we use `React` + `Flux/Redux` in terms of better performance and fewer side effects.
 
 ## Further Reading
 1. [Leveling Up With React: React Router](https://css-tricks.com/learning-react-router/)
