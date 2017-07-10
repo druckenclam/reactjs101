@@ -70,14 +70,14 @@ React Provides Hooks below to perform actions according to life-cycles:
 	- componentWillMount()
 	- componentDidMount()
 2. Updating
-	- componentWillReceiveProps(object nextProps)：已載入元件收到新的參數時呼叫
-	- shouldComponentUpdate(object nextProps, object nextState)：元件判斷是否重新渲染時呼叫，起始不會呼叫除非呼叫 forceUpdate()
+	- componentWillReceiveProps(object nextProps): Invoked when a component is about to receive new props
+	- shouldComponentUpdate(object nextProps, object nextState): check if a component needs rerendering. forceUpdate() will bypass the check
 	- componentWillUpdate(object nextProps, object nextState)
 	- componentDidUpdate(object prevProps, object prevState)
 3. Unmounting
 	- componentWillUnmount()
 
-很多讀者一開始學習 Component 生命週期時會覺得很抽象，所以接下來用一個簡單範例讓大家感受一下 Component 的生命週期。讀者可以發現當一開始載入元件時第一個會觸發 `console.log('constructor');`，依序執行 `componentWillMount`、`componentDidMount` ，而當點擊文字觸發 `handleClick()` 更新 `state` 時則會依序執行 `componentWillUpdate`、`componentDidUpdate`：
+Many readers may find Component Life Cycle abstract. We will be demonstrate it using an example below. 讀者可以發現當一開始載入元件時第一個會觸發 `console.log('constructor');`，依序執行 `componentWillMount`、`componentDidMount` ，而當點擊文字觸發 `handleClick()` 更新 `state` 時則會依序執行 `componentWillUpdate`、`componentDidUpdate`：
 
 HTML Markup：
 ```html
@@ -151,8 +151,8 @@ shouldComponentUpdate(nextProps, nextState) {
 }
 ```
 
-## Ajax 非同步處理
-若有需要進行 Ajax 非同步處理，請在 `componentDidMount` 進行處理。以下透過 `jQuery` 執行 `Ajax` 取得 `Github API`　資料當做範例：
+## Ajax Asynchronous Processing
+Ajax Asynchronous Processing is done in `componentDidMount`. The example below use `jQuery` to execute `Ajax` code to retrieve `Github API`.
 
 HTML Markup：
 
@@ -215,10 +215,10 @@ ReactDOM.render(
 );
 ```
 
-<a class="jsbin-embed" href="http://jsbin.com/kupusa/embed?html,js,output">點擊看詳細範例</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
+<a class="jsbin-embed" href="http://jsbin.com/kupusa/embed?html,js,output">Click on this one to see a detailed example</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
 ## Summary
-以上介紹了 React Component 規格與生命週期（Life Cycle）的概念，其中生命週期的概念對於初學者來說可能會比較抽象，建議讀者跟著範例動手實作。接下來我們將更進一步介紹 `React Router` 讓讀者感受一下單頁式應用程式（single page application）的設計方式。
+We have introduced React Component Specification and Life Cycle. Life Cycle is an abstract concept especially for beginners. We suggest readers to try typeing and running the examples. Next up, we will introduce `React Router`, upon which single page application can be built.
 
 ## Further Reading
 1. [Component Specs and Lifecycle](https://facebook.github.io/react/docs/component-specs.html#lifecycle-methods)
@@ -226,6 +226,6 @@ ReactDOM.render(
 （image via [react-lifecycle](http://imgh.us/react-lifecycle.svg)）
 
 ## :door: Dokodemo Door
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Props、State、Refs 與表單處理](https://github.com/druckenclam/reactjs101/blob/master/Ch04/props-state-introduction.md) | [Next Chapter: React Router 入門實戰教學](https://github.com/druckenclam/reactjs101/blob/master/Ch05/react-router-introduction.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: Props, State, Refs and Form Processing](https://github.com/druckenclam/reactjs101/blob/en/Ch04/props-state-introduction.md) | [Next Chapter: React Router Basics & Tutorial](https://github.com/druckenclam/reactjs101/blob/en/Ch05/react-router-introduction.md) |
 
 | [Correction, Question, and Wish List](https://github.com/kdchang/reactjs101/issues) |
