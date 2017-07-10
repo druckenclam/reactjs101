@@ -11,7 +11,7 @@ We have introduced two ways of writing React components: one is use ES6 Class; t
 	```javascript
 	//  The first letter must be capitalized
 	class MyComponent extends React.Component {
-		// render 是 Class based 元件唯一必須的方法（method）
+		// render is the only mandatory method for Class based method
 		render() {
 			return (
 				<div>Hello, {this.props.name}</div>
@@ -36,22 +36,22 @@ We have introduced two ways of writing React components: one is use ES6 Class; t
 2. Use Functional Component (for pure UI render, stateless components, no internal state and no ref, no life cycle functions.)
 
 	```javascript
-	// 使用 arrow function 來設計 Functional Component 讓 UI 設計更單純（f(D) => UI），減少副作用（side effect）
+	// Use arrow function to simplify Functional Components and reduce side effect
 	const MyComponent = (props) => (
 		<div>Hello, {props.name}</div>
 	);
 
-	// PropTypes 驗證，若傳入的 props type 不符合將會顯示錯誤
+	// PropTypes verification. If the constraints are not met, errors will be flagged.
 	MyComponent.propTypes = {
 		name: React.PropTypes.string,
 	}
 
-	// Prop 預設值，若對應 props 沒傳入值將會使用 default 值
+	// Prop default value. If no value is passed in, the default value will be used.
 	MyComponent.defaultProps = {
 		name: '',
 	}
 
-	// 將 <MyComponent /> 元件插入 id 為 app 的 DOM 元素中
+	// The mounting point for react component.
 	ReactDOM.render(<MyComponent name="Mark"/>, document.getElmentById('app'));
 	```
 
