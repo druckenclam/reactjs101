@@ -6,7 +6,7 @@
 At this point, you should be really proud of yourself for finishing the prior chapters. With all the basics on react, you probably can't wait to use it in real projects. Next we will introduct to our readers single page application.
 
 ## Single Page Application
-傳統的 Web 開發主要是由伺服器管理 URL Routing 和渲染 HTML 頁面，過往每次 URL 一換或使用者連結一點，就需要重新從伺服器端重新載入頁面。但隨著使用者對於使用者體驗的要求提昇，許多的網頁應用程式紛紛設計成不刷頁的單頁式應用程式（single page application），由前端負責 URL 的 routing 管理，若需要和後端進行 API 資料溝通的話，通常也會使用 Ajax 的技術。在 React 開發世界中主流是使用 [react-router](https://github.com/reactjs/react-router) 這個 routing 管理用的 library。
+Tranditional Web applications use URL Routing to render HTML pages. Whenever URL changes, browsers will have to reload pages from servers. With growing demand for user friendliness and responsiveness, many web applications have turned themselves into single page application without the need to refreshing pages. The routing is handled by frontend. If any data are needed, Ajax calls are used to communicate with backend. The most popular routing in React ecosystem is [react-router] (https://github.com/reactjs/react-router).
 
 ## React Router Environment Setting
 
@@ -109,7 +109,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 
 太好了！這樣我們就完成了開發環境的設定可以開始動手實作 `React Router` 應用程式了！	
 
-## 開始 React Routing 之旅
+## Start of React Routing
 
 HTML Markup：
 
