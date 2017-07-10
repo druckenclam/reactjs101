@@ -71,13 +71,13 @@ React Provides Hooks below to perform actions according to life-cycles:
 	- componentDidMount()
 2. Updating
 	- componentWillReceiveProps(object nextProps): Invoked when a component is about to receive new props
-	- shouldComponentUpdate(object nextProps, object nextState): check if a component needs rerendering. forceUpdate() will bypass the check
+	- shouldComponentUpdate(object nextProps, object nextState): check if a component needs rerendering. This method is not called for the initial render or when forceUpdate() is used.
 	- componentWillUpdate(object nextProps, object nextState)
 	- componentDidUpdate(object prevProps, object prevState)
 3. Unmounting
 	- componentWillUnmount()
 
-Many readers may find Component Life Cycle abstract. We will be demonstrate it using an example below. 讀者可以發現當一開始載入元件時第一個會觸發 `console.log('constructor');`，依序執行 `componentWillMount`、`componentDidMount` ，而當點擊文字觸發 `handleClick()` 更新 `state` 時則會依序執行 `componentWillUpdate`、`componentDidUpdate`：
+Many readers may find Component Life Cycle abstract. We will be demonstrate it using an example below. When the component is loaded, we will see `console.log('constructor');`, `componentWillMount`, and `componentDidMount`; When the text is clicked and `handleClick()` updates `state`, `componentWillUpdate` and `componentDidUpdate` will be called.
 
 HTML Markup：
 ```html
@@ -139,11 +139,11 @@ class MyComponent extends React.Component {
 ReactDOM.render(<MyComponent />, document.getElementById('app'));
 ```
 
-<a class="jsbin-embed" href="http://jsbin.com/yokebo/embed?html,js,console,output">點擊看詳細範例</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
+<a class="jsbin-embed" href="http://jsbin.com/yokebo/embed?html,js,console,output">Click to view the detaile example</a><script src="http://static.jsbin.com/js/embed.min.js?3.39.12"></script>
 
 ![React Component 規格與生命週期](./images/react-lifecycle.png)
 
-其中特殊處理的函數 `shouldComponentUpdate`，目前預設 `return true`。若你想要優化效能可以自己編寫判斷方式，若採用 `immutable` 可以使用 `nextProps === this.props` 比對是否有變動：
+`shouldComponentUpdate` by default `returns true`. If rendering needs to be optimized, one can utilize `immutable` to compare if props have changed via `nextProps === this.props`:
 
 ```javascript
 shouldComponentUpdate(nextProps, nextState) {
