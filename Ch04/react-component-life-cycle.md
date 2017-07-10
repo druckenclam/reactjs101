@@ -55,9 +55,9 @@ We have introduced two ways of writing React components: one is use ES6 Class; t
 	ReactDOM.render(<MyComponent name="Mark"/>, document.getElmentById('app'));
 	```
 
-值得留意的是在 ES6 Class 中 `render()` 是唯一必要的方法（但要注意的是請保持 `render()` 的純粹，不要在裡面進行 `state` 修改或是使用非同步方法和瀏覽器互動，若需非同步互動請於 `componentDidMount()` 操作），而 Functional Component 目前允許 `return null` 值。 喔對了，在 ES6 中也不支援 `mixins` 複用其他元件的方法了。
+In ES6 Class has only one mandatory method `render()`. (Please don't change or use asynchronous method talking to browsers. Any asynchronous communication must placed in `componentDidMount()`). Functional Component allows for `return null`. ES6 no longer support `mixins` or other methods of component reuse.
 
-## React Component 生命週期
+## React Component Cycle Life
 React Component，就像人會有生老病死一樣有生命週期。一般而言 Component 有以下三種生命週期的狀態：
 
 1. Mounting：已插入真實的 DOM
