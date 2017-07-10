@@ -3,9 +3,9 @@
 ![React Router 資料夾結構](./images/react-router.jpg "React Router 入門實戰教學")
 
 ## Introduction
-若你是從一開始一路走到這裡讀者請先給自己一個愛的鼓勵吧！在經歷了 React 基礎的訓練後，相信各位讀者應該都等不及想大展拳腳了！接下來我們將進行比較複雜的應用程式開發並和讀者介紹目前市場上常見的不刷頁單頁式應用程式（single page application）的設計方式。
+At this point, you should be really proud of yourself for finishing the prior chapters. With all the basics on react, you probably can't wait to use it in real projects. Next we will introduct to our readers single page application.
 
-## 單頁式應用程式（single page application）
+## Single Page Application
 傳統的 Web 開發主要是由伺服器管理 URL Routing 和渲染 HTML 頁面，過往每次 URL 一換或使用者連結一點，就需要重新從伺服器端重新載入頁面。但隨著使用者對於使用者體驗的要求提昇，許多的網頁應用程式紛紛設計成不刷頁的單頁式應用程式（single page application），由前端負責 URL 的 routing 管理，若需要和後端進行 API 資料溝通的話，通常也會使用 Ajax 的技術。在 React 開發世界中主流是使用 [react-router](https://github.com/reactjs/react-router) 這個 routing 管理用的 library。
 
 ## React Router Environment Setting
