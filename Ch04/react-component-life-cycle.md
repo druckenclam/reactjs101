@@ -58,13 +58,13 @@ We have introduced two ways of writing React components: one is use ES6 Class; t
 In ES6 Class has only one mandatory method `render()`. (Please don't change or use asynchronous method talking to browsers. Any asynchronous communication must placed in `componentDidMount()`). Functional Component allows for `return null`. ES6 no longer support `mixins` or other methods of component reuse.
 
 ## React Component Cycle Life
-React Component，就像人會有生老病死一樣有生命週期。一般而言 Component 有以下三種生命週期的狀態：
+React Components, like people, have life cycles. There are three status for a Component's life-cycle:
 
-1. Mounting：已插入真實的 DOM
-2. Updating：正在被重新渲染
-3. Unmounting：已移出真實的 DOM
+1. Mounting：Inserting to DOM
+2. Updating：Rerendering
+3. Unmounting：Unmounted from DOM
 
-針對 Component 的生命週期狀態 React 也有提供對應的處理方法：
+React Provides Hooks below to perform actions according to life-cycles:
 
 1. Mounting
 	- componentWillMount()
@@ -96,7 +96,7 @@ HTML Markup：
 </html>
 ```
 
-Component 生命週期展示：
+Component Life Cycle Demonstration
 
 ```javascript
 class MyComponent extends React.Component {
