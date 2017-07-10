@@ -1,14 +1,14 @@
-# React Router 入門實戰教學
+# React Router Introductory Tutorial
 
 ![React Router 資料夾結構](./images/react-router.jpg "React Router 入門實戰教學")
 
-## 前言
+## Introduction
 若你是從一開始一路走到這裡讀者請先給自己一個愛的鼓勵吧！在經歷了 React 基礎的訓練後，相信各位讀者應該都等不及想大展拳腳了！接下來我們將進行比較複雜的應用程式開發並和讀者介紹目前市場上常見的不刷頁單頁式應用程式（single page application）的設計方式。
 
 ## 單頁式應用程式（single page application）
 傳統的 Web 開發主要是由伺服器管理 URL Routing 和渲染 HTML 頁面，過往每次 URL 一換或使用者連結一點，就需要重新從伺服器端重新載入頁面。但隨著使用者對於使用者體驗的要求提昇，許多的網頁應用程式紛紛設計成不刷頁的單頁式應用程式（single page application），由前端負責 URL 的 routing 管理，若需要和後端進行 API 資料溝通的話，通常也會使用 Ajax 的技術。在 React 開發世界中主流是使用 [react-router](https://github.com/reactjs/react-router) 這個 routing 管理用的 library。
 
-## React Router 環境設置
+## React Router Environment Setting
 
 先透過以下指令在根目錄產生 npm 設定檔 `package.json` ：
 
@@ -267,19 +267,19 @@ export default Repos;
 
 ![範例成果](./images/example.png "範例成果")
 
-## 總結
+## Summary
 到這邊我們又一起完成了一個重要的一關，學習 `routing` 對於使用 `React` 開發複雜應用程式是非常重要的一步，接下來我們將一起學習一個相對獨立的單元 `ImmutableJS`，但學習 `ImmutableJS` 可以讓我們在使用 `React` 和 `Flux/Redux` 可以有更好的效能和避免一些副作用。
 
-## 延伸閱讀
+## Further Reading
 1. [Leveling Up With React: React Router](https://css-tricks.com/learning-react-router/)
 2. [Programmatically navigate using react router](http://stackoverflow.com/questions/31079081/programmatically-navigate-using-react-router)
-3. [React Router 使用教程](http://www.ruanyifeng.com/blog/2016/05/react_router.html)
-4. [React Router 中文文档](https://react-guide.github.io/react-router-cn/index.html)
+3. [React Router Tutorial (Chinese)](http://www.ruanyifeng.com/blog/2016/05/react_router.html)
+4. [React Router Document (Chinese)](https://react-guide.github.io/react-router-cn/index.html)
 5. [React Router Tutorial](https://github.com/reactjs/react-router-tutorial)
 
 （iamge via [seanamarasinghe](http://seanamarasinghe.com/wp-content/uploads/2016/01/react-router-1050x360.jpg)）
 
-## 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：React Component 規格與生命週期（Life Cycle）](https://github.com/kdchang/reactjs101/blob/master/Ch04/react-component-life-cycle.md) | [下一章：ImmutableJS 入門教學](https://github.com/kdchang/reactjs101/blob/master/Ch06/react-immutable-introduction.md) |
+## Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: React Component Specification and Life Cycle](https://github.com/druckenclam/reactjs101/blob/en/Ch04/react-component-life-cycle.md) | [Next Chapter: ImmutableJS Introductory Tutorial](https://github.com/druckenclam/reactjs101/blob/en/Ch06/react-immutable-introduction.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Questions and Wish List](https://github.com/kdchang/reactjs101/issues) |
