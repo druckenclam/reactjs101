@@ -10,13 +10,13 @@ Tranditional Web applications use URL Routing to render HTML pages. Whenever URL
 
 ## React Router Environment Setting
 
-先透過以下指令在根目錄產生 npm 設定檔 `package.json` ：
+Initialize npm projects by creating `package.json`:
 
 ```
 $ npm init
 ```
 
-安裝相關套件（包含開發環境使用的套件）：
+Install packages (including those used for dev only):
 
 ```shell
 $ npm install --save react react-dom react-router
@@ -26,7 +26,7 @@ $ npm install --save react react-dom react-router
 $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es2015 babel-preset-react eslint eslint-config-airbnb eslint-loader eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react webpack webpack-dev-server html-webpack-plugin
 ```
 
-安裝好後我們可以設計一下我們的資料夾結構，首先我們在根目錄建立 `src` 和 `res` 資料夾，分別放置 `script` 的 `source` 和靜態資源（如：全域使用的 `.css` 和圖檔）。在 `components` 資料夾中我們會放置所有 `components`（個別元件資料夾中會用 `index.js` 輸出元件，讓引入元件更簡潔），其餘設定檔則放置於根目錄下。
+We can now design our project structure. First, we create two folders `src` and `res` for `script source` and static resources respectively (for example, global `.css` and images). `components` folders, we place all the `components`（個別元件資料夾中會用 `index.js` 輸出元件，讓引入元件更簡潔），其餘設定檔則放置於根目錄下。
 
 ![React Router 資料夾結構](./images/folder.png "React Router 資料夾結構")
 
@@ -59,7 +59,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	}
 	```
 
-3. 設定 Webpack 設定檔： `webpack.config.js`
+3. setting up Webpack config file: `webpack.config.js`
 
 	```javascript
 	// 讓你可以動態插入 bundle 好的 .js 檔到 .index.html
@@ -71,7 +71,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	  inject: 'body',
 	});
 	
-	// entry 為進入點，output 為進行完 eslint、babel loader 轉譯後的檔案位置
+	// entry point, output 為進行完 eslint、babel loader 轉譯後的檔案位置
 	module.exports = {
 	  entry: [
 	    './src/index.js',
@@ -98,7 +98,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	      },
 	    }],
 	  },
-	  // 啟動開發測試用 server 設定（不能用在 production）
+	  // start testing server (not to be used for production）
 	  devServer: {
 	    inline: true,
 	    port: 8008,
@@ -107,7 +107,7 @@ $ npm install --save-dev babel-core babel-eslint babel-loader babel-preset-es201
 	};
 	```
 
-太好了！這樣我們就完成了開發環境的設定可以開始動手實作 `React Router` 應用程式了！	
+Great! We just finished setting up the environment for our `React Router` application.	
 
 ## Start of React Routing
 
