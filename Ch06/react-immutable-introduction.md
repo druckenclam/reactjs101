@@ -2,8 +2,8 @@
 
 ![ImmutableJS](./images/immutable.png "ImmutableJS")
 
-## 前言
-一般來說在 JavaScript 中有兩種資料類型：Primitive（String、Number、Boolean、null、undefinded）和 Object（Reference）。在 JavaScript 中物件的操作比起 Java 容易很多，但也因為相對彈性不嚴謹，所以產生了一些問題。在 JavaScript 中的 Object（物件）資料是 Mutable（可以變的），由於是使用 Reference 的方式，所以當修改到複製的值也會修改到原始值。例如下面的 `map2` 值是指到 `map1`，所以當 `map1` 值一改，`map2` 的值也會受影響。 
+## Introduction
+JavaScript data can be classified into two categories: Primitive (String、Number、Boolean、null、undefinded) and Object (Reference). Compared with Java, Objects in JavaScript are very flexible. This lead to some issues: JavaScript objects are mutable. Due to the Reference nature, any changes through one reference will impact the object values. In the example below, `map2` and `map1` point to the same objects. 
 
 ```javascript
 var map1 = { a: 1 }; 
@@ -11,9 +11,9 @@ var map2 = map1;
 map2.a = 2
 ```
 
-通常一般作法是使用 `deepCopy` 來避免修改，但這樣作法會產生較多的資源浪費。為了很好的解決這個問題，我們可以使用 `Immutable Data`，所謂的 Immutable Data 就是一旦建立，就不能再被修改的數據資料。
+The usually method is to use `deepCopy`. This will waste resources. To better solve the problem, we can utlize `Immutable Data` -- once established, the data cannot be modified.
 
-為了解決這個問題，在 2013 年時 Facebook 工程師 Lee Byron 打造了 [ImmutableJS](https://facebook.github.io/immutable-js/)，但並沒有被預設放到 React 工具包中（雖然有提供簡化的 Helper），但 `ImmutableJS` 的出現確實解決了 `React` 甚至 `Redux` 所遇到的一些問題。
+In 2013, Facebook Engineer Lee Byron developed [ImmutableJS] (https://facebook.github.io/immutable-js/), which is not part of React. `ImmutableJS` solved a lot of problems facing `React` and `Redux`.
 
 以下範例即是引入了 `ImmutableJS` 的效果，讀者可以發現，雖然我們操作了 `map1` 的值，但會發現原本的 `map1` 並未受到影響（因為任何修改都不會影響到原始資料），雖然使用 `deepCopy` 也可以模擬類似的效果但會浪費過多的計算資源和記憶體，`ImmutableJS` 則可以容易地共享沒有被修該到的資料（例如下面的資料 `b` 即為 `map1` 所 `map2` 共享），因而有更好的效能表現。 
 
@@ -27,7 +27,7 @@ map1.get('a'); // 1
 map2.get('a'); // 2
 ```
 
-## ImmutableJS 特性介紹
+## ImmutableJS Features
 ImmutableJS 提供了 7 種不可修改的資料類型：`List`、`Map`、`Stack`、`OrderedMap`、`Set`、`OrderedSet`、`Record`。若是對 Immutable 物件操作都會回傳一個新值。其中比較常用的有 `List`、`Map` 和 `Set`：
 
 1. Map：類似於 key/value 的 object，在 ES6 也有原生 `Map` 對應
@@ -242,10 +242,10 @@ class FooComponent extends React.Component {
 }
 ```
 
-## 總結
+## Summary
 雖然 `ImmutableJS` 的引入可以帶來許多好處和效能的提升但由於引入整體檔案較大且較具侵入性，在引入之前可以自行評估看看是否合適於目前的專案。接下來我們將在後面的章節講解如何將 `ImmutableJS` 和 `Redux` 整合應用到實務上的範例。 
 
-## 延伸閱讀
+## Further Reading
 1. [官方網站](https://facebook.github.io/immutable-js/)
 2. [Immutable.js初识](http://www.w3cplus.com/javascript/immutable-js.html)
 3. [Immutable 详解及 React 中实践](https://github.com/camsong/blog/issues/3)
@@ -258,7 +258,7 @@ class FooComponent extends React.Component {
 
 （image via [risingstack](https://risingstack-blog.s3.amazonaws.com/2016/Jan/immutable_logo_for_react_js_best_practices-1453211749818.png)）
 
-## :door: 任意門
-| [回首頁](https://github.com/kdchang/reactjs101) | [上一章：React Router 入門實戰教學](https://github.com/kdchang/reactjs101/blob/master/Ch05/react-router-introduction.md) | [下一章：Flux 基礎概念與實戰入門](https://github.com/kdchang/reactjs101/blob/master/Ch07/react-flux-introduction.md) |
+## :door: Dokodemo Door
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: React Router 入門實戰教學](https://github.com/druckenclam/reactjs101/blob/en/Ch05/react-router-introduction.md) | [Next Chapter: Flux 基礎概念與實戰入門](https://github.com/druckenclam/reactjs101/blob/en/Ch07/react-flux-introduction.md) |
 
-| [勘誤、提問或許願](https://github.com/kdchang/reactjs101/issues) |
+| [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
