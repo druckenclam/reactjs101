@@ -1,4 +1,4 @@
-# ImmutableJS 入門教學
+# ImmutableJS Introductory Tutorial 
 
 ![ImmutableJS](./images/immutable.png "ImmutableJS")
 
