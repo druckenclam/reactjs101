@@ -15,7 +15,7 @@ The usually method is to use `deepCopy`. This will waste resources. To better so
 
 In 2013, Facebook Engineer Lee Byron developed [ImmutableJS] (https://facebook.github.io/immutable-js/), which is not part of React. `ImmutableJS` solved a lot of problems facing `React` and `Redux`.
 
-以下範例即是引入了 `ImmutableJS` 的效果，讀者可以發現，雖然我們操作了 `map1` 的值，但會發現原本的 `map1` 並未受到影響（因為任何修改都不會影響到原始資料），雖然使用 `deepCopy` 也可以模擬類似的效果但會浪費過多的計算資源和記憶體，`ImmutableJS` 則可以容易地共享沒有被修該到的資料（例如下面的資料 `b` 即為 `map1` 所 `map2` 共享），因而有更好的效能表現。 
+Blow is a case using `ImmutableJS`. As is seen, we derive `map2` from `map1` with changes to the value of element 'a'. `map1`'s value remained intact. We could use `deepCopy` to achieve the same effect. `ImmutableJS` makes it easy to share values that have not been changed (for example, `b` in `map1` and `map2`) for better performance. 
 
 ```javascript
 import Immutable from 'immutable';
@@ -28,9 +28,9 @@ map2.get('a'); // 2
 ```
 
 ## ImmutableJS Features
-ImmutableJS 提供了 7 種不可修改的資料類型：`List`、`Map`、`Stack`、`OrderedMap`、`Set`、`OrderedSet`、`Record`。若是對 Immutable 物件操作都會回傳一個新值。其中比較常用的有 `List`、`Map` 和 `Set`：
+ImmutableJS provides 7 immutable data structures: `List`, `Map`, `Stack`, `OrderedMap`, `Set`, `OrderedSet`, `Record`. Every operation on an immutable object will return a new immutable object. Popular ones are `List`, `Map` and `Set`.
 
-1. Map：類似於 key/value 的 object，在 ES6 也有原生 `Map` 對應
+1. Map: similar to object in terms of key/value pairs (ES6 provides native Map type).
 
   ```javascript
   const Map= Immutable.Map;
@@ -246,7 +246,7 @@ class FooComponent extends React.Component {
 雖然 `ImmutableJS` 的引入可以帶來許多好處和效能的提升但由於引入整體檔案較大且較具侵入性，在引入之前可以自行評估看看是否合適於目前的專案。接下來我們將在後面的章節講解如何將 `ImmutableJS` 和 `Redux` 整合應用到實務上的範例。 
 
 ## Further Reading
-1. [官方網站](https://facebook.github.io/immutable-js/)
+1. [Official Site](https://facebook.github.io/immutable-js/)
 2. [Immutable.js初识](http://www.w3cplus.com/javascript/immutable-js.html)
 3. [Immutable 详解及 React 中实践](https://github.com/camsong/blog/issues/3)
 4. [为什么需要Immutable.js](http://zhenhua-lee.github.io/react/Immutable.html)
@@ -259,6 +259,6 @@ class FooComponent extends React.Component {
 （image via [risingstack](https://risingstack-blog.s3.amazonaws.com/2016/Jan/immutable_logo_for_react_js_best_practices-1453211749818.png)）
 
 ## :door: Dokodemo Door
-| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: React Router 入門實戰教學](https://github.com/druckenclam/reactjs101/blob/en/Ch05/react-router-introduction.md) | [Next Chapter: Flux 基礎概念與實戰入門](https://github.com/druckenclam/reactjs101/blob/en/Ch07/react-flux-introduction.md) |
+| [Back to Main Page](https://github.com/druckenclam/reactjs101/tree/en) | [Previous Chapter: React Router Introductory Tutorial](https://github.com/druckenclam/reactjs101/blob/en/Ch05/react-router-introduction.md) | [Next Chapter: Flux 基礎概念與實戰入門](https://github.com/druckenclam/reactjs101/blob/en/Ch07/react-flux-introduction.md) |
 
 | [Correction, Questions, and Wish List](https://github.com/kdchang/reactjs101/issues) |
