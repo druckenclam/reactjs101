@@ -5,18 +5,18 @@
 ## Introduction
 With React App growing in complexity，we often need to use parent component's props to change child components' state tree, which is not easy to manage. We need better architecture to build complex applications. [Flux] (https://facebook.github.io/flux/), developed by Facebook, is a client-side application architecture, aiming to solve problems related to `MVC`. In fact, Flux is not a complete frontend Framework; rather it features unidirectional Data Flow, making it easier to manage state in large applications. React, responsible for view, together with Flux-like framework, states can be better managed, including those involveing interactivities, such as Facebook likes, clicking on photos, new messages.
 
-Original Flux framework has room for improvements. We often use community Flux-like frameworks such as [Redux](http://redux.js.org/index.html), [Alt](http://alt.js.org/), and [Reflux](https://github.com/reflux/refluxjs).不過這邊我們主要會使用 Facebook 本身提供 `Dispatcher API` 函式庫（可以想成是一個 pub/sub 處理器，透過 broadcast 將 `payloads` 傳給註冊的 callback function）並搭配 `NodeJS` 的 `EventEmitter` 模組去完成 Flux 架構的實現。	
+Original Flux framework has room for improvements. We often use community Flux-like frameworks such as [Redux](http://redux.js.org/index.html), [Alt](http://alt.js.org/), and [Reflux](https://github.com/reflux/refluxjs). We mainly use Facebook `Dispatcher API` framework (can be thought of as pub/sub processor, broadcast `payloads` to registered callback function) and `NodeJS`'s `EventEmitter` to implement Flux.	
 
 ## Flux Concepts Introduction
 ![React Flux](./images/flux-simple-diagram.png "React Flux")
 
-在 Flux Unidirectional Data Flow（單項流）世界裡有四大主角，分別負責不同對應的工作：
+There are four roles in the world of Flux Unidirectional Data Flow, each of which has different responsibilities.
 
 1. actions / Action Creator 
 
-	action 負責定義所有改變 state（狀態）的行為，可以讓開發者快速了解 App 的各種功能，若你想改變 state 你只能發 action。注意 action 可以是同步或是非同步。例如：新增代辦事項，呼叫非同步 API 獲取資料。
+	Actions define behaviors that change states. They allow developers to quickly understand all functionalities of Apps. If you want to change states, you can only perform actions. Actions can be both synchronous and asynchronous (for example, invocatin of asynchonous API to retrieve data).
 
-	實務上我們會分成 action 和 Action Creator。action 為描述行為的 object（物件），Action Creator 將 action 送給 dispatcher。一般來說符合 Flux Standard Action 的 action 會如以下範例程式碼，具備 `type` 來區別所觸發的行為。而 `payload` 則是所夾帶的資料：
+	Actions works together with action creators. Action represent objects that change states; action creators pass actions to dispatcher. Normally Flux standard action would look like the code below, with `type` identifying each action and `payload` carrying data:
 
 	```
 	// action
@@ -30,7 +30,7 @@ Original Flux framework has room for improvements. We often use community Flux-l
 	AppDispatcher.dispatch(addTodo);
 	```
 
-	當發生 rejected Promise 情況：
+	When the promise is rejected:
 
 	```
 	{
