@@ -56,30 +56,30 @@ There are four roles in the world of Flux Unidirectional Data Flow, each of whic
 
 ![React Flux](./images/flux-react.png "React Flux")
 
-Flux 架構前置作業：
+Flux Setup：
 
-1. Stores 向 Dispatcher 註冊 callback，當資料改變時告知 Stores
-2. Controller Views 向 Stores 取得初始資料
-3. Controller Views 將資料給 Views 去渲染 UI
-4. Controller Views 向 store 註冊 listener，當資料改變時告知 Controller Views 
+1. Stores register callback at dispatcher; when data changes, dispatcher notifies stores;
+2. Controller Views get initial data from stores;
+3. Controller Views pass initial data to views to render UI;
+4. Controller Views register listeners at store; when data changes, stores notifies controller views; 
 
-Flux 與使用者互動運作流程：
+Flux and app use case:
 
-1. 使用者和 App 互動，觸發事件，Action Creator 發送 actions 給 Dispatcher
-2. Dispatcher 依序將 action 傳給 store 並由 action type 判斷合適的處理方式
-3. 若有資料更新則會觸發 Controller Views 向 store 註冊的 listener 並向 store 取得更新資料
-4. View 根據 Controller Views 的新資料重新繪製 UI
+1. Users interact with App, producing events. Action creator send actions to dispatcher;
+2. Dispatcher pass actions to store and perform actions based on action type;
+3. When data changes, trigger listeners controller views registered at stores;
+4. View based on Controller Views' data render UI.
 
-## Flux 實戰初體驗
-介紹完了整個 Flux 基本架構後，接下來我們就來動手實作一個簡單 Flux 架構的 Todo，讓使用者可以在 `input` 輸入代辦事項並新增。
+## Flux Examples
+After the introduction of Flux framework. Next we begin an example of simple Flux Todo, allow users to type new errands into `input`.
 
-首先，我們先完成一些開發的前置作業，先透過以下指令在根目錄產生 npm 設定檔 `package.json`：
+First, we need to set up the environment. We begin by generating npm configuration `package.json` at root folder:
 
 ```
 $ npm init
 ```
 
-安裝相關套件（包含開發環境使用的套件）：
+Install packages including dev packages.
 
 ```
 $ npm install --save react react-dom flux events
