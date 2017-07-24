@@ -320,25 +320,25 @@ export default TodoList;
 若讀者都有跟著上面的步驟走完的話，最後我們在終端機的根目錄位置執行 `npm start` 就可以看到整個成果囉，YA！
 ![React Flux ](./images/flux-demo.png "React Flux ")
 
-## 總結
-Flux 優勢：
+## Summary
+Flux Advantage:
 
-1. 讓開發者可以快速了解整個 App 中的行為
-2. 資料和業務邏輯統一存放好管理
-3. 讓 View 單純化只負責 UI 的排版不需負責 state 管理
-4. 清楚的架構和分工對於複雜中大型應用程式易於維護和管理程式碼
+1. Help developers understand behaviors of the applications;
+2. Data and business logic are well managed;
+3. View responsible for only UI, no responsibility for state management;
+4. Clear Architecture makes for easier management of large scale progrects.
 
-Flux 劣勢：
+Flux Disadvantage:
 
-1. 程式碼上不夠簡潔
-2. 對於簡單小應用來說稍微複雜
+1. Program code is verbose;
+2. Complex for small scale applications.
 
 以上就是 Flux 的實戰入門，我知道一開始接觸 Flux 的讀者一定會覺得很抽象，有些讀者甚至會覺得這個架構到底有什麼好處（明明感覺沒比 MVC 高明到哪去或是一點都不簡潔），但如同上述優點所說 Flux 設計模式的優勢在於清楚的架構和分工對於複雜中大型應用程式易於維護和管理程式碼。若還是不熟悉的讀者可以跟著範例多動手，相信慢慢就可以體會 Flux 的特色。事實上，在開發社群中為了讓 Flux 架構更加簡潔，產生了許多 Flux-like 的架構和函式庫，接下來將帶讀者們進入目前最熱門的架構：`Redux`。
 
 ## Further Reading
 1. [Getting To Know Flux, the React.js Architecture](https://scotch.io/tutorials/getting-to-know-flux-the-react-js-architecture)
-2. [Flux 官方網站](https://facebook.github.io/flux/)
-3. [從 Flux 與 MVC 的差異來簡介 Flux](http://blog.techbridge.cc/2016/04/29/introduce-flux-from-flux-and-mvc/)
+2. [Flux Official Site](https://facebook.github.io/flux/)
+3. [Comparing Flux and MVC and Introduction to Flux](http://blog.techbridge.cc/2016/04/29/introduce-flux-from-flux-and-mvc/)
 4. [Flux Stores and ES6](https://medium.com/@softwarecf/flux-stores-and-es6-9b453dbf9db#.uuf1ddj8u)
 5. [React and Flux: Migrating to ES6 with Babel and ESLint](https://medium.com/front-end-developers/react-and-flux-migrating-to-es6-with-babel-and-eslint-6390cf4fd878#.vafamphwy)
 6. [Building an ES6/JSX/React Flux App – Part 2 – The Flux](https://shellmonger.com/2015/08/17/building-an-es6jsxreact-flux-app-part-2-the-flux/)
