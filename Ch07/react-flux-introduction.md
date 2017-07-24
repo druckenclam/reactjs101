@@ -3,9 +3,9 @@
 ![React Flux](./images/react-flux.jpeg "React Flux")
 
 ## Introduction
-隨著 React App 複雜度提昇，我們會發現常常需要從 Parent Component 透過 props 傳遞方法到 Child Component 去改變 state tree，不但不方便也難以管理，因此我們需要更好的資料架構來建置更複雜的應用程式。[Flux](https://facebook.github.io/flux/) 是 Facebook 推出的 client-side 應用程式架構（Architecture），主要想解決 `MVC` 架構的一些問題。事實上，Flux 並非一個完整的前端 Framework，其特色在於實現了 Unidirectional Data Flow（單向流）的資料流設計模式，在開發複雜的大型應用程式時可以更容易地管理 state（狀態）。由於 React 主要是負責 View 的部份，所以透過搭配 Flux-like 的資料處理架構，可以更好的去管理我們的 state（狀態），處理複雜的使用者互動（例如：Facebook 同時要維護使用者是否按讚、點擊相片，是否有新訊息等狀態）。
+With React App growing in complexity，we often need to use parent component's props to change child components' state tree, which is not easy to manage. We need better architecture to build complex applications. [Flux] (https://facebook.github.io/flux/), developed by Facebook, is a client-side application architecture, aiming to solve problems related to `MVC`. In fact, Flux is not a complete frontend Framework; rather it features unidirectional Data Flow, making it easier to manage state in large applications. React, responsible for view, together with Flux-like framework, states can be better managed, including those involveing interactivities, such as Facebook likes, clicking on photos, new messages.
 
-由於原始的 Flux 架構在實現上有些部分可以精簡和改善，在實務上我們通常會使用開發者社群開發的 Flux-like 相關的架構實現（例如：[Redux](http://redux.js.org/index.html)、[Alt](http://alt.js.org/)、[Reflux](https://github.com/reflux/refluxjs) 等）。不過這邊我們主要會使用 Facebook 本身提供 `Dispatcher API` 函式庫（可以想成是一個 pub/sub 處理器，透過 broadcast 將 `payloads` 傳給註冊的 callback function）並搭配 `NodeJS` 的 `EventEmitter` 模組去完成 Flux 架構的實現。	
+Original Flux framework has room for improvements. We often use community Flux-like frameworks such as [Redux](http://redux.js.org/index.html), [Alt](http://alt.js.org/), and [Reflux](https://github.com/reflux/refluxjs).不過這邊我們主要會使用 Facebook 本身提供 `Dispatcher API` 函式庫（可以想成是一個 pub/sub 處理器，透過 broadcast 將 `payloads` 傳給註冊的 callback function）並搭配 `NodeJS` 的 `EventEmitter` 模組去完成 Flux 架構的實現。	
 
 ## Flux Concepts Introduction
 ![React Flux](./images/flux-simple-diagram.png "React Flux")
