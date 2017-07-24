@@ -42,17 +42,17 @@ There are four roles in the world of Flux Unidirectional Data Flow, each of whic
 
 2. Dispatcher
 
-	`Dispatcher` 是 Flux 架構的核心，每個 App 只有一個 Dispatcher，提供 API 讓 store 可以註冊 `callback function`，並負責向所有 store 發送 action 事件。在本範例中我們使用 Facebook 提供的 Dispatcher API，其內建有 `dispatch` 和 `subscribe` 方法。
+	`Dispatcher` is the core of Flux. Every app has only one dispatcher, providing for APIs that allows for store to register `callback function`, and is responsible for sending action events to all the stores. In our example, we use Facebook 提Dispatcher API including `dispatch` and `subscribe`.
 
 3. Stores
 
-	一個 App 通常會有多個 store 負責存放業務邏輯，根據不同業務會有不同 store，例如：TodoStore、RecipeStore。 store 負責操作和儲存資料並提供 `view` 使用 `listener`（監聽器），若有資料更新即會觸發更新。值得注意的是 store 只提供 `getter API` 讀取資料，若想改變 state 一律發送 action。
+	An app usually has multiple stores to keep business logic, for example: TodoStore, RecipeStore. Stores keeps data and provider `listener`s for `view`s. If data change, views will be udpated. Please note stores only provide `getter API`s for data retrival. Change of states need actions.
 
-4. Views（Controller Views）
+4. Views (Controller Views)
 
-	這部份是 `React` 負責的範疇，負責提供監聽事件的 `callback function`，當事件發生時重新取得資料並重繪 `View`。
+	It's under the purview of `React`, which provides `callback function`s, and changes `View`.
 
-## Flux 流程回顧
+## Flux Flow Review
 
 ![React Flux](./images/flux-react.png "React Flux")
 
